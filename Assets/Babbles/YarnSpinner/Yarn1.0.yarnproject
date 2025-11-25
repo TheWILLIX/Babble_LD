@@ -1,0 +1,50 @@
+﻿title: Program
+---
+/// La valeur du Seum de Bulle.                     (Le Thermomètre de Seum)
+<<declare $seum = 15>>
+
+/// Le Nombre d'algue donné à Burb
+<<declare $nbAlgueBurb = 0>>
+
+/// Si le joueur a déja parlé aux jeunes ou non.
+<<declare $jeunesParle = false>>
+
+/// Si le joueur a parlé a Napoléon après avoir parlé aux Jeunes (Début de la Quête)
+<<declare $mapGiven = false>>
+
+/// Si le joueur a donné une canette a Urfe pour la quete du Parfum
+<<declare $canetteGivenToUrfe = false>>
+
+/// Si le joueur a donné une pile a Urfe pour la quete du Parfum
+<<declare $pileGivenToUrfe = false>>
+
+/// Si le joueur a donné une pile ET une canette
+<<declare $urfeQuestSuccess = false>>
+<<declare $urfeBadMath = 0>>
+<<declare $tireBouchonFound = false>>
+<<declare $cuillereFound = false>>
+<<declare $fourchetteFound = false>>
+<<declare $requinsSuccessQuest = false>>
+<<declare $rockGrotteDestroyed = false>>
+<<declare $jeunesVisited = false>>
+<<declare $visitedJeunesIntro_EPA = false>>
+<<declare $visitedJeunesStory0_EPA = false>>
+<<declare $visitedJeunesStory1_EPA = false>>
+<<declare $visitedJeunesStory0_ABY = false>>
+<<declare $visitedJeunesStory1_ABY = false>>
+<<declare $visitedMarlineIntro_FOR = false>>
+<<declare $visitedMarlineStory0_FOR = false>>
+<<declare $visitedMarlineStory1_FOR = false>>
+<<declare $visitedMarlineStory0_CIM = false>>
+<<declare $visitedMarlineStory1_CIM = false>>
+<<declare $visitedMarlineIntro_CIM = false>>
+<<declare $visitedJeunesIntro_ABY = false>>
+<<declare $visitedUrfeIntro = false>>
+<<declare $GrenadeInInventory = false>>
+<<declare $grenadePositionInfo = false>>
+<<declare $hotuQueteSucced1 = false>>
+<<declare $hotuQueteSucced2 = false>>
+<<declare $hotuQueteSucced3 = false>>
+<<declare $skateTaken = false>>
+<<declare $infoAbysses = false>>
+===

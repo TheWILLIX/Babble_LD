@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Hotu
+  m_EditorClassIdentifier: 
+  _textColorID: '#a1adae'
+  _characterName: Hotu
+  _faceSprite: {fileID: 21300000, guid: 380862d6584aac24483965c98dd998dc, type: 3}
+  _isPNJClassic: 1
+  _seumHasInfluence: 1
+  _stadePNJ: 0
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 10
+  _seuilSeumExplo: 12
+  _itemLike: []
+  _itemDislike: []
+  _receiveUniqueItem: []
+  _voiceSound:
+  - {fileID: 11400000, guid: f8aec32e0bdee9f4eb74cf9bcd826d5e, type: 2}
+  - {fileID: 11400000, guid: ceba6d416c6940b4391a71c5f7e3582a, type: 2}
+  - {fileID: 11400000, guid: f0bc6c6d49b095542936163148456cd6, type: 2}
+  - {fileID: 11400000, guid: 057ce282d9ac65545bb5d4390b7774f2, type: 2}
+  - {fileID: 11400000, guid: 629a7f45068d91244ac9d79cdd0a7799, type: 2}
+  - {fileID: 11400000, guid: 882db8e81d8ec7b42ad5ffe025a2a410, type: 2}
+  - {fileID: 11400000, guid: ddda0ae4ef784cb4fa44c81f00f960c6, type: 2}
+  - {fileID: 11400000, guid: ac8775684cd90e542bf8579c09791f2b, type: 2}
+  - {fileID: 11400000, guid: 15b79c4b8fe5e404ba2b1d6587ee368f, type: 2}
+  _speedOfLettersSound: 0
+  _minimumPitchOfLettersSound: 1
+  _maximumPitchOfLettersSound: 1

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d99aa992dde3a45a93e06f1b2f891a, type: 3}
+  m_Name: REC_LancePile2
+  m_EditorClassIdentifier: 
+  _recipeName: REC_LancePile2
+  _firstItem: {fileID: 11400000, guid: a59b9aeddbae25c479317f203c252ac3, type: 2}
+  _secondItem: {fileID: 11400000, guid: 05c6e9513bdcb3c47a6be2e0192c6867, type: 2}
+  _resultItem: {fileID: 11400000, guid: 52af2a498a0e1174695b21f83a663b6d, type: 2}
+  _linkedRecipe: {fileID: 11400000, guid: 9a0d56f369c3e234e9a0881ce605a45e, type: 2}
+  _locked: 0

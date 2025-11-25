@@ -1,0 +1,199 @@
+title: Croki_Intro_ABYSSES
+position: 0,0.5
+---
+Croki : ßïêñvêñµê åµ £ê§†ïvål Ðê lå ¢rêvê††ê é†råñgêr ! †µ vêµx vðïr lå mïgrå†ïðñ Ðê ¢rêvê††ê ?
+Bulle : Oui !!!!!
+Croki : ǭμ€l ąǥ€ ą$ ţμ ? lą ƒąląɨ$€ ɲ'€$ţ ρą$ ąȼȼ€$$ɨβl€ ą ţ๏μ$.
+->Bulle : J'ai 16 ans.
+    Croki : 16 åñ§ ? J'åvåï§ l'ïmþrê§§ïðñ qµê †µ êñ åvåï§ 3 håhåhåhå. Lå £ålåï§ê ê§† å¢¢ê§§ïßlê à þår†ïr Ðê 5 åñ§.
+    Croki : Måï§ ßðñ, †µ ñ'ê§ þå§ å§êêz §wåG þðÚr Èñ†RêR !
+    Astère : <i>Il se permet vraiment de juger le look des gens avec sa dégaine d'huître ?</i>
+->Bulle : J'ai 18 ans.
+    Croki : Lê mêmê âgê qµê ¢ê§ †rðï§ åµ†rê§ Ðélïñqµåñ†§...
+    Bulle : L'echecouade de la mort ?
+    Croki : Öµï !
+    Bulle : Mais je suis pas comme eux...
+    Croki :  Ðê †ðµ†ê £åçðñ, †Ú ñ'È§ þå§ å§êêz §wåG þðÚr Èñ†RêR !
+    Astère : <i>Il se permet vraiment de juger le look des gens avec sa dégaine d'huître ? ?</i>
+->Bulle : J'ai 88 ans.
+    Croki : Çê††ê £ålåï§ê ñ'ê§† þå§ Äµ†Örï§éê åµ× VïÈµx, ïL§ ßåï§§êñ† lÈ ñïVêÄµ ÐÈ §wÄg.
+    Astère : Heuresement que mamie n'est pas là...
+    Bulle : Je rigole, j'ai pas 88 ans haha...
+    Croki : ñê ¢hêr¢hê þå§, †µ ñ'ê§ þå§ å§§êz §wåg þðµr rêñ†rêr.
+    Astère : <i>Il se permet vraiment de juger le look des gens avec sa dégaine d'huître ? ?</i>
+Bulle : Je dois faire quoi pour être swag ?
+Croki : ßålåÐê-†ðï Ðåñ§ lê £ê§†ïvål ê† ïñ§þïrê-†ðï Ðê ñð†rê mågñï£ïqµê ¢µl†µrê.
+===
+title: Croki_Swag_Bad
+position: 0,0.5
+---
+Croki : †µ vêµx qµê jê jµgê †ðñ §wåg ?
+Bulle : Oui !!
+Croki : Hµm -542% Ðê §wåg.
+Bulle : -542 ????
+Croki : Ðé§ðlé ïl £åµ† å††êïñÐrê 100% Ðê §wåg þðµr êñ†rêr. Rê†êñ†ê †å ¢håñ¢ê.
+===
+title: Croki_Swag_Meduse
+position: 0,0.5
+---
+Croki : †µ vêµx qµê jê jµgê †ðñ §wåg ?
+Bulle : Oui !!
+Croki : ...
+Croki : <size=500%>Ç'È§† ÄÚ ÐÈ§§Ú§ ÐÈ 9000% ÐÈ §WÄG.</size>
+Croki : Öù ê§† ¢ê qµê †µ å§ êµ ¢ê††ê méÐµ§ê ????
+Bulle : Secret d'état. Je peux rentrer alors ?
+Croki : ßïêñ-§ûr gråñÐ måî†rê Ðµ §wåg.
+===
+title: Croki_Swag_Chapeau
+position: 0,0.5
+---
+Croki : †µ vêµx qµê jê jµgê †ðñ §wåg ?
+Bulle : Oui !!
+Croki : 184% Ðê §wåg.
+Bulle : Trop bien !!! Je peux rentrer alors ?
+Croki : Öµï, þå§§ê µñ ßðñ mðmêñ† Ðêvåñ† lå mïgrå†ïðñ.
+===
+title: Croki_Swag_Parfum
+position: 0,0.5
+---
+Croki : †µ vêµx qµê jê jµgê †ðñ §wåg ?
+Bulle : Oui !!
+Croki : 100.00001% Ðê §wåg.
+Bulle : J'ai eu chaud...
+Croki : Çê ¢håþêåµ å µñê åµrå þår†ï¢µlïèrê, ïl ê§† à lå £ðï§ rïÐï¢µlê ê† §†¥lé. Ç'ê§† ¢ðmþlïqµé Ðê lê jµgêr måï§ ïl vå ßïêñ åvê¢ †å †ê†ê Ð'ïññð¢êñ†.
+Bulle : Je sais pas quoi penser de ce compliment.
+Astère : <i>Il se moque clairement de toi.</i>
+Croki : Ällêr ! þå§§ê µñ ßðñ mðmêñ† Ðêvåñ† lå mïgrå†ïðñ.
+===
+title: Croki_Salute
+position: 0,0.5
+---
+<<if dice(2) == 1>>
+Croki : Jê †ê §ðµhåï†ê µñê ßðññê jðµrñéê åµ ñðm Ðê lå þðlï¢ê Ðµ §wåg.
+<<else>>
+Croki : Au fait, tu connais la définition de swag ?
+->Bulle : Non, ça veut dire quoi ?
+    Croki : S
+    Croki : W
+    Croki : A
+    Croki : G
+->Bulle : Non, mais je veux pas savoir.
+    Croki : Ç'ê§† êxå¢†êmêñ† ¢ê qµê qµêlqµ'µñ Ðê ñðñ §wåg åµråï† Ðï†...
+->Bulle : Oui, au revoir.
+    Croki : T'es trop swag !!! 
+<<endif>>
+===
+title: Lumos_Intro_ABYSSES
+position: 0,0.5
+---
+Lumos : <size=40%>Bonjour voyageur, n'hésitez-pas à vous rendre à Raie-men.</size>
+Bulle : Pourquoi tu trembles ?
+Lumos : <size=40%>J'ai peur du noir...</size>
+Astère : <i>Ahaha le bébé.</i>
+Bulle : Bah pourquoi tu travailles ici ?
+Lumos : <size=40%>C'est pour payer mes études, mon école coûte cher...</size>
+Bulle : Oh la galère...bonne chance alors.
+===
+title: Lumos_Salute
+position: 0,0.5
+---
+<<if dice(2) == 1>>
+Lumos : <size=40%>Me laisse pas tout seul dans le noir s'il te plaît...</size>
+<<else>>
+Lumos : <size=40%>Lumos Maxima !!! Aller, un peu de lumière pitié...</size>
+<<endif>>
+===
+title: Perla_Intro_ABYSSES
+position: 0,0.5
+---
+Perla : Bienvenue...
+Palourda : Au stand...
+Palourda : De Bubble Tea !
+Perla : De Bubble Tea !
+Perla : Ehhh, c'était ma phrase.
+Palourda : Rooooh, toujours à vouloir faire la star.
+Perla : C'est toi qui vole mes phrases !!!
+Bulle : Vous vendez quoi ici ?
+Perla : Bah...des bubble tea.
+Bulle : Je peux en avoir ?
+Palourda : Et voilà, c'est encore toi qui répond, t'abuses Perla !!
+Perla : QUOI ? Alors là c'est le pompon !
+Bulle : Bon...je reviendrai plus tard...
+===
+title: Perla_Salute
+position: 0,0.5
+---
+<<if dice(2) == 1>>
+Perla : Bonjour !
+Palourda : Pourquoi c'est toujours toi qui commence à parler ?
+Perla : Raaaahhh bah vas-y la prochaine fois commence.
+<<else>>
+Palourda : Bonjour !
+Perla : Alors ? Contente d'avoir parlé en première ?
+Palourda : C'était pas si bien finalement...
+<<endif>>
+===
+title: Goldy_Intro_ABYSSES
+position: 0,0.5
+---
+Bulle : Bonjour.
+Goldy : ...
+Bulle : C'est quoi ça ?
+Goldy : LaNteRNe.
+Bulle : Je peux en avoir une ?
+Goldy : nON.
+Bulle : Pourquoi ?
+Goldy : .
+===
+title: Goldy_Salute
+position: 0,0.5
+---
+Goldy : ...
+===
+title: Delta_Intro_ABYSSES
+position: 0,0.5
+---
+Madame Δ : Je savais que tu me rendrais visite voyageur.
+Bulle : Ah bon ?
+Madame : Je connais déjà cette réaction.
+Bulle : ...
+Madame : Voyageur ! Souhaites-tu découvrir ton avenir ?
+->Bulle: Oui trop !!!
+    <<jump Delta_Prediction>>
+->Bulle: Non merci, ça fait trop peur...
+===
+title: Delta_Prediction
+position: 0,0.5
+---
+<<if dice(2) == 1>>
+Madame Δ : À propos de quel sujet désires-tu une prédiction jeune voyageur ?
+->Bulle : Sur mon avenir !
+    Madame Δ : Ah, les jeunes tous les mêmes...Pas un brin d'intelligence visible. 
+    Madame Δ : Une prédiction est forcément sur l'avenir. Petit ignorant !
+->Bulle : Sur la suite du jeu !
+    Madame Δ : Hum, je vois de belles choses.
+    Bulle : C'est tout ?
+    Madame Δ : Je ne vais tout te dévoiler, tu dois découvrir par toi-même.
+->Bulle : Sur mes parents ! Est-ce qu'ils vont enfin me laisser tranquille ?
+    Madame Δ : Hum, seul l'avenir te le dira.
+    Bulle : Mais...c'est ça que je vous demandais.
+<<else>>
+Madame Δ : Quel sujet te tracasse voyageur ?
+->Bulle : L'amour.
+    Madame Δ : L'amour passera cette fois avant tout le reste, même si vous avez juré de fermer définitivement votre porte à Cupidon. 
+    Madame Δ : Normal, puisque Vénus dominera votre Ciel ces jours-ci. 
+    Madame Δ : Votre horizon sentimental sera très dégagé. Une charmante rencontre est probable, ou une embellie spectaculaire dans vos relations existantes.
+->Bulle : Le travail.
+    Madame Δ : Refaites le plein d'enthousiasme, malgré les petits ou grands obstacles qui se dressent actuellement sur votre chemin. 
+    Madame Δ : C'est avec une force nouvelle que vous prendrez à bras-le-corps les problèmes quotidiens dans votre métier.
+->Bulle : La santé.
+    Madame Δ : Avec trois courants marins bénéfiques bien placés dans votre Ciel, vous ne devriez pas manquer de résistance physique. 
+    Madame Δ : Mais attention : des petites difficultés sont possibles pour quelques-uns d'entre vous. Ces planètes ont un impact si puissant qu'elles peuvent en effet perturber le système énergétique et nerveux. 
+    Madame Δ : Si cela vous arrive, pensez à vous détendre, à pratiquer une activité relaxante comme le yoga ou la méditation pour retrouver l'équilibre.
+<<endif>>
+===
+title: Delta_Salute
+position: 0,0.5
+---
+Madame Δ : Bon séjour dans le monde abyssal voyageur !
+===

@@ -1,0 +1,2281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &738528504419935640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 756514043792451162}
+  - component: {fileID: 5449970985089158389}
+  - component: {fileID: 3244950794804246339}
+  - component: {fileID: 1897770098622552221}
+  m_Layer: 0
+  m_Name: titre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &756514043792451162
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738528504419935640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -15, y: 420}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5449970985089158389
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738528504419935640}
+  m_CullTransparentMesh: 1
+--- !u!114 &3244950794804246339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738528504419935640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c9e9e81a1383b0b49b2725a8bf790e76, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1897770098622552221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738528504419935640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b2e51acbedda14993eced729404044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - Translations:
+      keys:
+      - EN
+      - FR
+      values:
+      - {fileID: 21300000, guid: 975dc037d486c5841ada7d3da6033b71, type: 3}
+      - {fileID: 21300000, guid: c9e9e81a1383b0b49b2725a8bf790e76, type: 3}
+  _spriteID: 0
+--- !u!1 &806942529561786520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5256210511708666778}
+  - component: {fileID: 148971704990667675}
+  - component: {fileID: 3694692881191771904}
+  m_Layer: 0
+  m_Name: Ingredient2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5256210511708666778
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806942529561786520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 170, y: -250}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &148971704990667675
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806942529561786520}
+  m_CullTransparentMesh: 1
+--- !u!114 &3694692881191771904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806942529561786520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 018297e91a64d6f41a039c0266c4c696, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &3374025372322893126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2448332885693693804}
+  - component: {fileID: 2222459071194198113}
+  - component: {fileID: 8798824839151710754}
+  m_Layer: 0
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2448332885693693804
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374025372322893126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -236, y: 261}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2222459071194198113
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374025372322893126}
+  m_CullTransparentMesh: 1
+--- !u!114 &8798824839151710754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3374025372322893126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: dc14b546cfbc9344e8f25e07532f3c4b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4003289317510270614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3114928686974330902}
+  - component: {fileID: 6690480326906223899}
+  - component: {fileID: 2713364813538694550}
+  - component: {fileID: 8498914981375483063}
+  m_Layer: 0
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3114928686974330902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003289317510270614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -27, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6690480326906223899
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003289317510270614}
+  m_CullTransparentMesh: 1
+--- !u!114 &2713364813538694550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003289317510270614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: To counteract pollution
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e51d75028f0b5bc45a663410f3b1257d, type: 2}
+  m_sharedMaterial: {fileID: 559331918830543118, guid: e51d75028f0b5bc45a663410f3b1257d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -201.04025, y: 0, z: -242.96393, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8498914981375483063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003289317510270614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f6e2cfd1971e94b81c4d2a48f08cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lines:
+    keys:
+    - Algue01
+    - Algue02
+    - Ampoule.Description
+    - Briquet.Description
+    - Brochette.Description
+    - Brouilleur.Description
+    - Campement.Description
+    - Canette01
+    - Canette02
+    - ChapeauHelice.Description
+    - ChapeauMeduse.Description
+    - CIMETIERE1.01
+    - CIMETIERE1.02
+    - CIMETIERE2.01
+    - CIMETIERE2.02
+    - CIMETIERE3.01
+    - CIMETIERE3.02
+    - Credits
+    - Echecouade.Aime01
+    - Echecouade.Aime02
+    - Echecouade.Aime03
+    - Echecouade.AimePas01
+    - Echecouade.AimePas02
+    - Echecouade.Description
+    - Echecouade.Fav01
+    - Echecouade.Fav02
+    - Echecouade.Lieu
+    - Echecouade.SousTitre
+    - EPAVE1.01
+    - EPAVE1.02
+    - EPAVE10.01
+    - EPAVE10.02
+    - EPAVE11.01
+    - EPAVE11.02
+    - EPAVE12.1
+    - EPAVE12.2
+    - EPAVE2.01
+    - EPAVE2.02
+    - EPAVE3.01
+    - EPAVE3.02
+    - EPAVE4.01
+    - EPAVE4.02
+    - EPAVE5.01
+    - EPAVE5.02
+    - EPAVE6.01
+    - EPAVE6.02
+    - EPAVE7.01
+    - EPAVE7.02
+    - EPAVE8.01
+    - EPAVE8.02
+    - EPAVE9.01
+    - EPAVE9.02
+    - FastFood.Description
+    - Fleur01
+    - Fleur02
+    - Fruit01
+    - Fruit02
+    - General.Lieu
+    - Grenade.Description
+    - Hotu.Aime01
+    - Hotu.Aime02
+    - Hotu.Aime03
+    - Hotu.AimePas
+    - Hotu.Description
+    - Hotu.Lieu
+    - Hotu.SousTitre
+    - InvertYAxis
+    - JumpInput
+    - KeyboardMouseMode
+    - LancePile.Description
+    - Language
+    - MainMenu
+    - Marline.Aime01
+    - Marline.Aime02
+    - Marline.Aime03
+    - Marline.AimePas01
+    - Marline.AimePas02
+    - Marline.Description
+    - Marline.fav01
+    - Marline.fav02
+    - Marline.Lieu
+    - Marline.Soustitre
+    - Meduse01
+    - Meduse02
+    - MeduseCoussin.Description
+    - MeduseDisco.Description
+    - Napoleon.Aime01
+    - Napoleon.Aime02
+    - Napoleon.Aime03
+    - Napoleon.AimePas
+    - Napoleon.Description
+    - Napoleon.Lieu
+    - Napoleon.Soustitre
+    - NotebookIntro01
+    - OphelieRole
+    - ParfumFruite.Description
+    - ParfumNaturel.Description
+    - PiegeFruit.Description
+    - Pile01
+    - Pile02
+    - Play
+    - Poulpe01
+    - Poulpe02
+    - PoulpeCasque.Description
+    - PoulpeCoussin.Description
+    - PoulpePropulseur.Description
+    - Quit
+    - Resume
+    - Settings
+    - Sloop.Aime
+    - Sloop.AimePas
+    - Sloop.Description
+    - Sloop.Lieu
+    - Sloop.Soustitre
+    - SoupeEncre.Description
+    - Sushi.Description
+    - ThermometerVisibility
+    - Urfe.Aime01
+    - Urfe.Aime02
+    - Urfe.Aime03
+    - Urfe.AimePas
+    - Urfe.Description
+    - Urfe.Lieu
+    - Urfe.Soustitre
+    - VisionPoulpe.Description
+    values:
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Mini resource to use against pollution.
+        - Mini ressource contre la pollution.
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - I saw the same ones in dad's garden.
+        - "Il y avait les m\xEAmes dans le jardin de papa."
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Big light
+        - "Grande lumi\xE8re"
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Medium light
+        - "Moyenne lumi\xE8re"
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To become less salty!
+        - Pour remonter le seum !
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To open an electric door!
+        - "Pour ouvrir une porte \xE9l\xE9ctrique !"
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To be ultra fresh in the morning.
+        - "Pour \xEAtre ultra frais au r\xE9veil."
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Pollution item...yuck
+        - Objet de pollution...beurk
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - I tried to drink it, I saw flying fishes
+        - "J'ai essay\xE9 d'en boire, j'ai vu des poissons volants."
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To go against the flow with swag
+        - "Pour aller \xE0 contre courant avec swag"
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Medium light
+        - "Moyenne lumi\xE8re"
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The beginning of a great story...
+        - "Le d\xE9but d'une grande histoire..."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Once upon a time there was a whale.
+        - "Il \xE9tait une fois une baleine."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The continuation of a great story
+        - "L'avanc\xE9e d'une grand histoire"
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - One day, it died.
+        - Un jour, elle mourut.
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The end of a great story
+        - La fin d'une grande histoire
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Then it became a skeleton.
+        - Puis elle devint un squelette.
+    - Category: Main Menu
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Credits
+        - "Cr\xE9dits"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The skate-bulle
+        - 'Le skate-bulle '
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Rap<br><br>
+        - <br>Le rap<br><br>
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br><br>FIGHT (mainly Gumpy actually)<br><br>
+        - <br><br>LA BAGARRE (surtout Gumpy en fait)<br><br>
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Napoleon (normal)
+        - "Napol\xE9on (normal)"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Losers
+        - <br>Les boloss
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Ablette, Gumpy, and Dumbo, the cool three!
+        - "Ablette, Gumpy et Dumbo, les plus styl\xE9s !"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Propeller hat
+        - "Chapeau h\xE9lice"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Sushi
+        - <br>Sushi
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '      : In front of the skate park'
+        - '      : Devant le skate parc'
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The young gang
+        - Le gang de jeunes
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - A sand hockey match
+        - Un match de hockey sur sable
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - 'In the year 2004 before Poseidon, Marline was enjoying her youth. She
+          was traveling all around the sea, looking for new experiences.<br><br>But
+          today, her goal was different: to watch the sand hockey finals. Her favorite
+          team, the Tokyeau Sharks, were up against their eternal rivals, the Saint-Marin
+          Otters. In no case did she want to miss this show. So, dressed with her
+          best fan gear, she entered the first bar she saw on her path.'
+        - "An 2004 avant Pos\xE9idon, Marline jouissait de sa jeunesse, elle voyageait
+          partout dans l'oc\xE9an \xE0 la recherche de nouvelles exp\xE9riences.<br><br>Mais
+          aujourd'hui son objectif \xE9tait tout autre : regarder la finale du match
+          de hockey sur sable. Son \xE9quipe favorite les Tokyeau Sharks contre leurs
+          rivaux \xE9ternels les Saint-Marin Otters. Elle ne voulait en aucun cas
+          rater ce spectacle. Alors, v\xEAtue de son plus bel attirail de supporter,
+          elle entra dans le premier bar qui croisa sa route.  "
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The piracy degree
+        - "Le dipl\xF4me de piraterie"
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '- I''ll give you one thing, this boat isn''t a baby turtle without arms...<br>-
+          It was a gift from my parents when I graduated from pirate school...<br>-
+          Wow. What are we waiting for to get in? The Tokyeau Sharks are waiting
+          for us!<br><br>They entered and made their way to the cockpit. Napoleon
+          successfully led his boat-pooler to his match.<br><br>- Thanks my little
+          pirate. Come to the game with me, I''ll buy you a drink.'
+        - "- Pour le coup, c\u2019est pas un bateau de b\xE9b\xE9 tortue sans bras\u2026<br>-
+          C\u2019est un cadeau d\u2019mes parents qui date de l\u2019obtention de
+          mon dipl\xF4me de piraterie\u2026<br>- Waouw. On attend quoi pour monter
+          dedans ? Les Tokyeau Sharks nous attendent !<br><br>Ils entr\xE8rent et
+          se dirig\xE8rent vers la cabine de pilotage. Napol\xE9on conduisit avec
+          succ\xE8s sa co-batureuse jusqu\u2019\xE0 son match.<br><br>- Merci mon
+          p\u2019tit pirate. Viens au match avec moi, j\u2019te paye une boisson."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Marline the leader
+        - Marline la leadeuse
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Too impressed to refuse, the pirate followed the woman to the stadium.<br>Of
+          course the fabulous Tokyeau Sharks won, Marline was crazy with joy and
+          drank a few too many cocktails. She couldn't even stand straight enough
+          to leave the stadium. Napoleon helped her by taking her under his tentacles.<br><br>-
+          You know, your tentacles are not so bad after all. I like them.
+        - "Trop impressionn\xE9 pour refuser, le pirate suivit la femme jusqu\u2019au
+          stade.<br>Bien-s\xFBr les fabuleux Tokyeau Sharks gagn\xE8rent, Marline
+          folle de joie bu un peu trop de cocktails. Elle ne tenait m\xEAme plus
+          debout pour sortir du stade. Napol\xE9on l\u2019aida en la prenant sous
+          ses tentacules.<br><br>- T\u2019sais qu\u2019elles sont pas si mal tes
+          tentacules finalement. Elles me plaisent bien."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Good night pirates
+        - Bonne nuit les pirates
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Embarrassed by this unexpected statement, Napoleon suddenly let go of the
+          one he was helping to walk. Dying of laughter, she rolled on the floor
+          and exclaimed:<br><br>- You may not be a good pirate Napolele, but you're
+          a crazy enough octopus to stay with me. I like you, can I sleep in your
+          boat tonight? I don't know where to go.<br><br>Napoleon accepted without
+          hesitation to welcome Marline in his boat. This woman, although original,
+          had just declared her love for him. Perhaps tomorrow all this will no longer
+          be, but tonight, he was living one of the best moments of his life.
+        - "G\xEAn\xE9 par cette phrase inattendue, Napol\xE9on l\xE2cha d\u2019un
+          seul coup celle qu\u2019il aidait \xE0 marcher. Morte de rire, elle se
+          roula par terre et s\u2019exclama :<br><br>- T\u2019es ptetre pas un bon
+          pirate Napol\xE9l\xE9, mais t\u2019es un poulpe assez fou pour rester avec
+          moi. J't'aime bien, j\u2019peux dormir dans ton bateau cette nuit ? J\u2019sais
+          pas o\xF9 aller.<br><br>Napol\xE9on accepta sans h\xE9siter d'accueillir
+          Marline, cette femme, bien qu\u2019originale venait de lui d\xE9clarer
+          son amour. Peut-\xEAtre que demain tout \xE7a n\u2019existera plus, mais
+          ce soir, il vivait l\u2019un des meilleurs moments de sa vie."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The quietest bar on the sea
+        - "Le bar le plus calme de l'oc\xE9an"
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Proud and restless, she ordered a cocktail and sat in front of the television.
+          But very soon noticed that the warm and feisty atmosphere so common to
+          sand hockey matches was not there.<br>She found that only two customers
+          were sitting in front of the television with her.<br>One was sleeping with
+          a beer in his hand and the other was watching the program that was playing,
+          some kind of general knowledge show called "Fish Tank". He was answering
+          to the questions of the famous present Julien Leperche with such vigor
+          that Marine couldn't help but being carried away by the spectacle.
+        - "Fi\xE8re et impatiente, elle commanda un cocktail et s'installa devant
+          la t\xE9l\xE9vision. Mais elle se rendit tr\xE8s vite compte que l'ambiance
+          chaleureuse des matchs de hockey sur sable n'\xE9tait pas au rendez-vous.<br>Elle
+          constata que seuls deux clients \xE9taient assis devant la t\xE9l\xE9vision
+          avec elle.<br>L'un dormait sa bi\xE8re \xE0 la main et l'autre regardait
+          le programme qui passait, une sorte d'\xE9mission de culture g\xE9n\xE9rale
+          appel\xE9e \u201CQuestion pour un poisson\u201D. Il r\xE9pondait aux questions
+          du c\xE9l\xE8bre pr\xE9sentateur Julien Laperche avec une telle vigueur
+          que Marline se laissa emporter par ce spectacle."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Fish Tank
+        - Question pour un poisson
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - This big octopus who looked like a pirate seemed fascinated by a program
+          clearly aimed at people of the 5th age!<br>But suddenly, the feeling of
+          the supporter hat on her head reminded her of the purpose of her visit.<br><br>-
+          Oh, you old octopus, will you change the channel?<br>- In your dreams my
+          good lady.<br><br>Marline's ears twitched. Not only did he deny her request
+          but he also disrespected her. She climbed the table and changed the channel
+          under the offended look of the octopus.
+        - "Ce gros poulpe qui semblait \xEAtre un pirate \xE9tait fascin\xE9 par
+          une \xE9mission pour le 5\xE8me \xE2ge !<br>Mais soudain, elle sentit son
+          chapeau de supporter sur sa t\xEAte et se rappela du but de sa venue.<br><br>-
+          Oh, vieux poulpe, tu veux bien changer de cha\xEEne ?<br>- Dans tes r\xEAves
+          ma bonne dame.<br><br>Les oreilles de Marline fr\xE9mirent. Non seulement
+          il avait refus\xE9 sa proposition mais en plus, il lui avait manqu\xE9
+          de respect. Elle monta sur la table et changea de cha\xEEne sous le regard
+          offusqu\xE9 du poulpe."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Wet behind the ears
+        - Marline la poule d'eau
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '- Who do you think your are? You''re still wet behind the ears!<br>- I
+          think I am a Tokyeau Sharks fan, old man!<br>She lifted her hat and placed
+          it on the octopus'' red skull.<br>- Watch it with with me, you''ll see
+          it''s better than your nonsense.<br>Mad with rage and humiliated, the octopus
+          grabbed the cocktail of the one who was bothering him to throw it at her.<br>-
+          Get off my table!!<br>Marline avoided the projectile with such an ease
+          that she could easily be mistaken for the main actress of an adventure
+          film. She was, after all, used to it.'
+        - "- Tu t'prends pour qui ma poule d\u2019eau ?<br>- Pour une fan des Tokyeau
+          Sharks mon vieux !<br>Elle brandit son chapeau et le posa sur le cr\xE2ne
+          rouge du poulpe.<br>- Regarde avec moi, tu vas voir c'est mieux que tes
+          \xE2neries.<br>Fou de rage et humili\xE9, le poulpe attrapa le cocktail
+          de celle qui le d\xE9rangeait pour lui lancer dessus.<br>- Barre toi d'ma
+          table !!<br>Marline \xE9vita le projectile avec une facilit\xE9 digne de
+          l\u2019actrice principale d\u2019un film d\u2019aventure, il faut dire
+          qu'elle avait l'habitude."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Large tentacles
+        - Grosses tentacules
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - You think you scare me with your big tentacles?<br>The supporter approached
+          him and ran her finger over the many suction cups on the pirate's tentacle.<br><br>-
+          Don't touch me!!<br><br>OH! What's going on here?<br><br>The bartender,
+          taken aback by the argument of the two customers, walked towards them.
+        - "Tu crois que tu m'fais peur avec tes grosses tentacules ?<br>La supporter
+          s'approcha de lui et passa ses doigts sur les nombreuses ventouses pr\xE9sentes
+          sur les tentacules du pirate.<br><br>- M'touche pas !!<br><br>- OH ! Qu\u2019est-ce
+          qu\u2019il se passe ici ?<br><br>Le barman, interloqu\xE9 par la dispute
+          des deux clients se dirigea vers eux."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Ocean Indiana Jones
+        - Ocean Indiana Jones
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - I only wanted to watch the sand field hockey game and this freshwater pirate
+          is stopping me!<br>- You'll see if I'm a freshwater pirate!<br>The octopus
+          launched itself on Marline and tackled her to the ground. This would be
+          it, would the very one he tackled  not practice multiple combat sports.
+          She retaliated as quickly.<br>- GET OUT OF HERE! Go fight outside you savages!<br>The
+          owner of the establishment kicked out the two fighters and they both found
+          themselves at the door.<br>- You happy? None of us can watch the TV, now.
+        - "Je voulais seulement regarder le match de hockey sur sable et ce pirate
+          d\u2019eau douce m\u2019en emp\xEAche !<br>- Tu vas voir si j\u2019suis
+          un pirate d\u2019eau douce.<br>Le poulpe se lan\xE7a sur Marline et la
+          plaqua au sol, seulement, celle-ci pratiquait plus d\u2019un sport de combat,
+          elle riposta aussi vite.<br>- SORTEZ D\u2019ICI ! Allez vous battre dehors
+          bande de sauvages !<br>Le patron de l'\xE9tablissement sortit les deux
+          combattants \xE0 coup de pied et ils se retrouv\xE8rent tous les deux \xE0
+          la porte.<br>- T\u2019es contente ? Aucun d\u2019nous peut r\u2019garder
+          la t\xE9l\xE9 maint\u2019nant."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - In the end a rugby match?
+        - Finalement un match de rugby ?
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '- Are you really a pirate? You fight like a baby turtle with no arms.<br>-
+          Consarn! You''ll see if I''m not a pirate!<br>- Show me your boat then!
+          If you take me to the ice hockey stadium before the game is over, I give
+          you my respect.<br>Marline always knew how to turn situations in her favor,
+          with this proposal she was almost sure to be able to attend her match.<br>-
+          Follow me, I''ve got the most beautiful boat in the ocean.<br>On the way,
+          the adventurer tried to find out more about her new driver.'
+        - "- T\u2019es vraiment un pirate toi ? Tu te bats comme un b\xE9b\xE9 tortue
+          sans bras.<br>- Vindiou ! Tu vas voir si j\u2019suis un pirate !<br>- Montre
+          moi ton bateau alors ! Si tu m'emm\xE8nes au stade de hockey sur glace
+          avant la fin du match, je te donne mon respect.<br>Marline savait toujours
+          tourner les situations en sa faveur, avec cette proposition elle \xE9tait
+          pratiquement s\xFBre de pouvoir assister \xE0 son match.<br>- Suis-moi,
+          j\u2019ai l\u2019plus beau rafiot d\u2019l\u2019oc\xE9an.<br>Sur le chemin,
+          l\u2019aventuri\xE8re chercha \xE0 en savoir plus sur son d\xE9sormais
+          conducteur."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Who are you anyway?
+        - T'es qui toi au fait ?
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - "- So what's your name?<br>- Napol\xE9on.<br>- Ahaha, finally a quality.
+          It's a beautiful name.<br>- Hm.<br>The pirate was not very talkative, it
+          must be said that he felt overwhelmed by the invasive charisma of this
+          fish like no other. Said person now walked proudly while humming a joyful
+          tune. She had beaten him by far during their altercation and now she wanted
+          to get into his boat. She had managed to manipulate him without him even
+          suspecting it. This woman was really impressive."
+        - "- Tu t\u2019appelles comment toi ?<br>- Napol\xE9on.<br>- Ahaha, enfin
+          une qualit\xE9. C\u2019est un beau pr\xE9nom.<br>- Hum.<br>Le pirate n\u2019\xE9tait
+          pas tr\xE8s bavard, il faut dire qu\u2019il se sentait \xE9cras\xE9 face
+          au charisme envahissant de ce poisson pas comme les autres. Celle-ci marchait
+          fi\xE8rement en chantonnant un air joyeux, elle l\u2019avait largement
+          battu lors de leur altercation et maintenant elle voulait monter dans son
+          bateau. Elle avait r\xE9ussi \xE0 le manipuler sans m\xEAme qu\u2019il
+          s\u2019en doute. Cette femme \xE9tait vraiment impressionnante."
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Marline the adventurer
+        - "Marline l'aventuri\xE8re"
+    - Category: Collectible
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '- I am Marline, adventurer from father to daughter! I have already crossed
+          the ocean three times! And you, do you walk around a lot?<br>- No...I''m
+          in a pirate group, but they never call me to go on missions.<br>- Ahaha,
+          you must be really bad. It''s pathetic.<br>- I prefer pottery to piracy...<br><br>An
+          interesting information seemed to come out of this octopus at last, but
+          before the adventurer could say anything, they reached the ship. In front
+          of them was a large, brand new frigate.'
+        - "- Moi je suis Marline, aventuri\xE8re de p\xE8re en fille ! J\u2019ai
+          d\xE9j\xE0 travers\xE9 l\u2019oc\xE9an trois fois ! Et toi, tu te balade
+          beaucoup ?<br>- Non\u2026j\u2019suis dans un groupe de pirates, mais ils
+          m\u2019appellent jamais pour partir en mission.<br>- Ahaha, tu dois \xEAtre
+          vraiment mauvais. C\u2019est lamentable.<br>- J\u2019pref\xE8re la poterie
+          \xE0 la piraterie\u2026<br><br>Une partie int\xE9ressante semblait enfin
+          se d\xE9gager de ce poulpe, mais avant que l\u2019aventuri\xE8re ne puisse
+          r\xE9pondre quoi que ce soit, ils atteignirent le bateau. Devant eux, se
+          pr\xE9sentait une grande fr\xE9gate flambant neuve. "
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - A bad burger...
+        - Un burger pas bon...
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To burn algae walls!
+        - "Pour br\xFBler des murs d'algues !"
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - There's no point in trying to burn Napoleon's boat with that...
+        - "\xC7a sert \xE0 rien d'essayer de br\xFBler le bateau de Napol\xE9on avec..."
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Sugar beats salt? Maybe...
+        - "\xC7a remonte un peu le seum !"
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Is this a bananaception?
+        - Est-ce que c'est une bananeception ?
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Place
+        - Lieu
+    - Category: Recipes
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - TO MAKE EVERYTHING EXPLODE!!
+        - POUR TOUT FAIRE PETER !!
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Pillow jellyfishes
+        - "Les m\xE9duses coussins "
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Pillow jellyfishes
+        - "<br>Les m\xE9duses coussins  "
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br><br>Pillow jellyfishes
+        - "<br><br>Les m\xE9duses coussins  "
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - People who hurt pillow jellyfishes
+        - "Les gens qui font du mal aux m\xE9duses coussins"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - A talking rock.
+        - Une pierre qui parle.
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '    : Alone with his pillow jellyfishes'
+        - "    : Seul avec ses m\xE9duses coussins"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - My rock buddy
+        - Mon pote caillou
+    - Category: Options
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Invert the Y Axis
+        - Inverser l'axe Y
+    - Category: Options
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Jump mode
+        - Mode de saut
+    - Category: Options
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Keyboard-Mouse Mode
+        - Mode Clavier-Souris
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Craft failed successfully!
+        - Craft fail !!
+    - Category: Options
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Language
+        - Langue
+    - Category: Pause
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Main Menu
+        - Menu Principal
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Adventure
+        - L'aventure
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Kelp forests
+        - "<br>Les for\xEAts de varech"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br><br>Clubbing (hard)
+        - "<br><br>Les sorties en bo\xEEte (de sardines)"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Dad wet behind the ears (she's right)
+        - "Papa la poule s\xE8che (elle a raison)"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br><br><br>Having friends
+        - <br><br><br>Avoir des amis
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Best grandma in the world <3
+        - La meilleure mamie du monde <3
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Grenade
+        - Grenade
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Camp
+        - <br>Campement
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - ': Deep in the whale graveyard'
+        - ": Au fond du cimeti\xE8re des baleines"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The adventurer
+        - "L'aventuri\xE8re"
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - It lights the path.
+        - "Elle \xE9claire le chemin."
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - I hope it's not too tight in here...
+        - "J'esp\xE8re qu'elle est pas trop serr\xE9e l\xE0 dedans..."
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To bounce around everywhere!
+        - Pour rebondir partout !
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - It's just to be swag
+        - "\xC7a sert juste \xE0 \xEAtre swag"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Pottery
+        - Les poteries
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>A certain Liline
+        - <br>Une certaine Liline
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br><br>Fish Tank
+        - <br><br>Question pour un poisson
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Young people (he's a boomer)
+        - Les jeunes (c'est un boomer)
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - An old stinking octopus.
+        - Un vieux poulpe qui pue.
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '    : In a wreck as modly as he is.'
+        - "    : Dans un \xE9pave moisie comme lui."
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The old pirate
+        - Le vieux pirate
+    - Category: NotebookIntro
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - For all my super adventures!
+        - Pour toutes mes super aventures !
+    - Category: Credits
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Art Director, Concept & Texture Artist
+        - Directrice Artistique, Concept & Texture Artist
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To counteract pollution
+        - Pour contrer la pollution
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To counteract pollution
+        - Pour contrer la pollution
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - A trap for real adventurers!
+        - "Un pi\xE8ge pour les vrais aventuriers !"
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Pollution item...
+        - Objet de pollution...
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - I once saw Urfe eat one...
+        - Une fois j'ai vu Urfe en manger une...
+    - Category: Main Menu
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Play
+        - Jouer
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - It leads me to other resources!
+        - "Il emm\xE8ne \xE0 d'autres ressources !"
+    - Category: ResourceCard
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - It's so funny when they run into walls.
+        - "C'est trop dr\xF4le quand ils se prennent des murs."
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Craft failed successfully!
+        - Craft fail !!
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To jump everywhere!
+        - Pour sauter partout !
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To go even higher in the geysers!
+        - Pour aller encore plus haut dans les geysers !
+    - Category: Main Menu
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Quit
+        - Quitter
+    - Category: Pause
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Resume
+        - Reprendre
+    - Category: Main Menu
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Settings
+        - Options
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Oop rhymes
+        - Les rimes on oop
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - People who don't like blob fish (like me lol)
+        - Les gens qui aiment pas les blob fish (comme moi lol)
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - He always has a cold, yuck!
+        - "Il est toujours enrhum\xE9 berk !"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '    : In his organic grenade stand'
+        - '    : Dans son stand de grenades bio'
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The blob fish
+        - Le blob fish
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Yuck!!! Don't drink it.
+        - Berk !!! Faut pas la boire.
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To lower saltiness!
+        - Pour baisser le seum !
+    - Category: Options
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Thermometer
+        - "Thermom\xE8tre"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br>Pollution
+        - <br>La pollution
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - <br><br>Counting
+        - <br><br>Compter
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Overwater diving
+        - "La plong\xE9e sur-marine"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - 
+        - 
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - Algae-eating pollution fan
+        - Mangeur d'algues fan de pollution
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - '   : Near a pollution zone'
+        - "   : Pr\xE8s d'une zone de pollution"
+    - Category: Contacts
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - The manatee collector
+        - Le lamentin collectionneur
+    - Category: Default
+      Lines:
+        keys:
+        - EN
+        - FR
+        values:
+        - To see through walls!
+        - "Pour voir \xE0 travers les murs !"
+  line: ParfumFruite.Description
+  lineID: 95
+--- !u!1 &4531236629093842096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8355207742391426822}
+  - component: {fileID: 3091052124910773143}
+  - component: {fileID: 2436880064971083537}
+  m_Layer: 0
+  m_Name: plus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8355207742391426822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531236629093842096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -130, y: -130}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3091052124910773143
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531236629093842096}
+  m_CullTransparentMesh: 1
+--- !u!114 &2436880064971083537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4531236629093842096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: +
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: e51d75028f0b5bc45a663410f3b1257d, type: 2}
+  m_sharedMaterial: {fileID: 559331918830543118, guid: e51d75028f0b5bc45a663410f3b1257d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 200
+  m_fontSizeBase: 200
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -242.96393, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5177940201152435729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5780723652404747359}
+  - component: {fileID: 6692458373446394301}
+  - component: {fileID: 3311064779054614618}
+  m_Layer: 0
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5780723652404747359
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177940201152435729}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 7, y: 5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4, y: 128}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6692458373446394301
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177940201152435729}
+  m_CullTransparentMesh: 1
+--- !u!114 &3311064779054614618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177940201152435729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 289a8c64e0d06134ca8bd91993b2271d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5797830190674739407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 581370860097625785}
+  - component: {fileID: 7946944649611738995}
+  - component: {fileID: 6544628786569623745}
+  m_Layer: 0
+  m_Name: Titre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &581370860097625785
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797830190674739407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 110, y: -30}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7946944649611738995
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797830190674739407}
+  m_CullTransparentMesh: 1
+--- !u!114 &6544628786569623745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797830190674739407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Parfum Fruit\xE9"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dfdee3332a747d94ab2669c745463c0f, type: 2}
+  m_sharedMaterial: {fileID: 585854734460226971, guid: dfdee3332a747d94ab2669c745463c0f, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -236.56058, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6420362444057989927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5118578856018775648}
+  - component: {fileID: 4031595846134282813}
+  - component: {fileID: 5696483624926727715}
+  m_Layer: 0
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5118578856018775648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420362444057989927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -18, y: 200}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4031595846134282813
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420362444057989927}
+  m_CullTransparentMesh: 1
+--- !u!114 &5696483624926727715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420362444057989927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 00e2b37244a1cfa4d82d98981d18c651, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7106906272583281178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7106906272583281179}
+  - component: {fileID: 7106906272583281182}
+  - component: {fileID: 7106906272583281177}
+  - component: {fileID: 7106906272583281176}
+  - component: {fileID: 4864176366634689409}
+  m_Layer: 0
+  m_Name: ParfumFruite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7106906272583281179
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106906272583281178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 581370860097625785}
+  - {fileID: 3114928686974330902}
+  - {fileID: 5118578856018775648}
+  - {fileID: 6394691159370421586}
+  - {fileID: 5256210511708666778}
+  - {fileID: 8355207742391426822}
+  - {fileID: 756514043792451162}
+  - {fileID: 2448332885693693804}
+  - {fileID: 5780723652404747359}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 721}
+  m_SizeDelta: {x: 750, y: 950}
+  m_Pivot: {x: 0, y: 0}
+--- !u!222 &7106906272583281182
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106906272583281178}
+  m_CullTransparentMesh: 1
+--- !u!114 &7106906272583281177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106906272583281178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7106906272583281176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106906272583281178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e50212ee15b94447bafeeca7fda88b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4864176366634689409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106906272583281178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 0
+--- !u!1 &8609577530720010852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6394691159370421586}
+  - component: {fileID: 3973645238997917352}
+  - component: {fileID: 683255216208284871}
+  m_Layer: 0
+  m_Name: Ingredient1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6394691159370421586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8609577530720010852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7106906272583281179}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -170, y: -250}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3973645238997917352
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8609577530720010852}
+  m_CullTransparentMesh: 1
+--- !u!114 &683255216208284871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8609577530720010852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1f3ff895e63f6c54187a13dafb1afdde, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

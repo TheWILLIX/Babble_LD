@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927309bfbb3f6eb4eaa1bbc8100a5f6d, type: 3}
+  m_Name: RES_Algue
+  m_EditorClassIdentifier: 
+  _name: Algue
+  _cleanName: $Resource.Algue
+  _defaultQuantity: 1
+  _isRessource: 1
+  _isDiscoveredByDefault: 1
+  _useMultipleSelection: 0
+  _craftMultipleSelection: 1
+  _sprite: {fileID: 21300000, guid: ea7d67c02e17581468480b5ff31efb77, type: 3}
+  _spriteQuantity0: {fileID: 21300000, guid: f6ec77b6798dc4a4baff12af4065245e, type: 3}
+  _spriteQuantity1: {fileID: 21300000, guid: 10211a8f4e9c66f49949636a1b4b493a, type: 3}
+  _spriteQuantity2: {fileID: 21300000, guid: 9e8fac7af3518b3408dfe2c79fe2f439, type: 3}
+  _spriteQuantity3: {fileID: 21300000, guid: e5fa70aa883ee074aa6738191662c56d, type: 3}
+  _usageType: 1
+  _linkedObject: {fileID: 7395098413391199121, guid: 019f7ef51edaff7409c35a6a830157ac, type: 3}
+  _linkedValue: 20
+  _audio: S_AlgueRapide

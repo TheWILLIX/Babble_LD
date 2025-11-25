@@ -1,0 +1,1214 @@
+﻿title: Napoleon_Intro_EPAVE
+position: -164,63
+---                                                         // --- NAPOLEON ---- \\
+<<if $visitedJeunesIntro == false>>
+<<jump Napoleon_PasParleJeunes>>
+<<endif>>
+<<if $skateTaken is true>>
+<<jump Napoleon_Quete_Before>>
+<<endif>>
+<<if visited("Napoleon_Intro_EPAVE") is true>>
+<<jump Napoleon_Salute>>
+<<endif>>
+<<BulleAnim Coucou>>
+<<NapoleonAnim "Angry">>
+<<BulleAnim Idle>>
+Napoleon : Yarrr encore un moussaillon, mets les voiles poisson d'eau douce ! Tu n'passeras pas !  #line:06bcc72 
+<<NapoleonAnim "Idle">>
+->Bulle : T'es qui ? #line:052228a 
+    Bulle : T'es qui toi ? #line:021ff15 
+    <<NapoleonAnim "Proud">>
+    Napoleon : Ravi que tu m'demandes ! Les jeunes d'nos jours s'intéressent plus à leurs ancêtres ! #line:03dbecd 
+    <<NapoleonAnim "Idle">>
+->Bulle : Espèce de face de pouple !  #line:00006b8 
+    Bulle : Ta face de poulpe fait grave peur, mais j'vais quand même passer ! #line:030e981 
+    <<NapoleonAnim "Angry">>
+    Napoleon : Darr mille sabords ! Tu vas finir à la baille ! #line:0c04d7d 
+    <<NapoleonAnim "Idle">>
+->Bulle : T'es trop beau ! <<if $seum < 20 >> #line:23521b2
+    Bulle : Wah, c'est la première fois que je vois un vrai poulpe ! C'est trop beau !  #line:08afece 
+    <<BulleAnim Star>>
+    <<NapoleonAnim "Angry">>
+    Napoleon : T'fout pas d'moi...j'connais les jeunots comme toi, tu m'complimentes et après tu m'casse mes poteries !!!!! #line:01b2cd2 
+    <<NapoleonAnim "Idle">>
+    <<BulleAnim Idle>>
+<<BulleAnim Star>>
+<<NapoleonAnim "Proud">>
+Napoleon : Je suis Napoléon, le pirate le plus puissant d'la <color=\#48BC0D>forêt</color> !  #line:055c1d5 
+<<NapoleonAnim "Idle">>
+<<BulleAnim Idle>>
+<<NapoleonAnim "Angry">>
+Napoleon : Maintenant vas-t'en, j'ai pas l'temps d'jaqueter avec des marins d'eau douce comme toi argggh. #line:0ad4d9b 
+<<NapoleonAnim "Idle">>
+<<BulleAnim Sad>>
+Bulle : Mais je veux récupérer les skates-bulle de mes amis ! #line:0388112 
+<<BulleAnim Idle>>
+<<NapoleonAnim "Angry">>
+Napoleon : Morbleu ! Tu connais ces espèces d'olibrius ! Pars, pars loin d'ici malfrat !  #line:090d242 
+Napoleon : Seul un vrai pirate peut lire la carte pour les r'trouver arrrghhh. #line:0ea357a 
+<<NapoleonAnim "Idle">>
+<<BulleAnim Angry>>
+Bulle : Je suis un vrai pirate ! Donne moi la carte ! #line:00c9d5d 
+<<NapoleonAnim "Proud">>
+Napoleon : Darrrr tiens, j'suis sûr qu'tu peux même pas la com'prendre. #line:017e038 
+<<NapoleonAnim "Idle">>
+<<BulleAnim Idle>>
+<<set $mapGiven to true>>
+<<ObjectiveNotif "SKATE2t">>
+<<CardUpdate "SKATEIMAGE2">>
+<<CarteNapoleon>>
+
+===
+title: Napoleon_Salute
+position: -267,0.5
+---
+<<if $skateTaken is true>>
+<<jump Napoleon_Quete_Good>>
+<<endif>>
+<<if $mapGiven is true>>
+<<jump Napoleon_Quete_Bad>>
+<<endif>>
+<<if dice(3) == 1>>
+Napoleon : C'est bientôt l'heure de la boustifaille, j'boufferai bien un d'ces jeunots pour être tranquille... #line:0e841a0 
+<<elseif dice(3) == 2>>
+Napoleon : Ta tête m'rappelle quelque chose...Tu m'fais penser à ma Liline... #line:044fe83 
+<<else>>
+<<NapoleonAnim "Angry">>
+Napoleon : Grrrrrrr, encore un minot pour m'miner l'moral. #line:0c95b43 
+<<NapoleonAnim "Idle">>
+<<endif>>
+===
+title: Napoleon_Aurevoir
+position: -267,0.5
+---
+<<Autoskip 10>>
+<<if dice(3) == 1>>
+Napoleon : Laisse moi, j'dois aller à mon cours de poterie. #line:0852bb8 
+<<elseif dice(3) == 2>>
+Napoleon : C'est l'heure de larguer les amarres marin d'eau douce. #line:013e039 
+<<else>>
+Napoleon : Mon émission télévisée préférée va commencer, mets les voiles ! Et plus vite que ça ! #line:0b90a5a 
+<<endif>>
+===
+title: Napoleon_Wake
+position: -267,0.5
+---
+<<ModeFullScreen true>>
+<<if dice(2) == 1>>
+Napoleon : Yarrrrr cette cayenne à l'air confortable, elle m'rappelle la branle où j'dormais avant d'trouver mon rafiot. #line:05d4573 
+Astère : Bulle, on devrait remballer avant de se faire voler notre <color=\#FFC300>tente</color>. #line:0e1b818 
+<<else>>
+Napoleon : <size=400%>BRANLE BAS D'COMBAT ! PAS D'QUARTIER POUR LES JEUNOTS !</size> #line:0f0b42f 
+Napoleon : <size=100%>C'EST PAS TON TERRITOIRE ICI !</size> #line:0ccba78 
+Bulle : Je m'en vais ! Je m'en vais c'est bon !!! #line:0beec3a 
+<<endif>>
+<<ModeFullScreen false>>
+===
+title: Napoleon_Seum
+position: -267,0.5
+---
+<<NapoleonAnim "Angry">>
+Napoleon : Darrrr, gamin t'as une gueule d'matelot qui vient d'se faire piller son rafiot.  #line:0f286fe 
+Napoleon : Moi quand j'suis comme ça, une bonne boustifaille et c'est r'parti pour l'abordage. #line:04c5c35 
+<<NapoleonAnim "Idle">>
+===
+title: Napoleon_PasParleJeunes
+position: 0,0.5
+---
+<<NapoleonAnim "Angry">>
+<<BulleAnim Coucou>>
+Napoleon : Tonnerre de Brest !  #line:0cd650d 
+Napoleon : Encore un jeunot, r'joint tes sales cam'rades avant qu'jte dévore tout cru mécréant ! #line:0fdb9d6 
+<<ObjectiveNotif "NONE2f">>
+<<BulleAnim Idle>>
+<<NapoleonAnim "Idle">>
+===
+title: Napoleon_Quete_Good
+position: 0,0.5
+---
+Napoleon : Yarrrr, t'as r'trouvé ces satanés skates. Mais t'rejouis pas, ça fait pas d'toi un pirate.  #line:03ccc47 
+<<NapoleonAnim "Angry">>
+Napoleon : Maintenant hors d'ma vue mat'lot.  #line:0f14a08 
+<<NapoleonAnim "Idle">>
+===
+title: Napoleon_Quete_Bad
+position: 0,0.5
+---
+<<NapoleonAnim "Proud">>
+Napoleon : Gamin, maint'nant qu't'as la carte, débrouille-toi. T'as aucune chance marin d'eau douce. #line:01b3bc1 
+<<NapoleonAnim "Idle">>
+===
+title: Napoleon_Quete_Before
+position: 0,0.5
+---
+<<if visited("Napoleon_Quete_Before") is true>>
+<<jump Napoleon_Salute>>
+<<endif>>
+<<NapoleonAnim "Angry">>
+Napoleon : Yarrrrr, comment t'as réc'peré ces s'tanés skates ? #line:001a261 
+Bulle : J'me suis juste baladé et voilà ! #line:0e4d19a 
+Napoleon : Oooooor, pour qui tu t'prends ? Hors de ma vue poisson d'eau douce ! #line:0324b12 
+<<NapoleonAnim "Idle">>
+===
+
+title: Urfe_Intro_FORET
+position: -267,0.5
+---                                                     // --- URFE ---- \\
+<<if $visitedUrfeIntro>>
+<<jump Urfe_Salute>>
+<<endif>>
+<<SetSpeed 17>> 
+<<BulleAnim Coucou>>
+<<UrfeAnim "Fly">>
+Urfe : Petit poissoooon, tu veux des boooonboooons ? #line:0d6ba9d 
+<<UrfeAnim "Idle">>
+<<BulleAnim Idle>>
+<<SetSpeed 40>>
+Bulle : Euh...t'es qui toi ? #line:0d9d063 
+<<SetSpeed 17>>
+
+Urfe : Mooooi je suis Urfe, le ploooongeur sur-marinieeen de la <color=\#48BC0D>fooorêt soous marineee</color>. #line:02ea346 
+
+<<SetSpeed 40>>
+<<BulleAnim Star>>
+Bulle : C'est quoi plongeur sur-marinien ? #line:07a3cd2 
+<<SetSpeed 17>>
+<<BulleAnim Idle>>
+Urfe : Regarde au dessuuus de toooooi petit poisson.  #line:0f39b29 
+Urfe : Hooors de l'eaauu, il y a la terre !  #line:015504d 
+<<UrfeAnim "Fly">>
+Urfe : Et sur la terre, il y a ce que l'on appelle : les humains ! #line:0443c76 
+<<UrfeAnim "Idle">>
+<<SetSpeed 40>>
+<<BulleAnim Star>>
+Bulle : Waaaaaah, je veux trop y aller. #line:0784c00 
+<<SetSpeed 17>>
+
+Urfe : T'es encore un trooop petit poissoooon pour y aller. Mais tu peux m'aider si tu veuuuuuuuux. #line:07962c7 
+
+Urfe : J'ai besoin de 10 000 <color=\#FFC300>piles</color> et 10 000 <color=\#FFC300>canettes</color> pour une livraison !  #line:096b5b6 
+<<BulleAnim Sad>>
+Urfe : Mais relax Max, j'ai ai déjà 9 999 <color=\#FFC300>piles</color> et 9 999 <color=\#FFC300>canettes</color>. #line:05a1e24 
+Urfe : Tu dois juste m'en apporter 1 de chaque doudouuuu.  #line:0c0ebfb 
+<<BulleAnim Idle>>
+Urfe : Si tu m'rapportes ça je peux t'passer un truc. #line:0104551 
+<<ObjectiveNotif "URFE1t">>
+<<SetSpeed 30>>
+<<set $visitedUrfeIntro to true>>
+<<jump Urfe_Option>>
+===
+title: Urfe_Receive_Canette
+position: 0,0.5
+---
+<<set $canetteGiven to true>>
+<<if $canetteGiven && $pileGiven == true>>
+<<jump Urfe_Quete_Good>>
+<<endif>>
+Urfe : Ooooooooh merci p'tit poissoooon.  #line:02212df 
+<<UrfeAnim "Fly">>
+Urfe : Tu sais qu'une canette est un coooooontenant, de faible vooooolume en verre ou en métal qui contient une boooooissooooon que l'ooooon peut empooooorter puis boooooire ? #line:0a6712d 
+<<ObjectiveNotif "URFE3t">>
+<<UrfeAnim "Idle">>
+===
+title: Urfe_Receive_Pile
+position: 0,0.5
+---
+<<set $pileGiven to true>>
+<<if $canetteGiven && $pileGiven == true>>
+<<jump Urfe_Quete_Good>>
+<<endif>>
+Urfe : Ooooooooh merci p'tit poissoooon.  #line:0f0fc07 
+<<UrfeAnim "Fly">>
+Urfe : Tu sais qu'une pile est un dispositif électrooooochimique qui proooooduit de l'électricité en coooonvertissant l'énergie chimique en énergie électrique grâce à une réactioooon d'ooooxydoooooréductioooon. #line:026eb81 
+<<UrfeAnim "Idle">>
+Astère : <i>J'ai rien compris.</i> #line:0a602a5 
+Bulle : Moi non plus. #line:029f8f4 
+<<ObjectiveNotif "URFE2t">>
+===
+title: Urfe_Receive
+position: -267,0.5
+---
+<<SetSpeed 17>>
+<<BulleAnim Sad>>
+Urfe : Merci pour cet oooobjet mais c'est ni une <color=\#FFC300>pile</color>, ni une <color=\#FFC300>canette</color> doudouuuuuuu.  #line:0d20735 
+<<BulleAnim Idle>>
+<<SetSpeed 30>>
+===
+title: Urfe_Receive_Grenade
+position: -267,0.5
+---
+<<SetSpeed 17>>
+<<BulleAnim Sad>>
+Urfe : T'es sur la bonne voie doudou, mais cette objet est un produit transformé !  #line:06c656b 
+Urfe : J'veux de la pure moi !  #line:0fb8901 
+<<BulleAnim Idle>>
+<<SetSpeed 30>>
+===
+title: Urfe_Receive_Meduse
+position: -267,0.5
+---
+<<SetSpeed 17>>
+<<BulleAnim Sad>>
+Urfe : Tu sais que les humains ont peur des méduses ?  #line:0b0a5e3 
+Urfe : Si je leur rapporte ça, ils vont me bannir de leur groupe... #line:0f6d12e 
+<<BulleAnim Idle>>
+<<SetSpeed 30>>
+===
+title: Urfe_Option
+position: 269,-183
+---
+<<if $canetteGiven && $pileGiven == true>>
+<<jump Urfe_Salute2>>
+<<endif>>
+<<if $pileGiven is true>>
+Urfe : Doudou, il me manque plus qu'une <color=\#FFC300>canette</color> ! #line:0605e7b 
+->Donner  #line:0f8cf05 
+    <<Choice false>>
+    <<GiveObject>>  
+->Quitter  #line:0cd4c13 
+    <<jump Urfe_Aurevoir>>
+    <<UrfeAnim Coucou>>
+    <<Choice false>>
+<<elseif $canetteGiven is true>>
+Urfe : Plus qu'une <color=\#FFC300>pile</color> à me ramener doudou ! #line:0afd095 
+->Donner  #line:0f55109 
+    <<Choice false>>
+    <<GiveObject>>  
+->Quitter  #line:0d68d74 
+    <<jump Urfe_Aurevoir>>
+    <<UrfeAnim Coucou>>
+    <<Choice false>>
+<<else>>
+<<Choice true>>
+<<UrfeAnim "Fly">>
+Urfe : P'tit pooooissooooon, t'as ma <color=\#FFC300>pile</color> et ma <color=\#FFC300>canette</color> ? #line:31e2c1d 
+<<UrfeAnim "Idle">>
+->Donner #line:080e409 
+    <<Choice false>>
+    <<GiveObject>>  
+->Quitter  #line:0a77e38 
+    <<jump Urfe_Aurevoir>>
+    <<UrfeAnim Coucou>>
+    <<Choice false>>
+<<endif>>
+===
+title: Urfe_Salute
+position: -267,0.5
+---
+<<if $urfeQuestSuccess == false>>
+<<jump Urfe_Option>>
+<<elseif $urfeBadMath == 0>>
+<<jump Urfe_Quete_POLLUTION_After1>>
+<<elseif $urfeBadMath == 1>>
+<<jump Urfe_Quete_POLLUTION_After2>>
+<<elseif $urfeBadMath == 2>>
+<<jump Urfe_Quete_POLLUTION_After3>>
+<<else>> 
+<<jump Urfe_Quete_POLLUTION_After4>>
+<<endif>>
+<<UrfeAnim "Fly">>
+Urfe : Salut doudou. #line:0b2c217 
+<<UrfeAnim "Idle">>
+===
+title: Urfe_Salute2
+position: -267,0.5
+---
+<<if $urfeBadMath == 0>>
+<<jump Urfe_Quete_POLLUTION_After1>>
+<<elseif $urfeBadMath == 1>>
+<<jump Urfe_Quete_POLLUTION_After2>>
+<<elseif $urfeBadMath == 2>>
+<<jump Urfe_Quete_POLLUTION_After3>>
+<<else>> 
+<<jump Urfe_Quete_POLLUTION_After4>>
+<<endif>>
+<<UrfeAnim "Fly">>
+Urfe : Salut doudou.  #line:0ebdfd0 
+<<UrfeAnim "Idle">>
+===
+title: Urfe_Vision
+position: -267,0.5
+---
+<<SetSpeed 17>>
+Urfe : OooooOOooo coucou doudou. Besoin d'une infooormatiooon ? #line:0f4dd16 
+<<SetSpeed 40>>
+->Bulle : Oui. #line:04046fc 
+    <<SetSpeed 17>>
+    Urfe : Dooooone moi un objet alooooors. #line:04d0a9d 
+    <<SetSpeed 40>>
+    ->Bulle : Autre #line:0334c3f 
+    ->Bulle : <color=\#FFC300>Pile</color> #line:071fd46 
+        <<SetSpeed 17>>
+        Urfe : 4 grands avenirs ! Lequel désires tu ? #line:0cdc67e 
+            ->Lumière #line:03ea298 
+                <<SetSpeed 40>>
+                Bulle : Lumière (ampoule de fleur) #line:04dc7c4 
+                <<SetSpeed 17>>
+                Urfe : Avec les fleurs, pas de malheurs, suit la lumière qui guide ton cœur. #line:05807fe 
+            ->Vision #line:0708153 
+                <<SetSpeed 40>>
+                Bulle : Vision (vision de poulpe) #line:047370a 
+                <<SetSpeed 17>>
+                Urfe : Ne confonds pas les poulpes et les poules, l'un te montre le chemin, l'autre le déclin. #line:0759681 
+            ->Fête #line:0137adc 
+                <<SetSpeed 40>>
+                Bulle : Fête (méduse disco) #line:032ccfa 
+                <<SetSpeed 17>>
+                Urfe : Ruse pour attraper les méduses, elles aussi du swag, elles en abusent. #line:0e93cf1 
+            ->Flou #line:06e04ce 
+                <<SetSpeed 40>>
+                Bulle : Flou (brouilleur) #line:0516359 
+                <<SetSpeed 17>>
+                Urfe : Pour brouiller les pistes, pose une canette sur le lieu hors piste. #line:0b40af6 
+    ->Bulle : <color=\#FFC300>Canette</color> #line:040ef41 
+        <<SetSpeed 17>>
+        Urfe : 4 grandes destinées ! Laquelle désires tu ? #line:09b9439 
+            ->Rebond #line:03fa792 
+                <<SetSpeed 40>>
+                Bulle : Rebond (méduse coussin) #line:0c68fbd 
+                <<SetSpeed 17>>
+                Urfe : J'accuse les méduses de se trouver des excuses pour ne pas rebondir de leur propre loisir. #line:08799f4 
+            ->Style #line:02fc834 
+                <<SetSpeed 40>>
+                Bulle : Style (casquette) #line:0bc7526 
+                <<SetSpeed 17>>
+                Urfe : Des algues pour braver les vagues ? #line:09cd95b 
+            ->Explosion #line:04c15d0 
+                <<SetSpeed 40>>
+                Bulle : Explosion (grenade) #line:05b602d 
+                <<SetSpeed 17>>
+                Urfe : Les fleurs sont oranges, les canettes sont bleues, tout ça pour dire, ne mets pas le feu. #line:0a6798b 
+            ->Flou #line:057b731 
+                <<SetSpeed 40>>
+                Bulle : Flou (brouilleur) #line:012d352 
+                <<SetSpeed 17>>
+                Urfe : Tu es pile à l'heure pour jouer à pile ou face ! J'ai trouvé cette pièce dans la pile de déchets en face ! #line:01f42d3 
+->Bulle : Non. #line:09a57b7 
+    <<SetSpeed 17>>
+    Urfe : A bientôt doooudoooou. #line:023f886 
+    <<SetSpeed 30>>
+===
+title: Urfe_Quete_POLLUTION
+position: -267,0.5
+---
+<<SetSpeed 17>>
+Urfe : OOOoooOoo p'tit poisson. J'ai besoin de 10 000 <color=\#FFC300>piles</color> et 10 000 <color=\#FFC300>canettes</color> pour une livraison !  #line:0e4f34c 
+Urfe : Mais relax man, j'ai ai déjà 9 999 <color=\#FFC300>piles</color> et 9 999 <color=\#FFC300>canettes</color>, tu dois juste m'en apporter 1 de chaque doudouuuu.  #line:0ee5c49 
+Urfe : Si tu m'rapporte ça je peux t'passer un truc. #line:02d3234 
+<<SetSpeed 30>>
+===
+title: Urfe_Receive_Dislike
+position: -267,0.5
+---
+<<SetSpeed 17>>
+<<UrfeAnim "Fly">>
+Urfe : Doudouuu, si t'as des problèmes de vue je te conseille d'aller chez l'ophtalmeau. #line:0c04eea 
+<<UrfeAnim "Idle">>
+<<SetSpeed 30>>
+===
+title: Urfe_Receive_Algue
+position: -267,0.5
+---
+<<SetSpeed 17>>
+Urfe : J'ai un frère qui adore les <color=\#FFC300>algues</color> mais il s'est perdu dans une foret d'algue. #line:0a35306 
+Urfe : Personne l'a jamais retrouvé mais au moins il est dans son élément... #line:07675f7 
+<<SetSpeed 30>>
+===
+title: Urfe_Quete_Good
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_Good") is true>>
+<<jump Urfe_Quete_POLLUTION_After1>>
+<<endif>>
+<<SetSpeed 17>>
+<<UrfeAnim "Fly">>
+Urfe : Parfaaait doudouuuuu, laisse-moi compter tout ça.  #line:039a968 
+<<UrfeAnim "Idle">>
+<<SetSpeed 4>>
+Urfe : <size=50%>1, 2, 3, 4, 5,...</size=50%> #line:02b9b03 
+<<wait 0.5>>
+<<SetSpeed 17>>
+Urfe : Ahhhh oui attends p'tit poisson, je devais te donner un truc.  #line:03eadb7 
+Urfe : Hummmm, qu'est-ce que j'ai dans mon sac à doooos ?  #line:0e99cd1 
+Urfe : Des algues...des feuilles...des filtres... #line:079b4f1 
+<<BulleAnim Happy>>
+<<UrfeAnim "Fly">>
+Urfe : OOOOH ! Voilà qui pourrait te plaire, une recette de <color=\#FFC300>parfum fruité</color> !  #line:09aaed0 
+<<UrfeAnim "Idle">>
+Urfe : À plus doudouuuu. #line:00e9802 
+<<BulleAnim Idle>> 
+<<ReceiveRecipe REC_ParfumFruite1>>
+<<SetSpeed 30>>
+<<ShowStaturf>>
+===
+title: Urfe_Quete_POLLUTION_After1
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After1") is true>>
+<<jump Urfe_Quete_POLLUTION_After2>>
+<<endif>>
+<<SetSpeed 4>>
+Urfe : <size=50%>6, 7, 8, 9, 10,...</size=50%> #line:073a433 
+<<SetSpeed 30>>
+<<set $urfeBadMath to 1>>
+===
+title: Urfe_Quete_POLLUTION_After2
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After2") is true>>
+<<jump Urfe_Quete_POLLUTION_After3>>
+<<endif>>
+<<SetSpeed 4>>
+Urfe : <size=50%>11, 12, 13, 14, 15,...</size=50%> #line:007bf15 
+<<SetSpeed 30>>
+<<set $urfeBadMath to 2>>
+===
+title: Urfe_Quete_POLLUTION_After3
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After3") is true>>
+<<jump Urfe_Quete_POLLUTION_After4>>
+<<endif>>
+<<SetSpeed 4>>
+Urfe : <size=50%>16, 17, 18, 19, 20,...</size=50%> #line:0b8e6b3 
+<<SetSpeed 30>>
+<<set $urfeBadMath to 3>>
+===
+title: Urfe_Quete_POLLUTION_After4
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After4") is true>>
+<<jump Urfe_Aurevoir>>
+<<endif>>
+<<SetSpeed 17>>
+<<UrfeAnim "Fly">>
+Urfe : Miiiiince, j'ai perdu le coooompte...Je vais recooooommencer... #line:0549f4c 
+<<UrfeAnim "Idle">>
+<<SetSpeed 4>>
+Urfe : <size=50%>1, 2, 3,...</size=50%> #line:075edfe 
+<<SetSpeed 30>>
+<<set $urfeBadMath to 0>>
+===
+title: Urfe_Aurevoir
+position: -267,0.5
+---
+<<Autoskip 20>>
+<<if dice(2) == 1>>
+<<SetSpeed 17>>
+Urfe : J'ai des acheteurs d'<color=\#FFC300>algues</color> qui m'attendent, je dois te laisser doudouuuuu. #line:09117f3 
+<<else>>
+Urfe : Les humains m'attendent là haaaaut. À bientôôôôôt. #line:0e54fd0 
+<<endif>>
+<<SetSpeed 30>>
+===
+title: Urfe_Wake
+position: -267,0.5
+---
+<<ModeFullScreen true>>
+<<SetSpeed 17>>
+Urfe : Burb ? C'est toi dans cette tente ? #line:0731a84 
+<<SetSpeed 30>>
+Astère : <i> Ce mec est malade !!! Pourquoi il nous lance des algues ???</i> #line:02e4d59 
+<<ModeFullScreen false>>
+===
+title: Urfe_Seum
+position: -267,0.5
+---
+<<SetSpeed 17>>
+<<UrfeAnim "Fly">>
+Urfe : Doooudooou, t'es tout mou. Faaaaut que t'ailles prendre l'aaaair, pour être frais coooomme la meeeeer. #line:0b8ad08 
+<<UrfeAnim "Idle">>
+<<SetSpeed 30>>
+===
+
+
+title: Sloop_Intro_EPAVE
+position: -267,0.5
+---                                                         // --- SLOOP ---- \\
+<<ItemChecker "Grenade">>
+<<if $GrenadeInInventory is true>>
+<<jump Sloop_Condition>>
+<<endif>>
+<<if $rocherDestroyed is true>>
+<<jump Sloop_Explosed>>
+<<endif>>
+<<if visited("Sloop_Intro_EPAVE") is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+<<ItemChecker "Grenade">>
+<<BulleAnim Coucou>>
+Sloop : Ohhh, salut boooops !  #line:0814222 
+<<BulleAnim Sad>>
+Bulle : Je m'appelle pas Boooops...  #line:0c54ecc 
+<<SloopAnim "Happy">>
+Sloop : Mais nooon, je sais bien glooooops. Moi c'est Sloop !  #line:0ab6a8e 
+<<SloopAnim "Idle">>
+<<BulleAnim Idle>>
+Bulle : Euh...moi c'est Bulle.  #line:00eb758 
+<<SloopAnim "Happy2">>
+Sloop : Trop content de te rencontrer Bulle woooop ! #line:0ca73c0 
+<<SloopAnim "Happy">>
+Sloop : J'avais justement besoin d'aide glooop ! #line:0c9252c 
+<<SloopAnim "Idle">>
+Bulle : Qu'est-ce que tu veux ? #line:0802ff0 
+<<SloopAnim "Sad">>
+Sloop : J'aimerais fabriquer mes propres grenades artisanales bio mais j'ai perdu la recette soooop... #line:0d9d6cf 
+Sloop : Elle est dans une zone de pollution et j'ai trop le seum pour y aller noooop... #line:0ae0db2 
+<<SloopAnim "Idle">>
+Bulle : J'peux aller la chercher mais j'ai quoi en échange ? #line:0d7784b 
+<<SloopAnim "Happy2">>
+Sloop : Grâce à la recette tu pourra faire exploser ce gros rocher derrière toi zoooop. #line:01dbb5e 
+Sloop : Il bloque un gros geyser wooooooop. #line:0574ef4 
+<<SloopAnim "Idle">>
+<<BulleAnim Star>>
+Bulle : Marché conclu ! Comment on va à la zone de pollution ? #line:0bb0d15 
+<<BulleAnim Idle>>
+Sloop : Il faut juste monter par les méduses derrière moi et tu tombera sur le cratère coooooop. #line:02834a4 
+<<ObjectiveNotif "SLOOP1t">>
+===
+title: Sloop_Condition
+position: -267,0.5
+---
+<<set $grenadePositionInfo to true>>
+<<if $rocherDestroyed is true>>
+<<jump Sloop_Explosed2>>
+<<endif>>
+<<if visited("Sloop_Condition") is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+<<BulleAnim Coucou>>
+<<BulleAnim Coucou>>
+Sloop : Ohhh, salut boooops !  #line:0341196 
+<<BulleAnim Sad>>
+Bulle : Je m'appelle pas Boooops...  #line:02f9e80 
+<<SloopAnim "Happy">>
+Sloop : Mais nooon, je sais bien glooooops. Moi c'est Sloop !  #line:080572c 
+<<SloopAnim "Idle">>
+<<BulleAnim Idle>>
+Bulle : Euh...moi c'est Bulle.  #line:0a1eb2e 
+<<SloopAnim "Happy2">>
+Sloop : Trop content de te rencontrer Bulle woooop ! #line:0363031 
+<<SloopAnim "Happy">>
+Sloop : J'avais justement besoin d'aide glooop ! #line:0181a03 
+<<SloopAnim "Idle">>
+Bulle : Qu'est-ce que tu veux ? #line:0846341 
+<<SloopAnim "Sad">>
+Sloop : J'aimerais fabriquer mes propres grenades artisanales bio mais j'ai perdu la recette soooop... #line:047bc88 
+Sloop : Elle est dans une zone de pollution et j'ai trop le seum pour y aller noooop... #line:07d6332 
+<<SloopAnim "Idle">>
+Bulle : J'peux aller la chercher mais j'ai quoi en échange ? #line:07b1405 
+<<SloopAnim "Happy2">>
+Sloop : Grâce à la recette tu pourra faire exploser ce gros rocher derrière toi zoooop. #line:0fef099 
+Sloop : Il bloque un gros geyser wooooooop. #line:09b66c1 
+<<SloopAnim "Idle">>
+Bulle : Ah mais j'ai une grenade sur moi en fait. #line:067b877 
+Sloop : Mais t'es bête bloop, pourquoi t'as pas fait explosé la pierre avec alors voooop ?  #line:0e666e9 
+<<BulleAnim Angry>>
+Bulle : Bah...je sais pas moi. Pourquoi t'es moche toi ?  #line:0a17492 
+<<SloopAnim "Sad">>
+Sloop : Snoooooof...  #line:0b86cf4 
+<<BulleAnim Idle>>
+===
+title: Sloop_Quete_GRENADE_No
+position: -267,0.5
+---
+<<ItemChecker "Grenade">>
+<<if $GrenadeInInventory is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+<<if visited ("Sloop_Quete_GRENADE_No") >>
+<<jump Sloop_Quete_GRENADE_No2>>
+<<endif>>
+Sloop : Boop ! Tu aimes les poissons moches maintenant gloops ? #line:05f0df5 
+->Bulle : Oui. #line:0a66b53 
+    Bulle : Oui...on a le droit de changer d'avis non ? #line:01aafe5 
+    <<SloopAnim "Happy">>
+    Sloop : Yooooop c'est bien vrai !  #line:03ef369 
+    Sloop : Tiens, on peut trouver des <color=\#229954>grenades</color> dans le cratère juste derrière moi ploop ! #line:0672f25 
+    <<set $grenadePositionInfo to true>>
+    <<SloopAnim "Idle">>
+->Bulle : Non. #line:05510c3 
+    Bulle : Non toujours pas hahaha !!!! #line:046e292 
+    <<SloopAnim "Angry">>
+    Sloop : Glooops, je m'en fiche de ton avis de toute façon. Ce n'est pas moi qui ai besoin d'une <color=\#229954>grenade</color> booop. #line:0a93f11 
+    <<SloopAnim "Idle">>
+===
+title: Sloop_Quete_GRENADE_No2
+position: -267,0.5
+---
+Sloop : Boop ! Dernière chance pour toi plooops !  #line:08fa152 
+<<SloopAnim "Angry">>
+<<SetSpeed 60>>
+Sloop : Est.  #line:0b9bb60 
+Sloop : Ce.  #line:0fd38e8 
+Sloop : Que.  #line:0c0c8ac 
+Sloop : Tu.  #line:099c956 
+Sloop : Aimes.  #line:02636e3 
+Sloop : Les.  #line:03ea454 
+Sloop : Blob.  #line:09733ba 
+Sloop : Fish ? #line:0c53166 
+<<SetSpeed 40>>
+<<SloopAnim "Idle">>
+->Bulle : Oui. #line:030e2cd 
+    Bulle : Ouais, ouais, j'adore même ! C'est mes poissons préférés... #line:0479c9e 
+    <<SloopAnim "Happy2">>
+    Sloop : Yoooooop, tu vois quand tu veux !  #line:0d32280 
+    Sloop : Tiens, on peut trouver des <color=\#229954>grenades</color> dans le cratère juste derrière moi ploop ! #line:04288d3 
+    <<set $grenadePositionInfo to true>>
+    <<SloopAnim "Idle">>
+->Bulle : Non. #line:0d5b400 
+    Bulle : N.O.N NON !!!!!! #line:00b83d3 
+    <<SloopAnim "Angry">>
+    Sloop : Rooooooooop ! Tant pis pour toi floooop ! #line:08fbfc5 
+    <<SloopAnim "Idle">>
+===
+title: Sloop_Salute
+position: -267,0.5
+---
+<<if $recetteTaken is true>>
+<<jump Sloop_Quete_Good>>
+<<endif>>
+//<<if $grenadePositionInfo is false>>
+//<<jump Sloop_Quete_GRENADE_No>>
+//<<endif>>
+<<if dice(3) == 1>>
+Sloop : J'espère que mon commerce de grenades bio va fonctionner... #line:049851b 
+<<elseif dice(3) == 2>>
+<<SloopAnim "Sad">>
+Sloop : J'aimerais bien visiter les abysses un jour...pour rencontrer mes confrères soooop ! #line:0727365 
+Sloop : Tu penses que ça sera possible wooooop ? #line:013e8fd 
+Astère : <i> Si on trouve quelqu'un pour financer le jeu oui.</i> #line:03175eb 
+<<SloopAnim "Idle">>
+<<else>>
+<<SloopAnim "Sad">>
+Sloop : J'ai le nez qui coule, faudrait que j'aille chercher des algues pour me moucher snooooof. #line:0120e52 
+<<SloopAnim "Idle">>
+<<endif>>
+===
+title: Sloop_Quete_Good
+position: -267,0.5
+---
+<<SloopAnim "Happy">>
+Sloop : T'as réussi à vaincre la pollution booops ? #line:0f3fdf0 
+<<SloopAnim "Idle">>
+<<BulleAnim Star>>
+Bulle : Bah ouais, je suis un guerrier moi.  #line:0e4c6b6 
+<<BulleAnim Idle>>
+<<SloopAnim "Happy2">>
+Sloop : Ah mais bien-sûr, une fleur brûlante et une canette toooop. #line:041713e 
+Sloop : Merci goooop !  #line:0edd54b 
+<<SloopAnim "Idle">>
+Sloop : Si tu veux je te donne une fleur brûlante pour te remercier tooooop ! #line:0b0b2e0 
+Bulle : Ouaaaaais trop !  #line:0817271 
+Sloop : Mais avant, une question mooooop ! #line:00afacb 
+Sloop : Tu aimes les blob fish bloop ?  #line:0843d5f 
+    ->Bulle : Euuuuh...oui ?  #line:094ed20 
+        <<SloopAnim "Happy">>
+        Sloop : Parfait, tiens voilà ta fleur doooop ! #line:0ddcda3 
+        <<ReceiveItem Fleur>>
+        <<SloopAnim "Idle">>
+    ->Bulle : Non, c'est trop moche.  #line:05956ef 
+        <<SloopAnim "Sad">>
+        Sloop : Tu sais que je suis un blob fish hein cloop ?  #line:03bc418 
+        <<SloopAnim "Idle">>
+        Bulle : Euh bah oui bien sûr.   #line:03829d7 
+        Sloop : Alors tu aimes les blob fish xoooop ?  #line:0c4bd6f 
+        ->Bulle : Euuuuh...oui je suppose ?  #line:09dad92 
+            <<SloopAnim "Happy2">>
+            Sloop : Yooooop !  #line:02f7968 
+            Sloop : Parfait, tiens voilà ta fleur doooop ! #line:05365db 
+            <<ReceiveItem Fleur>>
+            <<SloopAnim "Idle">>
+        ->Bulle : Bah non toujours pas... #line:0a05d42 
+            <<SloopAnim "Sad">>
+            Sloop : Oooooops...tant pis alors...pas de <color=\#229954>fleur brûlante</color> pour toi... #line:08f6434 
+            <<SloopAnim "Idle">>
+<<ObjectiveNotif "SLOOP3t">>
+===
+title: Sloop_Aurevoir
+position: -267,0.5
+---
+<<Autoskip 10>>
+<<if dice(2) == 1>>
+Sloop : Bulle, je dois aller au travail, à plus yooooop !  #line:0645288 
+<<SloopAnim "Sad">>
+Sloop : <size=60%>Oh...mais j'ai plus de travail ooooops...</size=60%> #line:0625650 
+<<SloopAnim "Idle">>
+<<else>>
+Sloop : J'ai le nez qui coule, faut que j'aille chercher des algues pour me moucher snooooof. #line:06f2bab 
+<<endif>>
+===
+title: Sloop_Seum
+position: -267,0.5
+---
+<<BulleAnim Sad>>
+Bulle : Pas envie de parler à ce blobfish plein de morve... #line:0b2a718 
+<<BulleAnim Idle>>
+===
+title: Sloop_Explosed
+position: -267,0.5
+---
+<<if visited("Sloop_Condition") is true>>
+<<jump Sloop_Explosed2>>
+<<endif>>
+<<if visited("Sloop_Explosed") is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+<<BulleAnim Coucou>>
+<<SloopAnim "Happy2">>
+Sloop : Woop ! Cette explosion était magnifique blooooop ! #line:0677c8e 
+<<BulleAnim Idle>>
+Sloop : Digne des plus grands exploseurs sous-marins !  #line:039859a 
+<<SloopAnim "Idle">>
+Astère : <i> J'en ai vu des choses, mais alors ce métier...c'est quelque chose.</i> #line:047eb9a 
+<<BulleAnim Star>>
+Bulle : Merci !!!! #line:0305688 
+<<BulleAnim Sad>>
+Bulle : Mais je m'appelle pas Woop... #line:00fc6bf 
+<<SloopAnim "Happy">>
+Sloop : Mais nooon, je sais bien glooooops. Moi c'est Sloop ! #line:02f0cff 
+<<SloopAnim "Idle">>
+<<BulleAnim Idle>>
+Bulle : Euh...moi c'est Bulle.  #line:0616cb5 
+<<SloopAnim "Happy2">>
+Sloop : Trop content de te rencontrer Bulle woooop !   #line:099c906 
+<<SloopAnim "Happy">>
+Sloop : J'avais justement besoin d'aide glooop ! #line:038623d 
+<<SloopAnim "Idle">>
+Bulle : Qu'est-ce que tu veux ? #line:0f5a0bd 
+<<SloopAnim "Sad">>
+Sloop : J'aimerais fabriquer mes propres grenades artisanales bio mais j'ai perdu la recette soooop... #line:09884e1 
+Sloop : Elle est dans une zone de pollution et j'ai trop le seum pour y aller noooop... #line:04a98dd 
+<<SloopAnim "Idle">>
+Bulle : J'peux aller la chercher mais j'ai quoi en échange ? #line:0e4db8e 
+<<SloopAnim "Happy2">>
+Sloop : Grâce à la recette tu pourra faire exploser ce gros rocher derrière toi zoooop. #line:0a72418 
+Sloop : Il bloque un gros geyser wooooooop. #line:0f6beb9 
+<<SloopAnim "Idle">>
+<<BulleAnim Star>>
+Bulle : Marché conclu ! Comment on va à la zone de pollution ? #line:04013a5 
+<<BulleAnim Idle>>
+Sloop : Il faut juste monter par les méduses derrière moi et tu tombera sur le cratère coooooop. #line:04ad7ca 
+===
+title: Sloop_Explosed2
+position: -267,0.5
+---
+<<if visited("Sloop_Explosed2") is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+<<BulleAnim Coucou>>
+<<SloopAnim "Happy2">>
+Sloop : Woop ! Cette explosion était magnifique blooooop ! #line:03ee5ee 
+<<BulleAnim Idle>>
+Sloop : Digne les plus grands exploseurs sous-marins !  #line:0b415e2 
+<<SloopAnim "Idle">>
+Astère : <i> J'en ai vu des choses, mais alors ce métier...c'est quelque chose.</i> #line:0857d51 
+<<BulleAnim Star>>
+Bulle : Merci !!!! #line:096a792 
+<<BulleAnim Idle>>
+===
+
+
+title: Hotu_Intro_EPAVE
+position: -267,0.5
+---                                                 // --- HOTU ---- \\
+<<if visited("Hotu_Intro_EPAVE") is true>>
+<<jump Hotu_Quete_Meduses>>
+<<endif>>
+Bulle : Qu'est-ce que vous faites ici ? #line:0c78c35 
+<<BulleAnim Idle>>
+Hotu : Je saute sur des <color=\#229954>méduses coussins</color>. #line:031a2e6 
+->Bulle : Trop cool ! #line:051d00c 
+    Bulle : Trop cool ! ...Ça sert à quoi ? #line:0103aa0 
+    Hotu : Tu le découvriras si tu rejoins mon club de saut sur <color=\#229954>méduses coussins</color> !  #line:01aff5c 
+    Hotu : Tu vas être entrainé par le champion mondial de la discipline, c'est à dire... #line:0a8c0a6 
+    Hotu : <size=800%> MOI !! </size> #line:0f4670d 
+->Bulle : Les pauvres ! #line:0874c89 
+    Bulle : Mais les pauvres ! Tu penses à leur bien être parfois ? Elles aussi ont des sentiments ! #line:04b8638 
+    <<BulleAnim Sad>>
+    Hotu : Tu me prends pour qui ? J'ai une formation d'élevage de <color=\#229954>méduses</color> moi !  #line:0c6c5aa 
+    Hotu : J'ai même un titre mondial ! #line:0ca9169 
+    <<BulleAnim Idle>>
+->Bulle : Trop nul ! #line:1412401 
+    Bulle : Hahaha comment ça a l'air trop nul. #line:0cb2624 
+    Hotu : <size=60%>Tu te moques de moi alors que je suis champion mondial dans cette discipline...</size=60%> #line:0b7f763 
+Astère : <i>Champion mondial ? Ha ha ha plutôt champion de la solitude.</i> #line:0993922 
+Bulle : <i>Chuuut Astère, ça pourrait être un de nos amis.</i> #line:0e07158 
+<<BulleAnim Happy>>
+Bulle : Vas-y tope la mon ami ! #line:08e96ca 
+<<BulleAnim Idle>>
+Hotu : <size=60%>Mais...</size=60%> #line:047ad07 
+Hotu : <size=60%>J'ai pas de bras...</size=60%> #line:047314d 
+Hotu : Vous êtes aussi méchants que ce vieux poulpe qui utilise mes méduses pour monter ici.  #line:07bee3d 
+Hotu : Il n'a aucune idée de comment sauter et il n'écoute pas mes conseils.  #line:022ad3a 
+Hotu : <size=500%>Elles souffrent !!!!</size> #line:0f0eaa9 
+Hotu : Si vous empruntez ce chemin, prenez soin de mes méduses s'il vous plaît, elles sont fragiles... #line:0cf4e2f 
+Hotu : Et revenez me parlez si vous voulez relever un challenge !! #line:0cf4e5f 
+
+===
+title: Hotu_Salute
+position: -267,0.5
+---
+<<if $hotuQueteSucced1 is false>>
+<<jump Hotu_Quete_Meduses>>
+<<endif>>
+<<if dice(2) == 1>>
+Hotu : Vous voulez jouer à pierre, feuille, ciseaux les d'jeuns ? #line:08a2dc8 
+->Bulle : Oui !  #line:044be29 
+    Bulle : Je commence. #line:0c52e5c 
+    Bulle : Un, deux, trois, pierre, feuille, ciseaux ! #line:008611a 
+    <<BulleAnim Sad>>
+    Astère : <i>Il a fait pierre, t'as perdu Bulle ha ha !</i> #line:046e82d 
+    <<BulleAnim Idle>> 
+    Bulle : Revanche !  #line:0ac5b24 
+    Bulle : Pierre, feuille, ciseaux ! #line:0c91d2d 
+    <<BulleAnim Happy>>
+    Astère : <i>Encore pierre, cette fois tu as gagné Bulle !</i> #line:08eba53 
+    <<BulleAnim Idle>> 
+    Bulle : Aller une dernière !  #line:024104d 
+    Bulle : Pierre, feuille, ciseaux ! #line:0ff15a3 
+    Astère : <i>Mais...je crois qu'il ne peut faire que pierre en fait.</i> #line:02e4d70 
+    Hotu : <size=60%>Je peux pas jouer, je n'ai pas de bras... #line:0c39eca 
+    Hotu : Vous pensiez que je faisais pierre juste parce que j'en suis une...</size=60%> #line:015020a 
+->Bulle : Non. #line:0d6a18c 
+    Bulle : Non, j'ai d'autres poissons chats à fouetter. #line:0b9c1bb 
+<<else>>
+Bulle : Oh salut Hotu, ça va ? #line:08281dd 
+Hotu : <size=60%>Non pas trop, j'ai perdu Médusa, la plus belle de mes méduses...</size=60%> #line:0b35468 
+Bulle : Tu aurais dû la tenir en laisse. #line:0125dc9 
+Hotu : <size=60%>Mais j'ai pas de bras.</size=60%> #line:0a5e409 
+Astère : <i>Pas de bras, pas de Médusa hahaha.</i> #line:001ac9a 
+<<endif>>
+===
+title: Hotu_Quete_Meduses
+position: -243,-152
+---
+<<if visited("Hotu_Quete_Meduses") is true>>
+<<jump Hotu_Quete_MedusesRe>>
+<<endif>>
+<<if $hotuQueteSucced1 is true>>
+<<jump Hotu_Quete_Meduses2>>
+<<endif>>
+Hotu : Tu veux t'entrainer à sauter sur les méduses coussin petit ? #line:0796876 
+<<BulleAnim Happy>>
+Bulle : Ouaaaais ! #line:0c37f28 
+<<BulleAnim Idle>>
+Hotu : Je vais créer un parcours de méduses rien que pour toi !  #line:0e87612 
+Hotu : Si tu arrives à le finir je te donnerai des récompenses à la hauteur de ton niveau.  #line:09d4662 
+Hotu : T'es prêt ? #line:0a599a9 
+    ->Bulle : Oui. #line:05fa2a8 
+        <<HotuChallenge 1>>
+    ->Bulle : Non. #line:02f8e9f 
+        <<Choice false>>
+===
+title: Hotu_Quete_MedusesRe
+position: -243,-152
+---
+<<if $hotuQueteSucced1 is true>>
+<<jump Hotu_Quete_Meduses2>>
+<<endif>>
+Hotu : Alors, Tu veux t'entrainer à sauter sur les méduses coussin finalement ? #line:021a979 
+<<BulleAnim Happy>>
+Bulle : Ouaaaais ! #line:003c6ff 
+<<BulleAnim Idle>>
+Hotu : Je vais créer un parcours de méduses rien que pour toi !  #line:088f38c 
+Hotu : Si tu arrives à le finir je te donnerai des récompenses à la hauteur de ton niveau.  #line:0eb8d8e 
+Hotu : T'es prêt ? #line:032c53e 
+    ->Bulle : Oui. #line:0e30f31 
+        <<HotuChallenge 1>>
+    ->Bulle : Non. #line:0ac6c6e 
+        <<Choice false>>
+===
+title: Hotu_Quete_Meduses2
+position: -243,-152
+---
+<<if $hotuQueteSucced2 is true>>
+<<jump Hotu_Quete_Meduses3>>
+<<endif>>
+Hotu : Tu as réussi haut la main le premier parcours, mais le deuxième est inspiré de l'épreuve des Jeux Eaulympiques 2004.  #line:0f7f050 
+Hotu : Tu veux relever le défi ? #line:0ac1256 
+    ->Bulle : Oui. #line:0b4702d 
+        <<HotuChallenge 2>>
+    ->Bulle : Non. #line:031aa7f 
+        <<Choice false>>
+===
+title: Hotu_Quete_Meduses3
+position: -243,-152
+---
+<<if $hotuQueteSucced3 is true>>
+<<jump Hotu_Salute>>
+<<endif>>
+Hotu : Petit, si tu réussi ce parcours, j'aurais terminé ton apprentissage, même mon maître Pierre Pradal n'a jamais réussi à le faire.  #line:0bec84b 
+Hotu : Tu veux tenter de le faire ? #line:04f462b 
+    ->Bulle : Oui. #line:0e7a96a 
+        <<HotuChallenge 3>>
+    ->Bulle : Non. #line:0d2988e 
+        <<Choice false>>
+===
+title: Hotu_Quete_Fail
+position: -243,-152
+---
+<<if dice(3) == 1>>
+Hotu : Ne me jette pas la pierre petit, mais tu devrais encore t'entrainer ! #line:08e9ca2 
+<<BulleAnim Sad>>
+<<elseif dice(3) == 2>>
+Hotu : Dommage...Tu avais un caillou dans ta chaussure ? #line:0fc683e 
+Astère : <i> Il a même pas de chaussures...</i> #line:09334c6 
+<<else>>
+Astère : T'es trop nul Bulle. #line:0747b61 
+Hotu : Hého, il ne faut pas dire ça mais plutôt : tu ne t'es pas assez entrainé Bulle. #line:0949fff 
+<<endif>>
+===
+
+title: Hotu_Quete_Good1
+position: -243,-152
+---
+Hotu : Bravo petit ! Tu es presque aussi fort que moi quand j'ai commencé cette discipline ! #line:0416b1d 
+<<BulleAnim Star>>
+Bulle : Alors j'ai gagné quoi ? #line:084a9c9 
+<<BulleAnim Idle>>
+Hotu : Je vais te préparer d'autres parcours ! #line:052d5c8 
+<<BulleAnim Sad>>
+Bulle : Mais je voulais une vraie récompense moi ! C'est nul ! #line:0f0937a 
+<<BulleAnim Idle>>
+Hotu : Bon, bon...ça te va un fruit ? Pour avoir plein d'énergie ! #line:09f4ff8 
+<<ReceiveItem Fruit>>
+<<BulleAnim Sad>>
+Bulle : Pffff, trop inutile...Je ferrai plus jamais ce défi. #line:01adff1 
+<<BulleAnim Idle>>
+Hotu : ... #line:0f8bca2 
+Hotu : Tiens, voilà des <color=\#229954>poulpes coussins</color>, pour te préparer au prochain parcours. #line:0ee1418 
+<<ReceiveItem PoulpeCoussin>>
+<<ReceiveItem PoulpeCoussin>>
+<<ReceiveItem Fruit>>
+Astère : <i> C'était pas du racket ça ?</i> #line:0760672 
+===
+title: Hotu_Quete_Good2
+position: -243,-152
+---
+Hotu : Petit, je sens que tu vas ajouter ta pierre à l'edifice du saut sur méduses.  #line:05f7588 
+Hotu : Tu as un vrai potentiel !  #line:0931026 
+<<BulleAnim Star>>
+Bulle : Je gagne quoi cette fois ? #line:06a2d15 
+<<BulleAnim Idle>>
+Hotu : Puisque tu es une pépite qui ne demande qu'à être extraite de son rocher, je te donne la recette des <color=\#229954>méduses coussins</color> ! #line:0cf6a56 
+Hotu : Et une méduse et une canette pour en fabriquer une directement !  #line:031de15 
+Hotu : Comme ça, tu pourras t'entrainer avec tes propres <color=\#229954>méduses coussins</color> ! #line:0781f8c 
+<<ReceiveItem Meduse>>
+<<ReceiveItem Canette>>
+<<ReceiveRecipe REC_MeduseCoussin1>>
+===
+title: Hotu_Quete_Good3
+position: -243,-152
+---
+Hotu : Je ne peux pas y croire... #line:0349b3d 
+Hotu : Petit, il faut marquer ce jour d'une pierre blanche.  #line:06cad31 
+Hotu : Ce jour où tu as détroné tous les champions mondiaux, tu... #line:0acf753 
+<<BulleAnim Star>>
+Bulle : J'men fiche d'être le champion du monde, je veux juste ma récompense moi !! #line:017d39f 
+<<BulleAnim Idle>>
+Hotu : Je n'ai plus besoin de m'entrainer, j'ai trouvé mon successeur.  #line:001cc5d 
+Hotu : Alors voici toute ma collection... #line:0fab7aa 
+<<BulleAnim Star>>
+<<BulleAnim Idle>>
+<<ReceiveItem MeduseCoussin>>
+<<ReceiveItem MeduseCoussin>>
+<<ReceiveItem MeduseCoussin>>
+<<ReceiveItem PoulpeCoussin>>
+<<ReceiveItem PoulpeCoussin>>
+<<ReceiveItem PoulpeCoussin>>
+<<ReceiveItem PoulpeCoussin>>
+<<ReceiveItem Canette>>
+<<ReceiveItem Canette>>
+<<ReceiveItem Canette>>
+<<ReceiveItem Canette>>
+Bulle : Merci !!!! #line:0fece68 
+===
+title: Hotu_Aurevoir
+position: -146,-267
+---
+<<Autoskip 10>>
+<<if dice(2) == 1>>
+Hotu : À bientôt Bulle, j'espère qu'on se reverra vite ! #line:0af95a2 
+<<else>>
+Hotu : <size=60%>Tu veux pas rester un peu plus Bulle ? Je me sens un peu seul ici.</size=60%> #line:054ee3f 
+<<endif>>
+===
+title: Hotu_Seum
+position: -243,-152
+---
+<<BulleAnim Angry>>
+Bulle : Pourquoi je voudrais parler à ce vieux caillou inutile ? #line:07de702 
+Astère : <i>T'as vraiment un coeur de pierre Bulle.</i> #line:08654c6 
+<<BulleAnim Idle>>
+===
+title: Ver_Info
+position: 0,0.5
+---
+Ver : Informations trafic de la <color=\#48BC0D>forêt sous-marine</color>.  #line:0837821 
+Ver : Rien à signaler dans la <color=\#48BC0D>forêt de Burb</color>.  #line:0420cbe 
+Ver : Du coté de la <color=\#48BC0D>forêt de l'épave</color>, un rocher bloque le geyser G52, merci d'emprunter un autre itinéraire ou de le déboucher vous-même.  #line:0e5ba42 
+Ver : Passez une bonne journée sur le réseau Verci Autoroutes. #line:0a4a525 
+===
+
+
+
+//ARCHIVES 
+
+
+
+title: Hotu_Tuto_MEDUSE
+position: -267,0.5
+---
+Hotu : Petit, tu veux apprendre le saut sur <color=\#229954>méduses coussins</color>, aussi appelé SMIC ? #line:05ce637 
+Astère : <i>À quoi correspond le i ?</i> #line:008a192 
+->Bulle : Ouais ! #line:002dc9d 
+    Bulle : Ouais troooop. #line:0f2ba73 
+    Hotu : Le SMIC c'est très simple, tu prends une <color=\#229954>méduse coussin</color>, tu sautes dessus et hop ça rebondit tout seul !  #line:0d7b6e6 
+    Hotu : Essaye avec celle-là ! #line:0f697f8 
+    Astère : <i>Euh...Il y avait vraiment besoin d'un tuto pour ça ?</i> #line:048dea8 
+->Bulle : Non... #line:0443ca2 
+    Bulle : Non. Ça à l'air trop nul. #line:0bdabdf 
+    Hotu : <size=60%>Mais...c'est une discipline mondialement reconnue...</size=60%> #line:0891966 
+    Astère : <i>Bulle, tous les conseils sont bons à prendre.</i> #line:0d23d21 
+    Bulle : Bon, vas-y montre moi... #line:0f493fc 
+    Hotu : Le SMIC c'est très simple, tu prends une <color=\#229954>méduse coussin</color>, tu saute dessus et hop ça rebondit tout seul !  #line:0ecd448 
+    Hotu : Essaye avec celle-là ! #line:086f91a 
+    Astère : <i>Euh...Il y avait vraiment besoin d'un tuto pour ça ?</i> #line:0aa320a 
+->Bulle : Je sais sauter. #line:0882226 
+    Bulle : T'as cru quoi ? Je sais déjà sauter. #line:0533591 
+    Hotu : <size=60%>Ah...d'accord...je n'aurai alors servi à rien dans ce monde...</size=60%> #line:0bb3c4a 
+===
+
+title: Burb_Intro_FORET
+position: -39,41
+---
+<<if visited("Burb_Intro_FORET") is true>>
+<<jump Burb_Quete_ALGUE>>
+<<endif>>
+Burb : <color="purple">Urfe</color> ? #line:030207f 
+Bulle : Non, moi c'est Bulle. T'es qui toi ? #line:0487cf6 
+Burb : Burb ! #line:0b00005 
+===
+title: Burb_Quete_ALGUE
+position: 139,79
+---
+<<if visited("Burb_Quete_ALGUE") is true>>
+<<jump Burb_Salute>>
+<<endif>>
+Burb : <color=\#0E6251>Algue</color>, <color=\#229954>algue</color>, <color=\#58D68D>algue </color> ! #line:0428710 
+<<BulleAnim Angry>>
+Bulle : Tu peux me laisser passer stp ? #line:02bf2ed 
+<<BulleAnim Idle>>
+Burb : <size=200%>PAS PASSER !</size=200%>  #line:050a25b 
+Burb : <size=200%><color=\#0E6251>AL</color><color=\#229954>GU</color><color=\#58D68D>ES ! DONNER !!!</size=200%> #line:0b7fb9f 
+<<BulleAnim Angry>>
+Bulle : J'ai une tête de mangeur <color=\#FFC300>d'algues</color> ? #line:0f3a1e2 
+<<BulleAnim Idle>>
+Burb : <color=\#0E6251>Algue</color> mange pas, <color=\#58D68D>algue</color> donne Burb ! #line:04639ce 
+Bulle : Mais y'a pleins <color=\#FFC300>d'algues</color> autour, tu peux pas les prendre toi même ? #line:00489f3 
+Burb : <size=800%><color=\#0E6251>AL</color><color=\#229954>GU</color><color=\#58D68D>ES !</color></size=800%> #line:0034acf 
+<<BulleAnim Sad>>
+Bulle : ...Bon, il en faut combien ? #line:0948f9a 
+<<BulleAnim Idle>>
+Burb : <color=\#0E6251>Algue</color> Burb, <color=\#229954>Algue</color> Burb, <color=\#58D68D>Algue</color> Burb ! #line:0ec778c 
+Astère : <i>Je suppose qu'il veut donc 3 <color=\#FFC300>algues</color>...</i> #line:0076bc0 
+===
+title: Burb_Quete_ALGUE_Bad
+position: 255,-67
+---
+Burb : Pas <color=\#0E6251>algues</color> !!!!! Pas <color=\#229954>algues</color> !!! Burb <color=\#58D68D>algues</color> ! #line:0f96d0e 
+===
+title: Burb_Quete_ALGUE_Good
+position: -112,-65
+---
+Burb : <size=800%><color=\#0E6251>AL</color><color=\#229954>GU</color><color=\#58D68D>ES !</color> <3 <3</size=800%> #line:0a11794 
+===
+title: Burb_Salute
+position: 9,-142
+---
+Burb : <color=\#0E6251>Algues</color> ? #line:00c4859 
+-> Bulle : Algue. #line:0b30e8b 
+    Burb : <color=\#229954>Algue</color> <3 #line:008dc40 
+->Bulle : Algue ? #line:00f2d22 
+    Burb : <color=\#229954>Algue</color> ? #line:0eb0128 
+->Bulle : ALGUE ! #line:0f35438 
+    Burb: <color=\#0E6251>Algue...</color> #line:05732ed 
+->Bulle : Algue <3 <<if $seum < 20 >> #line:2455d04 
+    Burb : <size=800%><color=\#0E6251>AL</color><color=\#229954>GU</color><color=\#58D68D>ES !</color> <3 <3 <3 <3 </size=800%> #line:094c443 
+===
+title: Sloop_Intro_EPAVE_old
+position: -267,0.5
+---                                                         // --- SLOOP ---- \\
+<<ItemChecker "Grenade">>
+<<if $GrenadeInInventory is true>>
+<<jump Sloop_Condition>>
+<<endif>>
+<<if $rocherDestroyed is true>>
+<<jump Sloop_Explosed>>
+<<endif>>
+<<if visited("Sloop_Intro_EPAVE") is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+<<ItemChecker "Grenade">>
+<<BulleAnim Coucou>>
+Sloop : Ohhh, salut boooops ! #line:01d4268 
+<<BulleAnim Sad>>
+Bulle : Je m'appelle pas Boooops... #line:076d719 
+<<SloopAnim "Happy">>
+Sloop : Mais nooon, je sais bien glooooops. Moi c'est Sloop ! #line:0d523ea 
+<<SloopAnim "Idle">>
+<<BulleAnim Idle>>
+Bulle : Euh...moi c'est Bulle. #line:081b0ae 
+<<SloopAnim "Happy2">>
+Sloop : Trop content de te rencontrer Bulle woooop !  #line:0e3426a 
+Sloop : Qu'est-ce que tu fais dans cette belle <color=\#48BC0D>forêt</color> doooops ? #line:0a74e39
+<<SloopAnim "Idle">> 
+<<BulleAnim Sad>>
+Bulle : Je cherche comment prendre ce geyser. Y'a un caillou qui le bloque. #line:00050cd 
+<<BulleAnim Idle>>
+Sloop : J'ai ce qu'il te faut glooops !  #line:094014f 
+Sloop : Je travaillais dans une usine de destruction massive des pierres dans l'océan plooooop.  #line:05dae00 
+<<SloopAnim "Sad">>
+Sloop : Malheureusement elle a fermé récemment...Mais je pourrais te dire où trouver des <color=\#229954>grenades</color> booooop ! #line:027f436 
+<<SloopAnim "Idle">>
+Astère : <i>Ça tombe vraiment bien ça dit donc...</i> #line:0db3eca 
+<<BulleAnim Happy>>
+Bulle : Trop bien !!! #line:0ef8256 
+Sloop : Tu veux savoir alors doops ? #line:04dd9ae 
+<<BulleAnim Idle>>
+->Bulle : Oui. #line:0fae0a8 
+    Sloop : D'accord, tu aimes les blob fish bloop ? #line:040d299 
+    ->Bulle : Euuuuh...oui ? #line:0ca7949 
+        <<SloopAnim "Happy">>
+        Sloop : On peut trouver des <color=\#229954>grenades</color> dans le cratère juste derrière moi ploop ! #line:061ead
+        <<set $grenadePositionInfo to true>>
+        <<SloopAnim "Idle">>
+    ->Bulle : Non, c'est trop moche. #line:0140c8f 
+        <<SloopAnim "Sad">>
+        Sloop : Tu sais que je suis un blob fish hein cloop ? #line:087e205 
+        <<SloopAnim "Idle">>
+        Bulle : Euh bah oui bien sûr.   #line:09dfd22 
+        Sloop : Alors tu aimes les blob fish xoooop ? #line:0b61343 
+        ->Bulle : Euuuuh...oui je suppose ? #line:021c656 
+            <<SloopAnim "Happy2">>
+            Sloop : Yooooop !  #line:096679d 
+            Sloop : On peut trouver des <color=\#229954>grenades</color> dans le cratère juste derrière moi ploop ! #line:08e4158
+            <<set $grenadePositionInfo to true>>
+            <<SloopAnim "Idle">>
+        ->Bulle : Bah non toujours pas... #line:0d8719d 
+            <<SloopAnim "Sad">>
+            Sloop : Oooooops...tant pis alors...pas de <color=\#229954>grenade</color> pour toi... #line:053a118 
+            <<SloopAnim "Idle">>
+->Bulle : Non. #line:0ed92d8   
+    <<SloopAnim "Sad">>
+    Sloop : Reviens me voir dès que t'as envie là booops. #line:00317e5 
+    <<SloopAnim "Idle">>
+===
+title: Hotu_Trigger
+position: 0,0.5
+---
+Hotu : Ça roule petit ?  #line:00d3b6f 
+Bulle : Hein ? C'était quoi ça ?  #line:0f54d96 
+Astère : <i>Attention, il y a peut-être anguille sous roche. Tu veux vraiment aller voir ?</i> #line:0363725 
+===

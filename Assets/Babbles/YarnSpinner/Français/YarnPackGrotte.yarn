@@ -1,0 +1,271 @@
+title: Gertrude_Intro_GROTTE
+position: 0,0.5
+---
+<<if visited ("Gertrude_Intro_GROTTE")>>
+<<jump Gertrude_Salute>>
+<<endif>>
+Gertrude : Toi là !!! 
+Gertrude : Pourquoi tu traînes dans cette <color=\#48BC0D>grotte</color> ?
+Bulle : Je cherche les <color=\#48BC0D>abysses</color>.
+Gertrude : Les <color=\#48BC0D>abysses</color> ? C'est tout droit. 
+Gertrude : Mais tu peux pas y aller. 
+Gertrude : Aide moi plutôt à retrouver mes collaboratrices.
+Astère : <i>Elle se gène pas elle !</i>
+Bulle : Pourquoi je ferrai ça ?
+Gertrude : Parce qu'elles m'ont abandonnée !!! 
+Gertrude : <size=250%>Moi !!</size>
+Gertrude : Leur grande cheffe !! Je voulais les guider !! 
+Gertrude : Elles osent me défier de la sorte ! 
+Gertrude : On voulait fabriquer un objet pour faire un casse grâce à une recette !!! 
+Gertrude : Et elles l'ont déchirée !!!
+<<BulleAnim Angry>>
+Bulle : Je m'en fiche de vos histoires, je veux juste passer.
+<<BulleAnim Idle>>
+Gertrude : Si tu m'aides à retrouver mes associées, je t'aide à passer.
+<<BulleAnim Happy>>
+Bulle : Ok !! Marché conclu !
+<<BulleAnim Idle>>
+<<set $tireBouchonFound to true>>
+===
+title: Gertrude_Salute
+position: 0,0.5
+---
+Gertrude : Alors ? T'as retrouvé mes collaboratrices ?
+<<BulleAnim Sad>>
+Bulle : Non pas encore...
+Gertrude : Dépêche-toi !! On a besoin de la recette !
+<<BulleAnim Idle>>
+<<if $rockGrotteDestroyed>>
+<<jump Requin_Sucess_Quest>>
+<<elseif $requinsSuccessQuest>>
+<<jump Requin_Sucess_Quest>>
+<<elseif $fourchetteFound && $cuillereFound>>
+<<set $requinsSuccessQuest to true >>
+<<elseif $fourchetteFound>>
+<<jump Gertrude_Fourchette_Found>>
+<<elseif $cuillereFound>>
+<<jump Gertrude_Cuillere_Found>>
+<<endif>>
+===
+title: Gertrude_Aurevoir
+position: 0,0.5
+---
+<<Autoskip 10>>
+Gertrude : Au revoir.
+===
+title: Gertrude_Cuillere_Found
+position: 0,0.5
+---
+Gertrude : Ursule !
+Ursule : Gertrude !
+Gertrude : T'es plus fâchée contre moi ??
+Ursule : Bah j'étais pas fâchée, j'étais perdue.
+Gertrude : Pourquoi t'es partie avec le bout de recette alors ???
+Ursule : Je sais pas...Je cherchais la cuisine...
+Gertrude : ...
+Gertrude : Il faut qu'on retrouve <color="purple">Kristine</color>.
+===
+title: Gertrude_Fourchette_Found
+position: 0,0.5
+---
+Gertrude : Kristine, où t'étais partie ?
+Kristine : Loin de toi et de ta mocheté ! 
+Kristine : Heureusement, j'ai trouvé l'amour, je n'ai plus besoin de vous.
+Astère : <i>Euh si c'est moi dont on parle, je crois que t'as toujours besoin d'elles.</i>
+Gertrude : Et notre casse alors ?? Tu veux dire adieu à la richesse ??
+Kristine : Qu'est-ce qui vaut le plus cher ? L'argent ou l'amour ?
+->Bulle : L'argent !
+    Kristine : Bon...fabriquons cette <color=\#FFC300>grenade</color> alors, explosons cette société qui nous empêche de vivre nos rêves !
+->Bulle : L'amour !
+    Kristine : Dans ce cas, je veux bien fabriquer cette <color=\#FFC300>grenade</color> pour faire exploser le cœur de mes conquêtes.
+Gertrude : Il faut qu'on retrouve <color="purple">Ursule</color> avant !! Vite !!!
+===
+title: Gertrude_Seum
+position: 0,0.5
+---
+Bulle : J'ai plus envie de lui parler...
+===
+title: Kristine_Intro_GROTTE
+position: 0,0.5
+---
+<<if $tireBouchonFound is false>>
+<<jump Kristine_First>>
+<<endif>>
+<<if visited ("Kristine_Intro_GROTTE")>>
+<<jump Kristine_Salute>>
+<<endif>>
+Kristine : Heyyyyy salut toi !
+Bulle : Bonjour.
+<<BulleAnim Sad>>
+Kristine : Je parle pas à toi demi portion. Je parle à cette belle femme sur ton front.
+Astère : <i>Hein ?</i>
+<<BulleAnim Idle>>
+Kristine : Tu veux pas me montrer ta frimousse pour me mettre des étoiles dans les yeux ?
+Astère : Euh c'est un jeu tous publics malheureusement.
+Kristine : Toujours des excuses...
+Astère : Mais on se retrouve dans le DLC dating sim si tu veux !
+Bulle : Euh...sinon tu voudrais pas te réconcilier avec <color="purple">Gertrude</color> ?
+Kristine : Rohhh, <color="purple">Gertrude</color>, <color="purple">Gertrude</color>. La seule que j'ai en tête c'est cette étoile.
+Bulle : Si tu vas voir <color="purple">Gertrude</color>, je te prête Astère pendant le trajet.
+Astère : <i>Dans tes rêves Bulle.</i>
+Bulle : Astère, s'il te plaîîîîîît. J'en peux plus de cette <color=\#48BC0D>grotte</color>.
+<<BulleAnim Happy>>
+Astère : <i>Bon, j'accepte mais c'est bien pour que le jeu avance.</i>
+<<BulleAnim Idle>>
+Kristine : Allons-y de ce pas !!! Madame l'étoile, à vous l'honneur.
+<<set $fourchetteFound to true>>
+===
+title: Kristine_First
+position: 0,0.5
+---
+Kristine : Gertrude...Gertrude...je me vengerai...
+===
+title: Kristine_Salute
+position: 0,0.5
+---
+<<if dice(2) == 1>>   
+Kristine : Coucou petite étoile de mer. Tu sais, moi sans toi, c'est comme un océan sans eau...
+<<else>>
+Kristine : En temps normal je suis plutôt bonne nageuse, mais là je me noie dans tes yeux...
+<<endif>>
+===
+title: Kristine_Aurevoir
+position: 0,0.5
+---
+<<Autoskip 10>>
+Kristine : Les gens m'appellent Kristine, mais toi tu peux m'appeler ce soir.
+===
+title: Kristine_Seum
+position: 0,0.5
+---
+Astère : <i>C'est peut-être pas une bonne idée d'aller lui parler maintenant...</i>
+===
+title: Ursule_Intro_GROTTE
+position: 0,0.5
+---
+<<if $tireBouchonFound is false>>
+<<jump Ursule_First>>
+<<endif>>
+<<if visited ("Ursule_Intro_GROTTE")>>
+<<jump Ursule_Salute>>
+<<endif>>
+Ursule : Ohhh coucou petit poisson.
+<<BulleAnim Angry>>
+Bulle : Je suis pas petit !
+Ursule : Ah.............pardon.........
+<<BulleAnim Idle>>
+Bulle : Pas grave, mais pour te faire pardonner, donne moi la recette !
+Ursule : Quelle recette ?
+Bulle : La recette de la <color=\#FFC300>grenade</color> !
+Ursule : Miam trop bon les grenades.
+Bulle : Tu divagues beaucoup toi...
+Ursule : Vague, vague, vague,...
+<<BulleAnim Sad>>
+Astère : <i>Mon QI est en chute libre Bulle.</i>
+<<BulleAnim Idle>>
+Ursule : <size=150%>Hé !!!!!</size> 
+Ursule : Elles sont où <color="purple">Kristine</color> et <color="purple">Gertrude</color> ?
+Bulle : Bah <color="purple">Gertrude</color> est à l'entrée de la <color=\#48BC0D>grotte</color>.
+Ursule : Gertuuuuuuude, pourquoi t'es si loin ? J'arrive, attends moi.
+Astère : <i>Bon bah elle était facile à convaincre.</i>
+<<set $cuillereFound to true>>
+===
+title: Ursule_First
+position: 0,0.5
+---
+Ursule : Poissonnnnnnnn. Tu sais où est Gertrude ?
+===
+title: Ursule_Salute
+position: 0,0.5
+---
+Ursule : Kristiiiiiine, Gertruuuuude, vous êtes où ? Promis j'écraserai plus de poissons.
+===
+title: Ursule_Aurevoir
+position: 0,0.5
+---
+<<Autoskip 10>>
+Ursule : Au revoir petit poisson...
+===
+title: Ver_GROTTE
+position: -152,0.5
+---
+Ver : Informations trafic de la <color=\#48BC0D>grotte</color>. 
+Ver : Attention, le trafic est perturbé sur la voie principale menant aux <color=\#48BC0D>abysses</color>, nos équipes sont occupées dans la <color=\#48BC0D>forêt sous-marine</color>.
+Ver : Vous pouvez toujours tenter de le débloquer vous-même. 
+Ver : Passez une bonne journée sur le réseau Verci Autoroutes.
+===
+title: Ursule_Seum
+position: -152,0.5
+---
+Bulle : Ce requin a vraiment une tête de c...
+Astère : Uillère.
+Bulle : C'est mort j'vais pas lui parler.
+===
+title: Requin_Sucess_Quest
+position: -152,0.5
+---
+<<ReceiveRecipe REC_Grenade1>>
+Gertrude : Nous sommes toutes réunies !!!! Enfin !!!
+Kristine : Mais on a toujours pas décidé qui est la cheffe.
+Gertrude : Demandons à cet enfant innocent.
+Gertrude : Qui devrait être la cheffe ?
+->Bulle : Kristine !
+    Kristine : Et voilà, il n'a pas pu résister à mon charme naturel !
+    Gertrude : On s'en fiche !! 
+    Gertrude : Ne perdons pas plus de temps !!! Fabriquons la <color=\#FFC300>grenade</color> et allons organiser ce casse !
+    Bulle : Et ma récompense ?
+    Gertrude : Ah oui. Tu veux connaitre la recette de la <color=\#FFC300>grenade</color> ? 
+    Gertrude : Comme ça tu pourra faire exploser cette grosse pierre !
+    <<BulleAnim Star>>
+    Bulle : Trop stylééééé, merci.
+    Gertrude : Bon courage dans les <color=\#48BC0D>abysses</color>, on se croisera peut-être là-bas.
+    <<BulleAnim Idle>>
+->Bulle : Ursule !
+    Ursule : Oui ?
+    Bulle : T'es la cheffe du groupe !
+    Ursule : Quel groupe ?
+    <<BulleAnim Sad>>
+    Bulle : Je crois que je regrette mon choix...
+    <<BulleAnim Idle>>
+    Gertrude : On s'en fiche !! 
+    Gertrude : Ne perdons pas plus de temps !!! Fabriquons la <color=\#FFC300>grenade</color> et allons organiser ce casse !
+    Bulle : Et ma récompense ?
+    Gertrude : Ah oui. Tu veux connaitre la recette de la <color=\#FFC300>grenade</color> ? 
+    Gertrude : Comme ça tu pourra faire exploser cette grosse pierre !
+    <<BulleAnim Star>>
+    Bulle : Trop stylééééé, merci.
+    Gertrude : Bon courage dans les <color=\#48BC0D>abysses</color>, on se croisera peut-être là-bas.
+    <<BulleAnim Idle>>
+->Bulle : Gertrude !
+    Gertrude : La réponse était si évidente !!! Tout ce temps gâché !! 
+    Gertrude : Alors qu'on pourrait déjà être riches !!! Ne perdons pas plus de temps et allons organiser ce casse !
+    Bulle : Et ma récompense ?
+    Gertrude : Ah oui. Tu veux connaitre la recette de la <color=\#FFC300>grenade</color> ? 
+    Gertrude : Comme ça tu pourra faire exploser cette grosse pierre !
+    <<BulleAnim Star>>
+    Bulle : Trop stylééééé, merci.
+    Gertrude : Bon courage dans les <color=\#48BC0D>abysses</color>, on se croisera peut-être là-bas.
+    <<BulleAnim Idle>>
+->Bulle : Moi !
+    <<BulleAnim Happy>>
+    Gertrude : <size=800%>QUOI ??</size>
+    Kristine : Quel homme...
+    <<BulleAnim Angry>>
+    Bulle : Et ouais !!! Maintenant donnez moi la recette !!
+    <<BulleAnim Idle>>
+    Gertrude : D'abord, laisse nous fabriquer notre <color=\#FFC300>grenade</color>.
+    <<BulleAnim Angry>>
+    Bulle : Oh, c'est moi le chef !!!!
+    Gertrude : ...
+    Gertrude : On doit faire quoi alors ?
+    <<BulleAnim Idle>>
+    Bulle : <size=60%>Bah...</size>
+    <<BulleAnim Sad>>
+    Astère : <i>C'est le pire chef que j'ai jamais vu...</i>
+    Gertrude : On a pas ton temps tu sais ? Dépêche-toi un peu !
+    Bulle : Je sais paaaaaaas...
+    Bulle : C'est bon j'arrête d'être chef si c'est comme ça.
+    Gertrude : Bon nous on va organiser notre casse alors. 
+    Gertrude : Voici la recette, bon courage dans les <color=\#48BC0D>abysses</color>, on se croisera peut-être là bas.
+    <<BulleAnim Idle>>
+===

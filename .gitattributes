@@ -1,0 +1,4 @@
+*Adrien_Epave.unity filter=lfs diff=lfs merge=lfs -text
+*Adrien_Epave_LFS.unity filter=lfs diff=lfs merge=lfs -text
+*Adrien_Epave1.unity filter=lfs diff=lfs merge=lfs -text
+*ClemCa_BonusTestScene.unity filter=lfs diff=lfs merge=lfs -text

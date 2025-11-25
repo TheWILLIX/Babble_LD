@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1197895393376045108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4008590040831484228}
+  - component: {fileID: 3972339958128359645}
+  m_Layer: 0
+  m_Name: VFXSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4008590040831484228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197895393376045108}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3972339958128359645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197895393376045108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82dedc00aff31c41920754358bc35be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+  - Name: Encre
+    Prefab: {fileID: 1977506364348326919, guid: 21b85897bca064b40bf82da5441ce2e8, type: 3}
+  - Name: Steps
+    Prefab: {fileID: 1614299487715498115, guid: d6f2d399c2150854b99b1c281abfe59a, type: 3}
+  - Name: UltraFrais
+    Prefab: {fileID: 4687243024591819230, guid: 3831cee392f7905469232ae4be52d289, type: 3}
+  - Name: Gliding
+    Prefab: {fileID: 8439007114339252205, guid: 5ce5c8dfc37e8aa488b061dd072f82b3, type: 3}
+  - Name: Seum
+    Prefab: {fileID: 3060842813274641119, guid: 7ea0c5996b0f67348a88b6f7f8b83a45, type: 3}
+  - Name: Skin
+    Prefab: {fileID: 2951506786582088971, guid: 08312afe6049ff549a56b3b6b7720482, type: 3}
+  - Name: Manger
+    Prefab: {fileID: 7398256334705745631, guid: 00637c064a0fdef4d9c7289b1669689f, type: 3}

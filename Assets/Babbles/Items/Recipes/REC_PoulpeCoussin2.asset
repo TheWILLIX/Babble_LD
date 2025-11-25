@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d99aa992dde3a45a93e06f1b2f891a, type: 3}
+  m_Name: REC_PoulpeCoussin2
+  m_EditorClassIdentifier: 
+  _recipeName: REC_PoulpeCoussin2
+  _firstItem: {fileID: 11400000, guid: b4aa2791c2d6f834899f8f3328c26c62, type: 2}
+  _secondItem: {fileID: 11400000, guid: 56941cfb37db3b940aaceba9fb167db8, type: 2}
+  _resultItem: {fileID: 11400000, guid: 62e3a935819864a4db5fb91f43b72ab0, type: 2}
+  _linkedRecipe: {fileID: 11400000, guid: 5250501116a60f24aa5d1fffc119795c, type: 2}
+  _locked: 0

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Babbles/Scenes/Menu/ClemCa MainMenu.unity
+    guid: 1fa9a32db4f27dd409e20aa7366d3688
+  - enabled: 1
+    path: Assets/Babbles/Scenes/Tests/Multiscenes/BaseScene.unity
+    guid: 77337787858913749bdd98cd770204da
+  - enabled: 1
+    path: Assets/Babbles/Scenes/LD_Blank.unity
+    guid: 20c8ba69002608d4582fee093eab5a8b
+  - enabled: 1
+    path: Assets/Babbles/Scenes/Tutoriel/Alexis_Tuto.unity
+    guid: 92e8a849285f26147a6f3a6cab6fc865
+  - enabled: 1
+    path: Assets/Babbles/Scenes/Officiels/Adrien_Epave.unity
+    guid: 8bafef3dff1505f4881abccfd628e83a
+  - enabled: 1
+    path: Assets/Babbles/Scenes/Officiels/Lysiane_Cimetiere.unity
+    guid: 209f6fcbf4b235a47bfefafd24640585
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Officiels/SAS_Epave.unity
+    guid: e1aaafcc246c7d64ab95e94eb2c003c1
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Officiels/SAS_Cimetiere.unity
+    guid: 7c48e4d77a37c234d990d99b24cec69a
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Officiels/Lysiane_Grotte.unity
+    guid: d82a76d51232f9b42bb873af696f005f
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/Alexis_DialogueCampementTest.unity
+    guid: d16aa22971372dc43b9aaa0eb9530126
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Officiels/Adrien_NewForet.unity
+    guid: 978008ecb47e4d14f98c613c4a65cce5
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/ClemCa_TestScene.unity
+    guid: 336c0e1953ab7d141a9c5c568c12c1a8
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/ClemCa_BonusTestScene.unity
+    guid: 742df149ad480ef4b843ddad3091825f
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/Multiscenes/Chunk1.unity
+    guid: 6f806415c0449f744b37dab05a1f72d9
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/Multiscenes/Chunk2.unity
+    guid: 990c914c759188a4a924619a3e2f4330
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/Multiscenes/Chunk3.unity
+    guid: 36a45ffd35c03054d91e4f285be0a413
+  - enabled: 0
+    path: Assets/Babbles/Scenes/OLD/Adrien_Foret.unity
+    guid: 8100996c8ac870c4ba8c2335dbfd10ac
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Officiels/Adrien_Festival.unity
+    guid: 1210d663e8f2357498fe2fed6b5ec624
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/Multiscenes/(Debug) BaseScene.unity
+    guid: 0704efeb0de8f5d479e2ff4febd6654a
+  - enabled: 0
+    path: Assets/Babbles/Scenes/Tests/LD_Modules.unity
+    guid: 78b9364cc9b741a438ad185a6ed1ba79
+  m_configObjects: {}

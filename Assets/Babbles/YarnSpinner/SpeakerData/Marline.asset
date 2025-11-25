@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Marline
+  m_EditorClassIdentifier: 
+  _textColorID: '#D62A21'
+  _characterName: Marline
+  _faceSprite: {fileID: 21300000, guid: fd403154699988a4f96316f0353bc685, type: 3}
+  _isPNJClassic: 0
+  _seumHasInfluence: 1
+  _stadePNJ: 0
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 0
+  _seuilSeumExplo: 12
+  _itemLike:
+  - {fileID: 11400000, guid: 897858b3deb7f564ea859c44f82ebca5, type: 2}
+  - {fileID: 11400000, guid: 42a6deafb4c5a9b41b4c2c5a1a5dc0d5, type: 2}
+  - {fileID: 11400000, guid: 62e3a935819864a4db5fb91f43b72ab0, type: 2}
+  - {fileID: 11400000, guid: 1ecc036108f1e17468d6ab61c1d43bd7, type: 2}
+  - {fileID: 11400000, guid: 015021617147b154aa3c6f85a13f4512, type: 2}
+  - {fileID: 11400000, guid: 06b70db8e60ab704b9eab27783ab08e2, type: 2}
+  - {fileID: 11400000, guid: f0b86854bbbcaa0498a1b2436819957b, type: 2}
+  - {fileID: 11400000, guid: 6552b8513eda68e49bb1520326859806, type: 2}
+  _itemDislike:
+  - {fileID: 11400000, guid: b6abaeaba49d72b4d8904431f492a0b7, type: 2}
+  - {fileID: 11400000, guid: ac12b0b41d3ecce489fac442757b289e, type: 2}
+  - {fileID: 11400000, guid: 5f5ab6ac69d7c484d89f85a463b47ba3, type: 2}
+  - {fileID: 11400000, guid: 2b7d9bc15185fc443a010c16676970b6, type: 2}
+  - {fileID: 11400000, guid: 66671844de5d3214d8153725684432e0, type: 2}
+  - {fileID: 11400000, guid: 05c6e9513bdcb3c47a6be2e0192c6867, type: 2}
+  - {fileID: 11400000, guid: 0b9f2bd4356ff1143adf668fcfca91a9, type: 2}
+  _receiveUniqueItem:
+  - {fileID: 11400000, guid: d625d06444591b04e90c149d4e4982b9, type: 2}
+  - {fileID: 11400000, guid: 56941cfb37db3b940aaceba9fb167db8, type: 2}
+  - {fileID: 11400000, guid: b4aa2791c2d6f834899f8f3328c26c62, type: 2}
+  - {fileID: 11400000, guid: 88c6f0a4e51d90d4f9a7628a19ed2940, type: 2}
+  _voiceSound:
+  - {fileID: 11400000, guid: 742f673ee979ac04c8b3abd28a6eec82, type: 2}
+  - {fileID: 11400000, guid: 413b2215a8059ae4eaf00dd2ffcc91cb, type: 2}
+  - {fileID: 11400000, guid: cb3e9ae4fb0557b48ba4ffa7775f9630, type: 2}
+  - {fileID: 11400000, guid: 1f4e49e4e8568524ca81b83882e4fa4b, type: 2}
+  - {fileID: 11400000, guid: c7a732ed80bfd9240b83334e5e1e0cf2, type: 2}
+  - {fileID: 11400000, guid: 025e54551cc68f745943af5018665daa, type: 2}
+  - {fileID: 11400000, guid: 9c952e759dcbdbc4296360c4e40dff52, type: 2}
+  - {fileID: 11400000, guid: 9576347d2ff237e42a25d469937a790d, type: 2}
+  - {fileID: 11400000, guid: 0c50be0e3415abb48bed92b13dd1a9c9, type: 2}
+  - {fileID: 11400000, guid: 2a9fade2014f6a44aa2168421ab46a09, type: 2}
+  _speedOfLettersSound: 0
+  _minimumPitchOfLettersSound: 0.98
+  _maximumPitchOfLettersSound: 1.03

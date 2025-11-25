@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87744370b371c984b82958ff44ebe188, type: 3}
+  m_Name: SV_Sloop8
+  m_EditorClassIdentifier: 
+  _key: SV_Sloop8
+  _clip: {fileID: 8300000, guid: 3274061af25c81e469da33c5216d0c20, type: 3}
+  _volume: 0.85
+  _pitch: 1
+  _loop: 0
+  _uniqueSound: 0
+  _pitchVariation: 1
+  _pitchMinimum: 0.9
+  _pitchMaximum: 1.1
+  _multipleSound: 0
+  _additionalClips: []

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87744370b371c984b82958ff44ebe188, type: 3}
+  m_Name: S_MarcheSable
+  m_EditorClassIdentifier: 
+  _key: S_MarcheSable
+  _clip: {fileID: 8300000, guid: a9562e387ed762e4f96d886815acf33a, type: 3}
+  _volume: 0.8
+  _pitch: 1
+  _loop: 0
+  _uniqueSound: 0
+  _pitchVariation: 1
+  _pitchMinimum: 0.95
+  _pitchMaximum: 1.05
+  _multipleSound: 1
+  _additionalClips:
+  - {fileID: 8300000, guid: 6d46abbfdc9c6f045b53bb94a51ff22d, type: 3}
+  - {fileID: 8300000, guid: 92aa61ab1e4eb5a4ca98d31014b41ebc, type: 3}
+  - {fileID: 8300000, guid: e2a462f3202ac5a41b1498ded02daaa1, type: 3}
+  - {fileID: 8300000, guid: 902848579e1bd57438f0324a89a316d0, type: 3}
+  - {fileID: 8300000, guid: a53d969521a56454692da094b22053a1, type: 3}

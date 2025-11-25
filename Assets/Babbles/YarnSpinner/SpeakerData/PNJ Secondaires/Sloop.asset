@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Sloop
+  m_EditorClassIdentifier: 
+  _textColorID: '#A4F4FF'
+  _characterName: Sloop
+  _faceSprite: {fileID: 21300000, guid: 4774aa58169aa624cb2e34dfe67df973, type: 3}
+  _isPNJClassic: 1
+  _seumHasInfluence: 1
+  _stadePNJ: 1
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 10
+  _seuilSeumExplo: 12
+  _itemLike: []
+  _itemDislike: []
+  _receiveUniqueItem: []
+  _voiceSound:
+  - {fileID: 11400000, guid: b4055be6bb734d54e9d54ba53222617c, type: 2}
+  - {fileID: 11400000, guid: 0d00b2b3f36190b4cbc5427f385478cd, type: 2}
+  - {fileID: 11400000, guid: 3fdb226506aebba41955267477c687c6, type: 2}
+  - {fileID: 11400000, guid: f017169b3a376fd448f440fb7653577c, type: 2}
+  - {fileID: 11400000, guid: 88acf66f36102be4493d674820a1ba9e, type: 2}
+  - {fileID: 11400000, guid: 344994b5af3ff154bb48ad351b21b8da, type: 2}
+  - {fileID: 11400000, guid: feab191bd1da8e84f800faaeb1588f4a, type: 2}
+  - {fileID: 11400000, guid: 0eddc03f4482db64c94bca55bc8e271e, type: 2}
+  - {fileID: 11400000, guid: 2dd9c985b35cb9c4ca63da9a5a2622d3, type: 2}
+  - {fileID: 11400000, guid: 16ffac44c23bde14ba47d8a27c5f2a3d, type: 2}
+  - {fileID: 11400000, guid: 3393aa0effdfb9c48b9b45d319b646df, type: 2}
+  _speedOfLettersSound: -0.1
+  _minimumPitchOfLettersSound: 1
+  _maximumPitchOfLettersSound: 1

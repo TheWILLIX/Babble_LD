@@ -1,0 +1,354 @@
+﻿title: ZoneSombre_First
+position: 0,0.5
+---
+Bulle : C'est déjà la nuit ? #line:054851d 
+Astère : Oui Bulle, au dodo le petit.  #line:0c1b965 
+Astère : ... #line:0568178 
+<<wait 0.5>>
+Astère : Non Bulle, c'est une zone sombre. #line:0299d45 
+<<BulleAnim Sad>>
+Bulle : Ça fait peur... #line:048fc93 
+<<BulleAnim Idle>>
+Astère : Essaye d'obtenir de la lumière pour mieux voir. #line:0d287aa 
+===
+title: ZoneSombre_Peur
+position: 0,0.5
+---
+Bulle : <size=50%>Astère...ça sert à rien d'aller par là...</size> #line:049c904 
+Bulle : <size=50%>On va rien voir...</size> #line:015ef31 
+Astère : Ouais, ouais, c'est ça. C'est pas du tout parce que t'as peur du noir. #line:0fa0d14 
+===
+title: ZoneSombre_DemiTour
+position: 0,0.5
+---
+<<if dice(3) == 1>>
+Astère : Bah alors Bulle, t'as peur du noir ? #line:074175c 
+<<BulleAnim Sad>>
+Bulle : <size=50%>Non...c'est juste qu'un vrai aventurier emprunterait un autre chemin...</size> #line:0fb9b94 
+<<BulleAnim Idle>>
+<<elseif dice(2) == 2>>
+Bulle : <size=50%>Ah, je me suis trompé de chemin...</size> #line:03ad241 
+Astère : Oh vraiment pas de chance ça, on va pas passer dans cette zone sombre... #line:06a526b 
+<<endif>>
+===
+title: ZonePolluée_First
+position: 0,0.5
+---
+Bulle : C'est quoi ces trucs violets ? #line:0d3a4b2 
+Astère : C'est la résultante de la société de consommation humaine mêlant à la fois leurs déchets et leur irresponsabilité. #line:097d440 
+Astère : <size=700%>Oh, vous là !</size> #line:0e23e1d 
+Astère : Arrêtez de jeter vos déchets sur nous. #line:05188f6 
+Bulle : Quoi ? #line:00ba6a7 
+Astère : C'est de la pollution. Respire pas c'est dangereux. #line:0353f88 
+===
+title: ZonePolluée_DemiTour
+position: 0,0.5
+---
+<<if $visitedUrfeIntro is true>> 
+Bulle : Ça sent comme <color="purple">Urfe</color> ici, c'est mort je respire pas la même eau que lui. #line:0c6d727 
+<<elseif dice(2) == 1>>
+Bulle : Beurk, ça pue le merlu. #line:03ed996 
+<<elseif dice(2) == 2>>
+Bulle : Pouah, ça sent le merlan. #line:084e8f8 
+<<endif>>
+===
+title: ZonePolluée_Peur
+position: 0,0.5
+---
+Bulle : Le plastique, c'est pas fantastique. Je touche pas ces trucs. #line:004db6f 
+===
+title: Wall_Touched
+position: 0,0.5
+---
+<<if dice(3) == 1>>
+Astère : Bulle, t'as bu trop d'eau de mer ou quoi ? #line:0c6a0e1 
+<<elseif dice(3) == 2>>
+Astère : Tu veux encore faire le mur Bulle ? #line:0ec0dd3 
+<<else>>
+Astère : Heureusement que ta bulle est solide, avec tous les murs que tu te prends... #line:00a119c 
+<<endif>>
+===
+title: Wall_Touched2
+position: 0,0.5
+---
+Astère : Si tu jouais avec des nageoires je comprendrais ton manque de dexterité, mais là... #line:0311e48 
+===
+title: UberFish_Intro
+position: 0,0.5
+---
+Ver : Pourquoi tu viens me déranger pendant ma sieste là ? #line:0247808 
+Bulle : Euh, je voulais juste voir ce que c'était ce truc. #line:09b1d43 
+Ver : Ouais bah "ce truc" c'est Uberfish. #line:01c729e 
+Ver : Si tu veux aller vite bah parle-moi et j'appelle un chauffeur mon gars. #line:0619aa6 
+Ver : Bon tu veux aller où ? J'ai d'autres poisson-chat à fouetter. #line:06f3e4a 
+->Abysses #line:09ae61e 
+    Ver : Billy arrive.  #line:0ad911a 
+    Ver : Un conseil dans les <color=\#48BC0D>abysses</color> : mange pas trop de Raie-men, ça m'avait mis trop mal t'imagine même pas mon gars. #line:06fe4aa 
+->Grotte #line:0869eb8 
+    Ver : Jason arrive, ce mec c'est le meilleur.  #line:078620a 
+    Ver : Dans la <color=\#48BC0D>grotte</color> prend un GPS mon gars, mon pote Camille s'est perdu, je l'ai jamais revu. RIP. #line:05ecf4b 
+->Cimetière #line:050a464 
+    Ver : Beverly arrive.  #line:04f6290 
+    Ver : Dans le <color=\#48BC0D>cimetière</color>, prend une doudoune mon gars, si tu veux pas être trempé jusqu'aux os. #line:0d80f55 
+->Forêt #line:066990f 
+    Ver : Kimberley arrive.  #line:0826694 
+    Ver : Dans la <color=\#48BC0D>forêt</color> attention aux jeunes délinquants, c'est les fils de la sœur du père de mon oncle, ils ont aucune éducation. #line:0341dfd 
+===
+title: Uberfish_End
+position: 0,0.5
+---
+Ver : Merci d'avoir utilisé UberFish, n'oubliez pas de noter votre course ! #line:0706594 
+->Bulle : 0 étoiles <<if $seum > 20 >> #line:1f572cd 
+    Chauffeur : J'aimerais bien vous voir conduire vous !!! #line:0896b0c 
+->Bulle : 1 étoile #line:0cdf562 
+    Chauffeur : Franchement vous pourriez mettre plus, c'est pas très cool. #line:0ea1eae 
+->Bulle : 2 étoiles #line:069d2e3 
+    Chauffeur : Ni bon, ni mauvais, comme je l'ai toujours été...Je suis un être moyen merci de me le rappeler... #line:0894aa4 
+->Bulle : 3 étoiles #line:033f8fd 
+    Chauffeur : Et une et deux et trois étoiles !!!! Merci monsieuuuuuur ! #line:005a6bc 
+->Bulle : 10 000 étoiles <<if $seum < 20 >> #line:2f172cd 
+    Chauffeur : Non, c'est à vous que je mets 10 000 étoiles, vous êtes le meilleur client de tout l'océan ! #line:0dcd109 
+===
+title: Trigger_Cimetiere
+position: 0,0.5
+---
+Bulle : C'est tout vide ici. #line:0d72fb6 
+Astère : C'est normal, c'est un cimetière.  #line:05bca48 
+Astère : En général les morts font pas trop de bruit. #line:0317d58 
+Bulle : Les morts ? #line:06c4bdb 
+Astère : Tu vois ce grand squelette ?  #line:0cb463b 
+Astère : Avant c'était une baleine.  #line:0cf9c24 
+Astère : Elle s'est échouée ici pour terminer sa vie.  #line:0bcddf5 
+Astère : Elles s'éteignent loin de leurs familles pour ne pas être un poids pour elles. #line:08fe096 
+<<BulleAnim Sad>>
+Bulle : C'est trop triste. Elle doivent leur manquer. #line:005253c 
+<<BulleAnim Idle>>
+Astère : Toi aussi t'es loin de ta famille je te signale. #line:0addf4f 
+Bulle : Mais moi c'est pas pareil, je vais revenir les voir un jour. #line:0b6150c 
+Astère : Ah bon ? C'était pas ce que tu disais en partant. #line:0e82e5e 
+Bulle : Mais je veux pas qu'ils soient tristes à cause de moi. #line:0a6b0e7 
+Astère : Attention à pas être trop triste, sinon tu vas te noyer dans ta bulle haha. #line:05f26f6 
+===
+title: Trigger_Falaise
+position: 0,0.5
+---
+Bulle : Papa me dirait de faire attention à ne pas tomber. #line:0c68641 
+Astère : Et mamie de sauter. #line:08bb6e9 
+Bulle : Et Gumpy de frapper toutes ces crevettes qui gâchent la vue !!!! #line:0b43388 
+Astère : Hahaha, c'est tous des fous. #line:0f1f060 
+Bulle : Est-ce que nous aussi on est fous ? #line:074d566 
+Astère : Bah ouais, on a quand même traversé l'océan tous seuls alors qu'on connaissait rien en laissant maman et papa derrière ! #line:0472fdc 
+<<BulleAnim Sad>>
+Bulle : J'espère qu'ils se sont pas trop inquiétés... #line:092db8c 
+<<BulleAnim Idle>>
+Bulle : Mais c'était cool non ? #line:07979a1 
+Astère : C'était pas si mal. T'as envie de continuer ? #line:0a50d98 
+Bulle : J'aimerais bien, il doit rester tellement de choses à voir. #line:0b2d8f3 
+Astère : C'est quoi notre prochaine étape alors ? #line:092b929 
+Bulle : Je pense qu'on va aller faire un tour chez maman et papa. #line:0ce7401 
+Astère : Est-ce la fin de l'aventure ou le début d'une nouvelle ? #line:0fb7deb 
+Bulle : Je sais pas, mais comme dirait mamie : #line:036e60d 
+Bulle : <i>"Continue ton chemin et tu verras de tes propres yeux !"</i> #line:0dc8233 
+Bulle : Alors, on y va ? #line:0baa524 
+===
+title: Fantomas_Intro_EPAVE
+position: 0,0.5
+---
+<<if visited("Fantomas_Intro_EPAVE") is true>>
+<<jump Trigger_Fantome2>>
+<<endif>>
+Fantomas : Kikikikiki, tu as osé pénétrer dans l'épave maudite.  #line:0cb02a9 
+Bulle : Euh ? J'suis censé avoir peur là ? #line:0ee2382 
+Fantomas : Bah oui ! Je suis un fantôme ! #line:09cffb0 
+Bulle : BOUH !!!! #line:0b0f136 
+Fantomas : AHHHHHHHHHHHH. #line:0986011 
+===
+title: Trigger_Fantome2
+position: 0,0.5
+---
+<<if visited("Trigger_Fantome2") is true>>
+<<jump Trigger_Fantome3>>
+<<endif>>
+Fantomas : Non laisse-moi ! #line:04c3d95 
+Bulle : Désolé de t'avoir fait peur... #line:017e54c 
+Fantomas : Je comprends pas, c'est toi qui devrait avoir peur de moi. #line:0ea528e 
+Bulle : J'suis plus un bébé, j'ai pas peur des trucs qui existent pas !! #line:0be5855 
+Fantomas : Mais...j'existe... #line:081e9de 
+===
+title: Trigger_Fantome3
+position: 0,0.5
+---
+Fantomas : J'te parle plus.  #line:04c9cce 
+===
+title: Marin_Intro_EPAVE
+position: 0,0.5
+---
+<<if dice(4) == 1>>
+Marin : Vous avez vu mon fils ? #line:0216006 
+<<elseif dice(4) == 2>>
+Marin : Quand te reverrai-je, mon fils merveilleux ? #line:0c77d69 
+<<elseif dice(4) == 3>>
+Marin : Où t'es Némo ? Où t'es ?  #line:0ef5df5 
+<<else>>
+Marin : NÉMO ??? NÉMO !!! #line:01d6816 
+<<endif>>
+===
+title: Marin_Intro_CIMETIERE
+position: 0,0.5
+---
+<<if dice(3) == 1>>
+Marin : Dory, t'as pas vu Némo ? #line:06f89dd 
+<<elseif dice(3) == 2>>
+Marin : Mais où est le gang des requins ??? #line:09dfd50 
+<<endif>>
+===
+title: Kristine_Intro_CIMETIERE
+position: 0,0.5
+---
+<<if $infoAbysses is true>>
+<<jump Kristine_Dialogue>>
+<<endif>>
+Kristine : Vous ne pourrez pas aller plus loin mes beaux loulous... #line:021ef70 
+Bulle : Pourquoi ?  #line:04f70ea 
+Kristine : Les abysses sont fermées pour dégâts des eaux... #line:07b6127 
+Kristine : Tous mes rendez-vous galants sont annulés...  #line:072af03 
+<<set $infoAbysses to true>>
+===
+title: Kristine_Dialogue
+position: 0,0.5
+---
+<<if visited ("Kristine_Dialogue")>>
+<<jump Kristine_Salute>>
+<<endif>>
+Kristine : Salut demie-portion... #line:099e855 
+Kristine : En temps normal j'aurais dragué cette belle femme sur ton front. #line:0429cb4 
+Kristine : Mais là je suis tellement triste que les abysses soient fermées... #line:0f0a879 
+Kristine : Tous mes rendez-vous galants sont annulés...  #line:0bc6e2b 
+Kristine : MARIE-CHARLOTTE, AUDREY, ANGELIQUE, JE REVIENDRAI !!!! #line:0e3580a 
+===
+title: Kristine_Salute
+position: 0,0.5
+---
+<<if dice(3) == 1>>   
+Kristine : J'ai rencontré mes dates sur Adopte un poisson, c'est un super site. #line:0aa0261 
+<<elseif dice(3) == 2>>   
+Kristine : Sinon...comment elle s'appelle la belle femme sur ton front ? #line:0e4a8cb 
+<<else>>
+Kristine : Tu savais que le prénom Kristine signifiait messie ? #line:049be7b 
+Kristine : Je suis venu sauver tous les pauvres cœurs en manque d'amour.  #line:0474430 
+<<endif>>
+===
+title: Gertrude_Intro_CIMETIERE
+position: 0,0.5
+---
+<<if $infoAbysses is true>>
+<<jump Gertrude_Dialogue>>
+<<endif>>
+Gertrude : HALTE ! Les abysses sont fermées ! #line:04123ec 
+Bulle : Il se passe quoi ? #line:07367b4 
+Gertrude : Dégâts des eaux.  #line:088fe8a 
+Gertrude : Hop, hop, hop, on bouge d'ici, c'est dangeureux. #line:0390ecd 
+<<set $infoAbysses to true>>
+===
+title: Gertrude_Dialogue
+position: 0,0.5
+---
+<<if visited ("Gertrude_Dialogue")>>
+<<jump Gertrude_Salute>>
+<<endif>>
+Gertrude : Petit enfant, tu devrais vraiment pas trainer ici, c'est dangeureux.  #line:00467ad 
+Bulle : J'ai pas peur moi !  #line:043ba93 
+Gertrude : T'as pas peur du noir ? #line:0db1fdc 
+Bulle : Non. #line:083aa06 
+Gertrude : T'as même pas peur des squelettes ? #line:0d44d20 
+Bulle : Bah non. #line:060b9bd 
+Gertrude : Tu m'impressionnes demi-portion... #line:0ffee52 
+===
+title: Gertrude_Salute
+position: 0,0.5
+---
+<<if dice(2) == 1>>   
+Gertrude : C'est pas facile tous les jours d'être cheffe tu sais... #line:01779ce 
+Astère : <i> Ah ça je le sais bien...</i> #line:03c5f54 
+<<else>> 
+Gertrude : Entre nous, on sait que les abysses sont pas vraiment fermées pour dégâts des eaux... #line:07ce48a 
+Bulle : Ah bon ? #line:0476481 
+Astère : <i> Chuuuuut !!!! </i> #line:0750796 
+<<endif>>
+===
+title: Ursule_Intro_CIMETIERE
+position: 0,0.5
+---
+<<if $infoAbysses is true>>
+<<jump Ursule_Dialogue>>
+<<endif>>
+Ursule : Tu comprends pourquoi on peut plus avancer toi ? #line:045be05 
+Bulle : Euh non... #line:005efa1 
+Ursule : Kristine et Gertrude parlent de dégâts des os... #line:018cf0f 
+Ursule : Tu penses que c'est à cause de ce gros squelette ? #line:03f7449 
+<<set $infoAbysses to true>>
+===
+title: Ursule_Dialogue
+position: 0,0.5
+---
+<<if visited ("Ursule_Dialogue")>>
+<<jump Ursule_Salute>>
+<<endif>>
+Ursule : Dégâts des os... #line:008d297 
+Ursule : Je comprends vraiment pas comment c'est possible. #line:012f315 
+Bulle : C'est pas plutôt dégâts des eaux ? #line:09c9ce9 
+Ursule : Mais l'eau elle est gentille, on vit dedans. #line:08eb075 
+Astère : <i> Bulle mon QI est en chute libre, on peut partir ?</i> #line:0be6f44 
+===
+title: Ursule_Salute
+position: 0,0.5
+---
+<<if dice(3) == 1>>   
+Ursule : T'as parlé avec Kristine et Gertrude ?  #line:0311a53 
+Ursule : Elles sont vraiment trop gentilles. #line:0ab86cd 
+<<elseif dice(3) == 2>>
+Ursule : Quand je mange du thon, je suis thonifiée !! #line:0ac5736 
+Bulle : Tu manges des poissons ??? #line:0f4830b 
+<<else>> 
+Ursule : T'as déjà mangé de l'humain ?  #line:0b50806 
+Ursule : Dès que j'en mange, je suis requinquée. #line:0a23b33 
+<<endif>>
+===
+title: Trigger_Coffre
+position: -4,-133
+---
+Astère: Ah bah bravo ! Super original la musique... #line:0333c81 
+===
+title: Trigger_Marline
+position: -4,-133
+---
+Astère: Bah alors Bulle, tu vas pas dire bonjour à mamie ? #line:0a09413 
+===
+title: Trigger_Meduse_1
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: WESH !?! NON MAIS TU ME SAUTE PAS DESSUS GRAND FOU VA ! #line:0771425 
+<<SetSpeed 30>>
+===
+title: Trigger_Meduse_2
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: T'ES SOURD OU QUOI ?!? #line:040c5f1 
+<<SetSpeed 30>>
+===
+title: Trigger_Meduse_3
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: LA VIE D'MOI JVAIS TE GOUM TOI ! #line:0d9351a 
+<<SetSpeed 30>>
+===
+title: Trigger_Meduse_4
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: C'EST BON LÀ ! TU M'A SAOÛLÉ ! #line:098617c 
+<<SetSpeed 30>>
+===

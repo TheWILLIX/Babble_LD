@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87744370b371c984b82958ff44ebe188, type: 3}
+  m_Name: S_PoulpeQuiFuit
+  m_EditorClassIdentifier: 
+  _key: S_PoulpeQuiFuit
+  _clip: {fileID: 8300000, guid: 7080fa71b832b954d808790a1254320f, type: 3}
+  _volume: 1
+  _pitch: 1
+  _loop: 0
+  _uniqueSound: 0
+  _pitchVariation: 0
+  _pitchMinimum: 0.9
+  _pitchMaximum: 1.1
+  _multipleSound: 1
+  _additionalClips:
+  - {fileID: 8300000, guid: 0126ff7552d9a074297ae945db56de95, type: 3}
+  - {fileID: 8300000, guid: d0f6944a29320974fb2beaa76d7ef421, type: 3}

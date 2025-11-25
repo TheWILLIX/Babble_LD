@@ -1,0 +1,643 @@
+title: Jeunes_Intro_EPAVE
+position: -283,-22
+---
+<<if $skateTaken == true>>
+<<jump Jeunes_Quete_Before>>
+<<endif>>
+<<if $visitedJeunesIntro>>
+<<jump Jeunes_Salute>>
+<<endif>>
+<<AbletteAnim "Oklm">>
+Ablette : Yo whaddup, doh? New to da neighbourhood?
+<<AbletteAnim "Idle">>
+Ablette: Whatta ya doin'? 
+Bulle: <size=40%>I'm visiting the area... It looks great...</size>
+Ablette: It's a pit in here! Pillow Jellyfish, Marine Currents...
+<<AbletteAnim "Oklm">>
+Ablette: Everthing to chill and skate-bulle.
+<<AbletteAnim "Idle">>
+Bulle: What's a Marine Current?
+<<BulleAnim Sad>>
+<<GumpyAnim "Laugh">>
+Gumpy: Woooah, dat <color="green">small cat</color> don't know no Marine Current!
+<<BulleAnim Idle>>
+<<GumpyAnim "Idle">>
+Ablette: Dammmmmn, I forgot to introduce da crew. We're
+<<GumpyAnim "Clash">>  
+<<AbletteAnim "Clash">>  
+<<DumboAnim "Clash">>
+Jeunes: <size=600%><b>L'ECHECOUADE DE LA MOOOOOORT !</b><size=600%> 
+<<GumpyAnim "Clash">>
+Ablette: Da one dat just clashed you is <color="purple">Gumpy</color>, my bodyguard.
+<<GumpyAnim "Idle">>
+Ablette: The chad at my right is<color="purple">Dumbo</color>, my bro.
+<<DumboAnim "Idle">>
+<<GumpyAnim "Idle">>
+<<AbletteAnim "Idle">>
+<<Dumbo true>>
+<<DumboAnim "Happy">>
+Dumbo: [nomarkup] hs[ [/nomarkup] #line:057b8db 
+<<DumboAnim "Idle">>
+<<Dumbo false>>
+<<BulleAnim Star>>
+Bulle: Incredible!!!!
+<<BulleAnim Idle>>
+<<AbletteAnim "Angry">>
+Ablette: Basically we're skateboarders but dat old fart <color="purple">Napoleon</color> nicked our skates. 
+<<AbletteAnim "Idle">>
+Bulle: Who's <color="purple">Napoleon</color>?
+<<GumpyAnim "Pissed">>  
+Gumpy: An old man that squats in da wreck. 
+Gumpy: Doesn't he have something else to do with his life like
+Gumpy: ...pirates things...
+<<GumpyAnim "Idle">>
+Ablette: Bro, if you wanna visit the area like a true chad, I can give you a recipe to flex in the Marine Currents.
+<<BulleAnim Happy>>
+Bulle: Yeah!!!!
+Ablette: You bring back our skates, I give it to you. Good luck dude.
+<<BulleAnim Idle>>
+<<set $visitedJeunesIntro to true>>
+<<jump Jeunes_Option>>
+===
+title: Jeunes_Story_EPAVE_1
+position: -283,-22
+---
+<<if $visitedJeunesStory1_EPA>>
+<<jump Jeunes_NeedNewInteraction>>
+<<endif>>
+Ablette: --- #line:074b161 
+Ablette: Chillll dude, don't be scared, come on.  #line:04d1fbb 
+<<AbletteAnim "Proud">>
+Ablette: We're the most feared gang but that doesn't mean we're evil!  #line:079ccd4 
+Ablette: Okay, <color="purple">Gumpy</color> has a badass build, but she <size=150%>only</size=150%> hit five people. #line:005aaa8
+<<AbletteAnim "Proud">>
+<<GumpyAnim "Laugh">>
+Gumpy: And each time they still had enough energy to take a Marine Current and leave here... #line:0cdfdb4 
+<<GumpyAnim "Idle">>
+<<BulleAnim Star>>
+Bulle: And t<color="purple">Dumbo</color>? Why doesn't he talk? #line:0db237b
+<<BulleAnim Idle>>
+Ablette: <color="purple">Dumbo</color> ? He only speaks in our mega-secret language. #line:07770aa
+Ablette: And he don't like no strangers.
+<<AbletteAnim "Oklm">>
+Ablette: But my hommies are his hommies! #line:09a255d 
+<<AbletteAnim "Idle">>
+<<DumboAnim "Dumb">>
+<<Dumbo true>>
+Dumbo: gl+e » #line:0336d57 
+<<Dumbo false>>
+<<DumboAnim "Idle">>
+Ablette: No <color="purple">Dumbo</color>, no way he'd do that, there's no reason. Did you see his face, lol?  #line:07cd518 
+Ablette: Remember the first time we saw <color="purple">Gumpy</color>, it was the same. #line:0b8b9e8 
+Bulle: What do you mean it was the same? What are you talking about? #line:0c7b5c2 
+Ablette: One day, we were chilling and we heard rap. A real banger. Spitting some straight fire. #line:0f115f8 
+<<AbletteAnim "Clash">>
+Ablette: So we looked for the source. #line:00202fd 
+<<AbletteAnim "Idle">> 
+Ablette: But when we found her, she left very quickly, we didn't understand anything. #line:004417e
+<<GumpyAnim "Angry">>
+Gumpy: They didn't know skate-bulle these noobs. #line:0ca54e8 
+<<GumpyAnim "Idle">>
+Ablette: Except she was running so fast that she fell like a loser and broke her arm. #line:0bc7158 
+<<GumpyAnim "Pissed">>
+Gumpy: At the same time you were sus, chasing me with your weird clothes.  #line:0dae225 
+Gumpy: I wasn't in the mood to talk. #line:0971158 
+<<GumpyAnim "Idle">>
+<<set $visitedJeunesStory1_EPA to true>>
+<<jump Jeunes_Option>>
+===
+title: Jeunes_Story_EPAVE_0
+position: -288,-331
+---
+<<if $visitedJeunesStory0_EPA>>
+<<jump Jeunes_NeedNewInteraction>>
+<<endif>>
+Bulle: Why do you all live here alone?  #line:04fbbea 
+Bulle: You don't have parents? #line:0fc20c7 
+<<AbletteAnim "Proud">>
+Ablette: No dude. #line:0e726af 
+<<AbletteAnim "Idle">>
+<<BulleAnim Sad>>
+Bulle: Pffff, the luck...I wish I was like you. Mine are pissing me off. #line:08b57d4 
+<<BulleAnim Idle>>
+Ablette: Never seen ours, we don't really know what they look like. #line:019b59c 
+<<BulleAnim Star>>
+Bulle: It's so nice, like you can do anything you want? #line:02ef39e 
+<<BulleAnim Idle>>
+<<AbletteAnim "Proud">>
+Ablette: What did you think dude, you don't become a gang by living with your parents!  #line:0f2de3a 
+<<AbletteAnim "Idle">>
+Ablette: We did it all by ourselves!  #line:0913460 
+<<GumpyAnim "Clash">>
+Ablette: That's the real streeeeeets.#line:0678485 
+<<GumpyAnim "Clash">>
+Bulle: But how do you do it when you're sick?  #line:0c69749 
+Bulle: It's thanks to mom that I get better every time. #line:0e22516 
+<<BulleAnim Star>>
+Ablette: We take care of ourselves. #line:08bfc91 
+<<AbletteAnim "Proud">>
+Ablette: Anyway we're so <b><size=130%>powerful</size=130%></b> that diseases are afraid of us. #line:08787d5 
+<<AbletteAnim "Idle">>
+<<DumboAnim "Dumb">>
+<<Dumbo true>>
+Dumbo: +QT& #line:0a6d28d 
+<<Dumbo false>>
+<<DumboAnim "Idle">>
+Bulle: And when you're... #line:08b8350
+<<GumpyAnim "Pissed">>
+Gumpy: Dude, you can't actually live without your parents? #line:02e7135 
+<<GumpyAnim "Idle">>
+<<BulleAnim Idle>>
+->Bulle: Neither do you! #line:00c5c8e 
+    Bulle: Well, you don't either, look, you live in a lousy old boat. <<if $seum > 20 >> #line:1283fd1 
+    <<GumpyAnim "Angry">>
+    <<BulleAnim Sad>>
+    Gumpy: You're the loser, whadaya think you are? #line:0238f55 
+    <<GumpyAnim "Idle">>
+    <<BulleAnim Idle>>
+->Bulle: Yes I can!!! #line:0d6746a 
+    <<GumpyAnim "Pissed">>
+    Gumpy: Well, stop talking about them 24/7 then. #line:0a39426 
+    <<GumpyAnim "Idle">>
+->Bulle: I miss them... #line:03309c9 
+    Bulle: Sometimes I miss them... #line:0f757d3 
+    <<GumpyAnim "Laugh">>
+    <<BulleAnim Sad>>
+    Gumpy: Ahahah what a baby! #line:0e698f2 
+    <<GumpyAnim "Idle">>
+    <<BulleAnim Idle>>
+<<BulleAnim Angry>>
+Bulle: You're jealous? #line:06c0ced 
+<<GumpyAnim "Angry">>
+Gumpy: Bullshit! Parents sucks, you said it! #line:085b803 
+<<GumpyAnim "Idle">>
+Bulle: It sucks when they are boring! But sometimes they're cool too. #line:052663e
+<<AbletteAnim "Angry">>
+Ablette: <size=700%>OH!!!</size=700%>  #line:029658f 
+Ablette: Calm down!!!!  #line:0bbb108 
+<<AbletteAnim "Idle">>
+<<BulleAnim Idle>>
+Ablette: Today we're alone whether we want to be or not, that's why we're in this gang.  #line:01a38b5 
+<<AbletteAnim "Oklm">>
+Ablette: We're going to <cspace=-0.1em>stick</cspace=-0.1em> our fins together and live our best lives! #line:04625aa 
+<<AbletteAnim "Idle">>
+<<set $visitedJeunesStory0_EPA to true>>
+<<jump Jeunes_Option>>
+===
+title: Jeunes_Quete_Bad
+position: -281,275
+---
+<<BulleAnim Sad>>
+Ablette: What's that thing? You've really never seen a skate-bulle before, dude.  #line:0f90451 
+Ablette: You need to go to <color="purple">Napoleon</color> to get 'em. #line:0d2e25f 
+Gumpy: Hurry up and go before it's me who goes there! #line:0052b5c 
+<<BulleAnim Idle>>
+===
+title: Jeunes_Quete_Before
+position: -281,275
+---
+<<if visited("Jeunes_Quete_Before") is true>>
+<<jump Jeunes_Option_3>>
+<<endif>>
+<<AbletteAnim "Proud">>
+Ablette : Yo whaddup, doh?
+<<AbletteAnim "Idle">>
+<<GumpyAnim "Angry">>
+Gumpy: It's our skate-bulles in his ugly bag there??
+<<GumpyAnim "Idle">>
+<<DumboAnim "Happy">>
+<<Dumbo true>>
+Dumbo: sHls 
+<<Dumbo false>>
+<<DumboAnim "Idle">>
+Ablette: Man, don't know you but I respect you sooo much.
+Bulle: These are yours?
+<<GumpyAnim "Pissed">>
+Gumpy: Yeah, you better give them to use before I punch you.
+<<GumpyAnim "Idle">>
+<<AbletteAnim "Oklm">>
+Ablette: Gumpy, calm down. We can give you something for it if you want. 
+<<AbletteAnim "Idle">>
+<<BulleAnim Star>>
+Bulle: Cooolll! 
+<<BulleAnim Sad>>
+<<ReceiveRecipe REC_ChapeauHelice1>>
+<<BulleAnim Idle>>
+Ablette: Here, take this. We're <color=green>not very proficient</color> at making stuff so maybe you can do something with that <color=green>agreable recipe</green>.
+<<BulleAnim Happy>>
+Bulle : Thanks!
+<<BulleAnim Idle>>
+===
+title: Jeunes_Quete_Good
+position: -264,207
+---
+<<if visited("Jeunes_Quete_Good") is true>>
+<<jump Jeunes_Aurevoir>>
+<<endif>>
+<<AbletteAnim "Proud">>
+Ablette: Dude, did you succeed? Man, what are you?  #line:0184664 
+<<BulleAnim Happy>>
+<<AbletteAnim "Proud">>
+Ablett: Welcome to our gang!! #line:0fd302a 
+<<AbletteAnim "Idle">>
+Bulle: Yeah I know I'm too <b>good</b>! #line:0d5d11d 
+<<BulleAnim Idle>>
+<<GumpyAnim "Angry">>
+Gumpy: Don't get too excited either man, you're nobody in our gang!  #line:0ae1c31 
+Gumpy: I'm the official bodyguard of<color="purple">Ablette</color>. #line:0fe8b3e
+<<GumpyAnim "Idle">>
+<<Dumbo true>> 
+Dumbo: s+g> #line:06fba2c 
+<<Dumbo false>>
+<<AbletteAnim "Laugh">>
+Ablette: Dumbo don't say that lmao, well thanks Bulle.  #line:0873332 
+Ablette: Here, take this. We're <color=green>not very proficient</color> at making stuff so maybe you can do something with that <color=green>agreable recipe</green>.
+<<AbletteAnim "Idle">>
+<<BulleAnim Star>>
+Bulle : Thanks friends! #line:0bc8061 
+<<BulleAnim Idle>>
+<<ReceiveRecipe REC_ChapeauHelice1>>
+===
+title: Jeunes_Map_True
+position: -281,275
+---
+Ablette: Dude, did you get a map to find our skates??? #line:06dd8c5 
+<<BulleAnim Happy>>
+<<GumpyAnim "Laugh">>
+Gumpy: You're good buddy. #line:0fc1e15 
+<<GumpyAnim "Idle">>
+<<Dumbo true>>
+Dumbo: sHls #line:065e306 
+<<Dumbo false>>
+Ablette: Good luck finding them dude. #line:0e03744 
+<<BulleAnim Idle>>
+===
+title: Jeunes_Map_False
+position: -281,275
+---
+<<if visited("Jeunes_Map_False") is true>>
+<<jump Jeunes_Option_2>>
+<<endif>>
+<<AbletteAnim "Laugh">>
+Ablette: You still didn't talk to the old fart?  #line:0f7bf02 
+<<AbletteAnim "Idle">>
+<<GumpyAnim "Angry">>
+Gumpy: Hurry up, we aint got all year.  #line:03e7cd5 
+<<GumpyAnim "Idle">>
+===
+title: Jeunes_Skate_False
+position: -281,275
+---
+<<if visited("Jeunes_Skate_False") is true>>
+<<jump Jeunes_Option_2>>
+<<endif>>
+<<AbletteAnim "Laugh">>
+Ablette: You still didn't find our skates, lil buddy?  
+<<AbletteAnim "Idle">>
+<<GumpyAnim "Angry">>
+Gumpy: Hurry up, we aint got all year. 
+<<GumpyAnim "Idle">>
+===
+title: Jeunes_SeumExplo
+position: -277,138
+---
+<<BulleAnim Angry>>
+Ablette : Bulle you serious? We're not victims, we aint gonna be treated like this. #line:0a22ca4
+Gumpy : I'm gonna murk him, <color="purple">Ablette</color>, let me make him. #line:0301bba 
+<<Dumbo true>>
+Dumbo : ntÜrù° #line:0fd5240 
+<<Dumbo false>>
+Ablette : <size=700%>Calm down!!!</size=700%> #line:0dd6e1b 
+Ablette : Remember what we said? #line:052f1cc 
+Ablette : We fix everything with rap, not crap. #line:036ed6c 
+Gumpy : You're so right, I'm gonna write a freestyle to spit my hate. #line:0b1c1d5 
+<<Dumbo true>> 
+Dumbo : ùùùù #line:0a2d579 
+<<Dumbo false>>
+Ablette : Look at what I have to do because of you. #line:076fb90 
+Bulle: It's you who get angry for no reason! #line:010021f 
+Astère: <i>The nerve of that boy!</i> #line:06221fa 
+Ablette: You talk shit even once about a member of my gang and you're <b>BANNED</b>  !!  #line:0c8d82d 
+Ablette: Leave us get a breath of fresh water, here. #line:07c7599 
+===
+title: Jeunes_SeumExcuse
+position: -283,-98
+---
+<<if visited("Jeunes_SeumExcuse") is true>>
+<<jump Jeunes_Aurevoir>>
+<<endif>>
+<<BulleAnim Sad>>
+Bulle : <size=60%>Hey friends...</size=60%> #line:0517e36 
+Gumpy : What he doing here, him? #line:0be5293 
+<<Dumbo true>>
+Dumbo : z!]- #line:0044448 
+<<Dumbo false>>
+Ablette : Let him talk, maybe he calmed down a bit. #line:0d2aec4 
+Bulle : <size=60%>Yeah... Sorry I was too angry... I don't have the habit of being with people.</size=60%> #line:0a126dd 
+Ablette : You need to learn the code of the street if you wanna be part of it.  #line:0d1510a 
+Ablette : We're not your 'rents here. #line:0daa0d3 
+Gumpy : You respect us, we respect you, it's easy to understand, right? #line:017fbc8 
+<<BulleAnim Idle>>
+Bulle : It's crystal clear water. I'm sorry, I like to be with you all. #line:0ab74ab 
+<<BulleAnim Happy>>
+Ablette : In the name of the Echecouade, I forgive you lil buddy. #line:048872f 
+<<BulleAnim Idle>>
+===
+title: Jeunes_SeumSalute
+position: -284,-165
+---
+Ablette : Don't talk to me. #line:0fdc5d9 
+<<BulleAnim Angry>>
+Bulle : YOU don't talk to me. #line:0ce0704 
+Ablette : I told you not to talk to me. Come back when you're not a rager. #line:059ff4e 
+Bulle : You're the one talking to me! #line:074f73e 
+<<BulleAnim Idle>>
+===
+title: Jeunes_Salute
+position: -288,-212
+---
+    <<if dice(6) == 1>>
+    <<AbletteAnim "Oklm">>
+    Ablette : Wassup Bulle? #line:0f6c728 
+    <<AbletteAnim "Idle">>
+    <<elseif dice(6) == 2>>
+    <<Dumbo true>> 
+    <<DumboAnim "Happy">>
+    Dumbo : ghg #line:0a3cf8b 
+    <<Dumbo false>>
+    <<DumboAnim "Idle">>
+    <<elseif dice(6) == 3>>
+    <<AbletteAnim "Clash">>
+    Ablette : Heyooooo dude! #line:0458c5d 
+    <<AbletteAnim "Idle">>
+    <<elseif dice(6) == 4>>
+    <<GumpyAnim "Pissed">>
+    Gumpy : What do you want man? You want me to blow you up like a bubble? #line:0d6ab86 
+    <<GumpyAnim "Idle">>
+    <<elseif dice(6) == 5>>
+    Ablette : See that time your dad was not a loser, but a mega-stylish double agent spy? #line:080fe09 
+    Bulle : No? #line:040d248 
+    <<AbletteAnim "Laugh">>
+    Ablette : Well, neither do I, dude. I don't even have a father lol. #line:02cbc8a 
+    <<AbletteAnim "Idle">>
+    <<else>>
+    <<GumpyAnim "Angry">>
+    Gumpy : I'm so angry, Imma break something. #line:031a82d 
+    <<GumpyAnim "Idle">>
+    <<endif>>
+    <<jump Jeunes_Option>>
+    <<if $mapGiven == false>>
+    <<endif>>
+===
+title: Jeunes_Aurevoir
+position: -286,-260
+---
+    <<if dice(4) == 1>>
+    <<AbletteAnim "Laugh">>
+    Ablette : Uh dude, I like you and all but you don't have to stick with us all day. #line:0e412e3 
+    <<AbletteAnim "Idle">>
+    <<elseif dice(4) == 2>>
+    <<AbletteAnim "Oklm">>
+    Ablette : Can you leave so we can talk? We're not talking about you, no worries. #line:0d2dc46 
+    <<AbletteAnim "Idle">>
+    <<elseif dice(4) == 3>>
+    <<GumpyAnim "Laugh">>
+    Gumpy : Seeay Bulle, we have to bail, bail. #line:02ec2de 
+    <<GumpyAnim "Idle">>
+    <<else>>
+    <<Dumbo true>>
+    <<DumboAnim "Happy">>
+    Dumbo : grehrf #line:0d27ae6 
+    <<DumboAnim "Idle">>
+    <<Dumbo false>>
+    <<endif>>
+===
+title: Jeunes_Receive
+position: -465,-174
+---
+<<AbletteAnim "Proud">>
+Ablette : Thank you dude, the great chief Ablette is honored by this offering. #line:075ec5a 
+<<AbletteAnim "Idle">>
+===
+title: Jeunes_Receive_Like
+position: -477,81
+---
+    <<if dice(3) == 1>>
+    <<GumpyAnim "Laugh">>
+    Gumpy : Woah Bulle, this is the first time I don't feel like hitting you. That's a sick thing you have going on. #line:0a9a446 
+    <<GumpyAnim "Idle">>
+    <<elseif dice(3) == 2>>
+    <<AbletteAnim "Proud">>
+    Ablette : Hey thanks, it's so nice to have small gifts like that. #line:01426fe 
+    <<AbletteAnim "Idle">>
+    <<else>>
+    <<Dumbo true>> 
+    Dumbo : [nomarkup] h[s [/nomarkup] #line:08d6a94 
+    <<Dumbo false>>
+    <<endif>>
+===
+title: Jeunes_Receive_Dislike
+position: -464,6
+---
+    <<if dice(3) == 1>>
+    <<AbletteAnim "Angry">>
+    Ablette : I know we look like we're in a pinch, but that's no reason to give us something so lame. #line:0d18879 
+    <<AbletteAnim "Idle">>
+    <<elseif dice(3) == 2>>
+    <<GumpyAnim "Angry">>
+    Gumpy : I'm going to hit you, what's this thing? #line:09204a1 
+    <<GumpyAnim "Idle">>
+    <<else>>
+    <<Dumbo true>> 
+    <<DumboAnim "Dumb">>
+    Dumbo : [nomarkup] Ñ?‘]n [/nomarkup] #line:07a773c 
+    <<Dumbo false>>
+    Ablette : ROFL goog thing you don't understand what he's saying...
+    <<DumboAnim "Idle">>
+    <<endif>>
+===
+title: Jeunes_Receive_Grenade
+position: -689,-17
+---
+Ablette: Thannnks! With this we will instantly rush B! #line:038904b 
+<<Close>>
+<<wait 1>>
+<<Open>>
+Ablette: <size=70%>You know the sauce?<size=70%> #line:0688293 
+===
+title: Jeunes_Receive_ChapeauHelice
+position: -475,-73
+---
+Ablette : What!! Is this a <color=\#FFC300>Propeller Hat</color> ?  #line:0d11241 
+Ablette : We knew the recipe to make some but we are too bad in DIY, every time we made beannies.  #line:096e257 
+<<BulleAnim Happy>>
+Ablette : That's why we wear them... Thanks Bulle, you are the best. #line:00a0a31 
+<<BulleAnim Idle>>
+===
+title: Jeunes_Receive_Poulpe
+position: 0,0.5
+---
+<<AbletteAnim "Laugh">>
+Ablette: LMAO it looks like Napoléon with that rotten surimi face!
+<<AbletteAnim "Idle">>
+Gumpy: Not your best punchline...
+===
+title: Jeunes_Receive_Campement
+position: -475,-73
+---
+<<AbletteAnim "Angry">>
+Ablette : You thought we were homeless?
+<<AbletteAnim "Idle">>
+Bulle : Where do you live, then?
+<<GumpyAnim "Angry">>
+Gumpy : It aint obvious? We live here.
+<<GumpyAnim "Idle">>
+Astère : <i>So they are indeed homeless...</i>
+===
+title: Jeunes_Receive_Sushi
+position: 0,0.5
+---
+<<AbletteAnim "Oklm">>
+Ablette : Wow daaammmnnnn! Tonight, Sushi!!!! What are your favorites?
+<<AbletteAnim "Idle">>
+<<GumpyAnim "Clash">>
+Gumpy : It's those made with the tears of our enemies.
+<<GumpyAnim "Clash">>
+<<AbletteAnim "Clash">>
+Ablette : Wooooh Gumpy always clashing someone, aint she.
+<<AbletteAnim "Idle">>
+===
+title: Jeunes_Receive_Fruit
+position: 0,0.5
+---
+<<AbletteAnim "Oklm">>
+Ablette : Thanks Bulle, I love apples.
+<<AbletteAnim "Idle">>
+Bulle : Eh... It's a banana...
+<<GumpyAnim "Angry">>
+Gumpy : Dude, it's the same thing.
+<<GumpyAnim "Idle">>
+<<AbletteAnim "Angry">>
+Ablette : Yeah, it's a fruit. You're dumb.
+<<AbletteAnim "Idle">>
+===
+title: Jeunes_Receive_Fastfood
+position: 0,0.5
+---
+Ablette : Uh what's that thing?
+<<GumpyAnim "Laugh">>
+Gumpy : For how much you eat it Dumbo?
+<<GumpyAnim "Idle">>
+<<DumboAnim "Happy">>
+<<Dumbo true>>
+Dumbo : frrds
+<<Dumbo false>>
+<<DumboAnim "Idle">>
+Gumpy : Bet.
+<<Dumbo true>>
+Dumbo : ferm
+<<Dumbo false>>
+Gumpy : Same!!!
+<<DumboAnim "Dumb">>
+<<Dumbo true>>
+Dumbo : eddj
+<<Dumbo false>>
+<<DumboAnim "Idle">>
+===
+title: Jeunes_Receive_Canette
+position: -689,-17
+---
+<<AbletteAnim "Proud">>
+Ablette : Duuuuddeeee!!! You're crazy!
+Ablette : Where did you nick that?
+<<AbletteAnim "Idle">>
+Bulle : Well... On the ground.
+Gumpy : It's Red Shark ??
+<<DumboAnim "Happy">>
+<<Dumbo true>> 
+Dumbo : [nomarkup] h[s [/nomarkup]  
+<<Dumbo false>>
+<<DumboAnim "Idle">>
+<<AbletteAnim "Oklm">>
+Ablette : Thanks lil buddy, we never tasted it! 
+<<AbletteAnim "Clash">>
+Ablette : It's forbidden to minors!!!
+<<AbletteAnim "Idle">>
+===
+title: Jeunes_Option
+position: 269,-183
+---
+<<Choice true>>
+<<AbletteAnim "Oklm">>
+Ablette : What's up dude? #line:39e6921 
+<<AbletteAnim "Idle">>
+->Give an object #line:0a03d3f 
+    <<if dice(2) == 1>>
+    <<AbletteAnim "Oklm">>
+    Ablette: Oh my god free food! #line:038a065 
+    <<AbletteAnim "Idle">>
+    <<Choice false>>
+    <<GiveObject>>
+    <<else>>
+    <<GumpyAnim "Laugh">>
+    Gumpy : Don't give us too much stuff, your parents will think we're mugging you. #line:00f9511 
+    <<GumpyAnim "Idle">>
+    <<Choice false>>
+    <<GiveObject>>
+    <<endif>>
+->Talk #line:089b5ab 
+    <<Story "Jeunes">>   
+    <<Choice false>>
+->Leave
+    <<jump Jeunes_Aurevoir>>
+    <<AbletteAnim Coucou>>
+    <<Choice false>>
+===
+title: Jeunes_Option_2
+position: 269,-183
+---
+<<if $skateTaken is true>>
+<<jump Jeunes_Quete_Good>>
+<<endif>>
+<<Choice true>>
+Gumpy : Whaddaya want? #line:35d6461 
+->Give an object #line:0172b09 
+    <<Choice false>>
+    <<GiveObject>>
+->Talk  #line:04d99f5 
+    <<Story "Jeunes">>   
+    <<Choice false>>
+->Leave
+    <<jump Jeunes_Aurevoir>>
+    <<AbletteAnim Coucou>>
+    <<Choice false>>
+===
+title: Jeunes_Option_3
+position: 269,-183
+---
+<<Choice true>>
+Gumpy : Whaddaya want?
+->Give an object 
+    <<Choice false>>
+    <<GiveObject>>
+->Talk
+    <<Story "Jeunes">>   
+    <<Choice false>>
+->Leave
+    <<jump Jeunes_Aurevoir>>
+    <<AbletteAnim Coucou>>
+    <<Choice false>>
+===
+title: Jeunes_NeedNewInteraction
+position: 0,0.5
+---
+Ablette : You know, lil buddy, I only tell my secrets to my greatest friends.  #line:049bd00 
+Ablette : And for now... We're not close enough.  #line:0e923d8 
+===
+title: Jeunes_NeedNewLocation
+position: -358,0.5
+---
+Ablette : Lil buddy, can you leave us alone for a bit? #line:0ea213e 
+Ablette : We need to go to the shrimp fes'.  #line:06dd20d 
+Gumpy : Yeah, we have a showcase planned in the abysses.  #line:0cb3494 
+===

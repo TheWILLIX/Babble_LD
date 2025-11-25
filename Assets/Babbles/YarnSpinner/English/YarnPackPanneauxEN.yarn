@@ -1,0 +1,59 @@
+title: Panneau_Cimetiere
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: The cemetery is over there.
+<<SignMode false>>
+===
+title: Panneau_Abysses
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: The abysses over here! 
+<<SignMode false>>
+<<SetSpeed 30>>
+Astère : <i>It's scary.</i>
+<<SetSpeed 17>>
+Panneau: No, don't worry, it's fine, actually.
+<<SetSpeed 30>>
+===
+title: Panneau_Foret
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: Direction: <i><size=60%>stinky old fish's</size></i> wreck.
+<<SignMode false>>
+<<SetSpeed 30>>
+Astère: <i>Weird sign.</i>
+<<SetSpeed 17>>
+Panneau: Kids tagged me!
+Panneau: This generation doesn't know respect.
+<<SetSpeed 30>>
+===
+title: TopWallBreak
+position: 0,0.5
+---
+Astère: Hey! We see you trying to break the game.
+===
+title: Panneau_Foret2
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: The cemetery is over there.
+<<SignMode false>>
+<<SetSpeed 17>>
+Panneau: I mean... I think?
+<<SetSpeed 30>>
+Astère: Don't ask me.
+===
+title: Panneau_Foret3
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: Direction??? 
+<<SignMode false>>
+Astère: <i>Really useful as a sign...</i>
+<<SetSpeed 17>>
+Panneau: Hey! It's not my fault, there's really nothing there except a talking rock.
+<<SetSpeed 30>>
+===

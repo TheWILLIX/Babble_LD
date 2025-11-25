@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927309bfbb3f6eb4eaa1bbc8100a5f6d, type: 3}
+  m_Name: RES_Brassart
+  m_EditorClassIdentifier: 
+  _name: Brassart
+  _cleanName: Brassart
+  _defaultQuantity: 1
+  _isRessource: 1
+  _isDiscoveredByDefault: 1
+  _useMultipleSelection: 0
+  _craftMultipleSelection: 1
+  _sprite: {fileID: 21300000, guid: 2c8f92621307e6245a4a54c14e8c48a5, type: 3}
+  _spriteQuantity0: {fileID: 21300000, guid: fa619cf1cfc4c1b40a098bcfc2558612, type: 3}
+  _spriteQuantity1: {fileID: 21300000, guid: 491495f6d7559264c93e67dfe9b48095, type: 3}
+  _spriteQuantity2: {fileID: 21300000, guid: 2daa28fb3127af04ab9c24b27a999866, type: 3}
+  _spriteQuantity3: {fileID: 21300000, guid: 150fa200303f86c4586478949f65b5a1, type: 3}
+  _usageType: 9
+  _linkedObject: {fileID: 505540718279665763, guid: a28f15478c7594a48a7b3e16306fe9b7, type: 3}
+  _linkedValue: 5
+  _audio: S_PoulpeRapide

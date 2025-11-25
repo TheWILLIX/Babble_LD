@@ -1,0 +1,324 @@
+﻿title: Tuto_Intro
+position: -45,21
+---
+Astère : Aller Bulle, au bullot ! C'est l'heure du tuto ! #line:011d29f 
+->Bulle : Ouaaaais !! #line:0e879a1 
+    Astère : Tutoriel désactivé ! T’es sûr de toi Bulle ?  #line:05bf3e9 
+    Astère : Non je rigole je vais t'aider... faut dire qu’il y a pas grand chose à faire sur ton front.  #line:0926d41 
+    Astère : Bon Bulle, dans ce monde il y a plein de choses à savoir, tu sautes avec RT et tu récupères des ressources avec X.  #line:0c3b668 
+    Bulle : Et c’est quoi les autres ?  #line:051c6d1 
+    Astère : Doucement petit génie, c’est à ça que sert un tuto. #line:0d67b73
+->Bulle : Non. #line:03e6751 
+    Astère : Oh toi là derrière ton écran ! Tu veux vraiment passer le tuto ?  #line:01a52dd 
+    Astère : Faudra pas venir se plaindre quand tu sauras pas comment crafter ! #line:0ad1bce 
+    ->Oui passer le tuto. #line:08f3327 
+        <<SkipTuto>>
+    ->Non ne pas passer le tuto. #line:093c66e 
+        Astère : Ah merci, je suis pas là pour rien moi !! #line:0bf81fa 
+        Astère : Bon Bulle, dans ce monde il y a plein de choses à savoir, tu sautes avec RT et tu récupères des ressources avec X. #line:08e6e9c 
+        Bulle : Et c’est quoi les autres ? #line:0eaf647 
+        Astère : Doucement petit génie, c’est à ça que sert un tuto.  #line:0d9ad83 
+===
+title: Tuto_PoupleCoussin
+position: 668,225
+---
+Astère : Ce gros truc orange, c'est un poulpe coussin, c'est comme un trampoline géant, tu peux sauter dessus avec RT ! #line:0d2ea18 
+Bulle : T’en connais des choses pour quelqu’un qui a vécu toute sa vie sur mon front…  #line:0d34d5a 
+===
+title: Tuto_Planage
+position: 169,145
+---
+Astère : Oh nooon, cette plateforme est trop loin…Si seulement on pouvait planer… #line:0c9b4ad 
+Astère : Oh mais on peut ! Il suffit de rester appuyé sur RT.  #line:02a4416 
+===
+title: Tuto_Fruit
+position: 421,78
+---
+Astère : 1 2 3 nous irons dans l'eau ! #line:0975a43
+Astère : 4 5 6 cueillir des bananes ! #line:08f26fb 
+Astère : Et j'ai oublié le reste. #line:01f4519 
+Astère : Tu peux récupérer les bananes et les poulpes avec X. #line:0be7e89 
+===
+title: Tuto_Planage_Fail
+position: 55,298
+---
+Astère : Bulle si tu sais même pas planer, tu peux directement retourner chez maman et papa. #line:0bf2396 
+===
+title: Tuto_Banane
+position: 62,-114
+---
+Astère : On peut dire que tu es au pied du mur là.  #line:0be76e0 
+Astère : Et si tu fabriquais ton propre poulpe coussin pour rebondir dessus ? Tu te souviens comment on ouvre la banane j’espère ?  #line:049f57c 
+===
+title: Tuto_Craft_Intro
+position: 342,-233
+---
+<<LockInput>>
+Astère : Contrôle suprise ! Pour un poulpe coussin il faut : un poulpe et un... #line:07ea465 
+Bulle : Coussin ? #line:0d992b1 
+Astère : Eh non, un fruit. T'es pas très fort Bulle... #line:0fcd23a 
+Astère : Sélectionne un poulpe et met le dans le shaker, c’est le truc violet à droite là.  #line:0d41e38 
+<<UnlockInput>>
+===
+title: Tuto_Craft_FirstItem_Poulpe2
+position: 710,-143
+---
+<<LockInput>>
+Astère : Bravo Bulle, t'as gagné le droit de faire la même chose avec un fruit. #line:085f7e8 
+<<UnlockInput>>
+===
+title: Tuto_Craft_FirstItem_Fruit
+position: 516,-143
+---
+<<LockInput>>
+Astère : C'est pas un poul... Euh Bravo Bulle, t'as gagné le droit de faire la même chose avec un poulpe, cette fois ci... #line:0b35e62 
+<<UnlockInput>>
+===
+title: Tuto_Craft_Item_Good
+position: 512,-271
+---
+<<LockInput>>
+Astère : Parfait, maintenant tourne le joystick droit de toutes tes forces ! #line:04a8017 
+Bulle : Ça veut dire quoi joystick ? #line:09c0caf 
+Astère : Euh ça veut dire shaker en poulpien. #line:0cd9b6b 
+Bulle : Vraiment ? #line:0ccb1d0 
+Astère : Ne poses pas de questions. #line:076e5bb 
+<<UnlockInput>>
+===
+title: Tuto_Craft_Item_Bad
+position: 326,-323
+---
+<<LockInput>>
+Astère : Bulle, tu sais pas reconnaitre des ressources ? Il faudrait penser à aller chez l'ophtalmeau.  #line:08c3a74
+Astère : Il faut un poulpe et un fruit ! Tu peux annuler ta bêtise en restant appuyé sur B. #line:01443a6 
+<<UnlockInput>>
+===
+title: Tuto_Craft_Fin
+position: 513,-186
+---
+<<LockInput>>
+Astère : J'espère que t'as retenu la recette, parce que crois-moi tu vas en avoir besoin.  #line:09b708e 
+Astère : Sélectionne ce poulpe coussin en mettant ton curseur dessus puis en appuyant sur A !#line:074bf70 
+<<UnlockInput>>
+===
+title: Tuto_UseObject
+position: 327,-143
+---
+<<LockInput>>
+Astère : Parfait ! Maintenant sélectionne l'emplacement "utiliser" avec A pour... euh... bah l'utiliser ! #line:019e895
+<<UnlockInput>>
+===
+title: Tuto_Poser_Meduse
+position: 659,53
+---
+<<LockInput>>
+Astère : Tu peux te balader partout avec, mais si tu veux le poser appuie sur A ou X. #line:04d4f97 
+<<UnlockInput>>
+===
+title: Tuto_Meduse_Active
+position: 662,145
+---
+Astère : Plus qu'à sauter, vers l'infini et au-delà !!! #line:099e0ab 
+===
+title: Tuto_FleurBrulante
+position: -285,176
+---
+Astère : Encore un obstacle...on dirait qu'ils font exprès !!!! #line:044d492 
+Astère : Ouvre ta banane avec Y et cherche des fleurs brûlantes. On va détruire ce mur !!!! #line:0e5a23f 
+===
+title: Tuto_FleurBrulante_Active
+position: -279,101
+---
+<<LockInput>>
+Astère : Et maintenant, place la fleur près du mur avec A ou X pour ALLUMER LE FEUUUU !! #line:0d35992 
+<<UnlockInput>>
+===
+title: Tuto_Geyser
+position: 228,246
+---
+Astère : On est libres comme l'eau !!!! Il n'y a plus qu'à prendre ce geyser en sautant dessus.  #line:0a68f88 
+Astère : Après c'est ciao, je fais une sieste. #line:0ec53d7 
+===
+title: Tuto_Final
+position: -17,-262
+---
+Astère : Ah enfin on en a fini avec ce tutoriel interminable ! #line:0946a01 
+Bulle : Maintenant direction la ville ! #line:01a534a 
+Astère : D’après Water Maps, il faut traverser une épave puis un cimetière pour y aller. #line:03c1e99 
+<<ObjectiveNotif "SKATE0v">>
+===
+title: Tuto_FinalNul
+position: -14,-322
+---
+Astère : T'es vraiment une poule sèche Bulle... tu sais qu'il y a pas de dégâts de chute ? #line:04da250 
+===
+title: Tuto_CraftLock
+position: 566,-390
+---
+<<LockInput>>
+<<if dice(3) == 1>>
+Astère : Pas de chance ! Il te faut une recette pour fabriquer ça ! #line:0eeb72d 
+<<elseif dice(3) == 2>>
+Astère : Oh on se calme l'alchimiste, t'as pas encore découvert la recette de cet objet. #line:07b72d5 
+<<else>>
+Astère : Si t'avais la recette, ça ferait un super objet !  #line:05b3535 
+<<endif>>
+<<UnlockInput>>
+===
+title: Tuto_CourantMarin_OLD
+position: -260,-514
+---
+<<LockInput>>
+<<if visited("Jeunes_Intro_EPAVE") is true>>
+Bulle : C'est quoi ce truc ? #line:05d8901 
+Astère : C'est un courant marin, le truc dont parlait le gang tout à l'heure. #line:0c5b829 
+Astère : Pour le prendre, t'as juste à entrer dedans et te laisser porter par le courant. #line:0a943f8 
+<<else>>
+Bulle : C'est quoi ce truc ? #line:0476695 
+Astère : C'est un courant marin. #line:09d9a05 
+Astère : Pour le prendre, t'as juste à entrer dedans et te laisser porter par le courant. #line:0a412c0 
+<<endif>>
+<<UnlockInput>>
+===
+title: Tuto_ZonePollution
+position: -429,-88
+---
+<<LockInput>>
+Astère : Attention, t'entres dans une zone de pollution Bulle. #line:0cbd9bc 
+Astère : Si tu restes trop longtemps tu vas avoir le seum ! #line:00a4a31 
+<<UnlockInput>>
+===
+title: Tuto_Seum
+position: -254,-83
+---
+<<LockInput>>
+Astère : Bah bravo Bulle, t'as le seum... #line:03e7198 
+Astère : Mais t'inquiètes pas, c'est pas une maladie incurable.  #line:02e30d6 
+Astère : Tu peux baisser ton seum en mangeant ou en dormant dans un campement !  #line:0d6cacb 
+<<UnlockInput>>
+===
+title: Tuto_SeumPNJ
+position: -432,-144
+---
+<<LockInput>>
+Astère : Bulle, vaut mieux pas que tu parles avec des gens quand t'as le seum... #line:0fa4e14 
+Astère : Oublie pas que tu peux descendre ton seum en mangeant ou en dormant dans un campement !  #line:07a9f88 
+<<UnlockInput>>
+===
+title: Tuto_CourantMarin
+position: 34,210
+---
+Astère : Le meilleur truc de l’océan ! Un courant marin ! #line:10a9f88 
+Bulle : Comment j’y vais ? #line:11a9f88 
+Astère : Bah c’est simple... #line:12a9f88 
+<<SetSpeed 60>>
+Astère : alors t’appuies sur A tout en marchant, au bout de 3 secondes t’appuies 6 fois sur ZL à intervalles réguliers, exactement 1,7 seconde après, t’as juste à faire un salto arrière en direction de l’entrée nord est du courant en faisant tourner ton joystick gauche dans le sens anti horaire ! #line:13a9f88 
+<<SetSpeed 40>>
+<<wait 0.5>>
+Astère : Non j’rigole, faut juste sauter dedans. #line:14a9f88 
+<<SetSpeed 30>>
+===
+title: Tuto_CourantMarinSortie
+position: -267,-405
+---
+Astère : Quand t’aura fini de faire mumuse, tu pourras sortir en appuyant sur RT. #line:15a9f88 
+===
+title: Tuto_Blague
+position: 217,-24
+---
+Astère : Ah, encore une dernière chose importante ! #line:16a9f88 
+Bulle : Quoi encore… #line:17a9f88 
+<<Close>>
+<<wait 0.5>>
+<<Open>>
+Astère : Non rien ahahah. #line:18a9f88 
+===
+title: Tuto_Inventory
+position: 464,440
+---
+<<LockInput>>
+Astère : Bon ta banane c’est l’endroit où tu mets tout le bazar que tu ramasses. Et chaque objet est magiquement trié dans des petites poches. #line:0b7a062
+Astère : Utilise ton joystick pour atteindre la fleur brûlante et sélectionne la avec A. #line:05ea2f1
+<<UnlockInput>>
+===
+title: Tuto_Fleur_Selected
+position: 492,526
+---
+<<LockInput>>
+Astère : Et là, tu mets ton joystick vers le haut puis t'appuie sur A pour sortir l’objet de ta banane. #line:0cc92be
+<<UnlockInput>>
+===
+title: Tuto_Fleur_NotSelected
+position: 301,498
+---
+<<LockInput>>
+Astère : Bulle je sais que t’as jamais vu le monde extérieur mais quand même, tu trouves que ce truc ressemble à une fleur ???? #line:0e5486a
+<<UnlockInput>>
+===
+title: Tuto_Inventory_Short
+position: -281,542
+---
+<<LockInput>>
+Astère : Allez Bulle, courage, tu vas réussir à la sélectionner cette fleur... un jour.  #line:04a545b 
+<<UnlockInput>>
+===
+title: Tuto_Craft_Intro_Short
+position: -282,609
+---
+<<LockInput>>
+Astère : Poulpe + Banane = Poulpe Coussin, c’est comme les tables de multiplication, c’est du par cœur Bulle !!!!  #line:0398e43 
+<<UnlockInput>>
+===
+title: Tuto_ShakerUsedTooSoon
+position: -285,706
+---
+<<LockInput>>
+Astère : Oula doucement Bulle, je t’apprends ça un peu plus tard.  #line:0a7a78b 
+<<UnlockInput>>
+===
+title: Tuto_PassageSecret
+position: -288,342
+---
+Astère : J'adore les petites cachettes comme ça! Si tu vois une cascade un jour, tu sais quoi faire. #line:05ad0c8 
+===
+title: Tuto_MissedCourantMarin0
+position: 44,804
+---
+Astère : Oulah où-est-ce que tu vas ? C'est dans le courant qu'il faut aller ! #line:0198527 
+===
+title: Tuto_MissedCourantMarin1
+position: 50,729
+---
+Astère : Non Bulle dans le courant marin! Tu sais le gros tube bleu devant toi. Impossible de le rater! #line:0b5b80d 
+===
+title: Tuto_MissedCourantMarin2
+position: 54,667
+---
+Astère : Je commence à croire que tu l'as fait exprès. Ou est-ce que c'est les tutoriels qui t'ont grillé le cerveau? #line:04fb775 
+===
+title: Tuto_MissedCourantMarin3
+position: 57,603
+---
+Astère : Bulle si tu me comprends fait moi un signe vite ! #line:0b12492 
+===
+title: Tuto_MissedCourantMarin4
+position: 60,541
+---
+Astère : Mince on ne s'est pas mis d'accord sur le signe, peut-être que rater le courant marin comme un nullos c'était ton signe. #line:066e0db 
+===
+title: Tuto_MissedCourantMarin5
+position: 69,466
+---
+Astère : Bon j'arrête de t'aider, à partir de maintenant je vais me contenter d'admirer ta stupidité. #line:08a53ce 
+===
+title: Tuto_MissedCourantMarin6
+position: 67,416
+---
+Astère : Magnifique... #line:0151a42 
+===
+title: Tuto_Skip
+position: 482,644
+---
+Astère : Pour passer à la suite il te suffit d'aller dans le courant marin devant toi. #line:0dc414c 
+===
+

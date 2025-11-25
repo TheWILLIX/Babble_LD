@@ -1,0 +1,57 @@
+﻿title: Panneau_Cimetiere
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: Le cimetière c'est par là. #line:0f39d0f 
+<<SignMode false>>
+===
+title: Panneau_Abysses
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: Les abysses par ici !  #line:0079daf 
+<<SignMode false>>
+<<SetSpeed 30>>
+Astère: <i>Ça fait peur.</i> #line:09d7afd 
+<<SetSpeed 17>>
+Panneau: Non t'inquiètes ça va en vrai. #line:0bf0f26 
+<<SetSpeed 30>>
+===
+title: Panneau_Foret
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: Direction l'épave <i><size=60%>du vieu ki pu.</size></i> #line:028b8ac 
+<<SignMode false>>
+<<SetSpeed 30>>
+Astère: <i>Bizarre ce panneau.</i> #line:06770f0 
+<<SetSpeed 17>>
+Panneau: Ce sont des jeunes qui m'ont tagué ! #line:066bce1 
+Panneau: Ils n'ont plus aucun respect dans cette génération. #line:0332302 
+<<SetSpeed 30>>
+===
+title: TopWallBreak
+position: 0,0.5
+---
+Astère: Hého, on vous voit en train d'essayer de casser le jeu.  #line:00a1fd2 
+===
+title: Panneau_Foret2
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau:Le cimetière c'est par là. #line:0f39d3f 
+<<SignMode false>>
+<<SetSpeed 17>>
+Panneau:Enfin je crois...? #line:0f39d5f 
+<<SetSpeed 30>>
+Astère: Me demande pas. #line:0aefe27 
+===
+title: Panneau_Foret3
+position: 0,0.5
+---
+<<SignMode true>>
+Panneau: Direction la cachette super secrette de Napoléon #line:0a6cfe8 
+<<SignMode false>>
+Panneau: Oh, j'aurais pas dû dire ça... #line:034e286 
+<<SetSpeed 30>>
+===

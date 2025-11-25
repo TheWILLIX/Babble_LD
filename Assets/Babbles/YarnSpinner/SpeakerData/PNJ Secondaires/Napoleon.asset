@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Napoleon
+  m_EditorClassIdentifier: 
+  _textColorID: '#cf7500'
+  _characterName: Napoleon
+  _faceSprite: {fileID: 21300000, guid: 06d2e3095e1b5b543a35572f1a716ffa, type: 3}
+  _isPNJClassic: 1
+  _seumHasInfluence: 1
+  _stadePNJ: 0
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 10
+  _seuilSeumExplo: 12
+  _itemLike: []
+  _itemDislike: []
+  _receiveUniqueItem: []
+  _voiceSound:
+  - {fileID: 11400000, guid: cd33b4dec0d1d8244b0036f5f1066693, type: 2}
+  - {fileID: 11400000, guid: d29af27dfbd49b74f9d1a6651412233f, type: 2}
+  - {fileID: 11400000, guid: 79b369d8d219fd047bc559d5ba70f74a, type: 2}
+  - {fileID: 11400000, guid: 879ac512f3d59224b8e14e844a1d36f8, type: 2}
+  - {fileID: 11400000, guid: de4207d7a051f6b4cb86b2b0fa28af64, type: 2}
+  _speedOfLettersSound: 0
+  _minimumPitchOfLettersSound: 0.7
+  _maximumPitchOfLettersSound: 0.9

@@ -1,0 +1,298 @@
+title: Tuto_Intro
+position: 0,0.5
+---
+Astère : Bulle, it's time to dip your toes in the water! This is your trial, for now is the tutorial!
+->Bulle : Yeeeeees !!
+    Astère : Non-tutorial mode activated ? Are you sure, Bulle? 
+    Astère : No, I'm just kidding, I'll help you... there's not much to do on your forehead. 
+    Astère : So Bulle, in this world there's a lot to know. You jump with RT and you pick up resources with X.
+    Bulle : And what about the other things ?
+    Astère : Slow down little genius, that’s what a tutorial is made for !
+->Bulle : No.
+    Astère : Oh you there behind your screen! Do you really want to skip the tutorial? 
+    Astère : Don't complain when you don't know how to craft!
+    ->Yes, skip the tutorial.
+            <<SkipTuto>>
+    ->No, don't skip the tutorial.
+        Astère : Oh, thank you, there is a purpose to my presence on your foreheah!
+        Astère : So Bulle, in this world there's a lot to know. You jump with RT and you pick up resources with X.
+        Bulle : And what about the other things ?
+        Astère : Slow down little genius, that’s what a tutorial is made for !
+===
+title: Tuto_PoupleCoussin
+position: 0,0.5
+---
+Astère: This big orange thing is a Pillow Octopus, it's like a giant trampoline, you can jump on it with RT
+Bulle : You know a lot of things for someone who has lived all her life on my forehead... 
+===
+title: Tuto_Planage
+position: 0,0.5
+---
+Astère : Oh no, this platform is too far... If only we could glide...
+Astère: Oh, but we can! Just keep pressing RT. 
+===
+title: Tuto_Fruit
+position: 0,0.5
+---
+Astère : Five little monkeys jumping on the bed...
+Astère : One fell down and bumped his head...
+Astère : Mama called the doctor and the doctor said...
+Astère : Oh not five monkeys but three bananas! jump up and press X to grab them!
+===
+title: Tuto_Planage_Fail
+position: 0,0.5
+---
+Astère : Bulle, if you can't even glide, you can go straight back to mommy and daddy.
+===
+title: Tuto_Banane
+position: 0,0.5
+---
+Astère : You could say you're up against the wall here. 
+Astère : How about making your own Pillow Octopus to bounce on? You remember how to open your waist bag, I hope? 
+===
+title: Tuto_Craft_Intro
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Surprise test ! To craft a Pillow Octopus you need: an octopus and a...
+Bulle : Pillow ?
+Astère : Eh no, a fruit. You're not very smart, Bulle...
+Astère : Select an octopus and put it in the shaker, it's the purple thing on the right here. 
+<<UnlockInput>>
+===
+title: Tuto_Craft_FirstItem_Poulpe
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Congratulations Bulle, you have earned the right to do the same thing with an octopus.
+<<UnlockInput>>
+===
+title: Tuto_Craft_FirstItem_Fruit
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Congratulations Bulle, you have earned the right to do the same thing with a fruit.
+<<UnlockInput>>
+===
+title: Tuto_Craft_Item_Good
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Perfect, now turn the right joystick with all of your strength!
+Bulle : What does joystick mean?
+Astère : It means shaker in octopus language.
+Bulle : Really?
+Astère : Don't ask questions.
+<<UnlockInput>>
+===
+title: Tuto_Craft_Item_Bad
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Bulle, don't you know how to recognize resources? You should think about getting diving glasses, it might help. 
+Astère : You need an octopus and a fruit! You can undo your mistake by pressing and holding B.
+<<UnlockInput>>
+===
+title: Tuto_Craft_Fin
+position: 0,0.5
+---
+<<LockInput>>
+Astère : I hope you remembered the recipe, because trust me, you're going to need it. 
+Astère : Press A or X twice to place it.
+<<UnlockInput>>
+===
+title: Tuto_Poser_Meduse
+position: 0,0.5
+---
+Astère : You can walk around with it, but if you want to put it down press A or X.
+===
+title: Tuto_Meduse_Active
+position: 0,0.5
+---
+Astère : Jump! To infinity and beyoooond!!!
+===
+title: Tuto_FleurBrulante
+position: 0,0.5
+---
+Astère : Another obstacle... It's almost like they are doing it on purpose!
+Astère : Open your banana with Y and look for burning flowers. We're going to tear down this wall !!!!
+===
+title: Tuto_FleurBrulante_Active
+position: 0,0.5
+---
+Astère : And now, press A or X next to the wall ! Look like we are on FIRE today!
+===
+title: Tuto_Geyser
+position: 0,0.5
+---
+Astère : We are as free as water! The only thing left to do is to enter this geyser! 
+Astère : Bye-bye, then, I'm going to take a nap.
+===
+title: Tuto_Final
+position: 0,0.5
+---
+Astère : Ah! We're finally done with this endless tutorial! 
+Bulle :  Now, let's go to the city!
+Astère : According to Water Maps, you have to cross a wreck and then a cemetery to get there. 
+<<ObjectiveNotif "NONE1f">>
+===
+title: Tuto_FinalNul
+position: 0,0.5
+---
+Astère : You're really a party wetter, Bulle... You do know there is no fall damage?
+===
+title: Tuto_CraftLock
+position: 0,0.5
+---
+<<LockInput>>
+<<if dice(3) == 1>>
+Astère : No luck! You need a recipie to craft this!
+<<elseif dice(3) == 2>>
+Astère : Sir Alchemist, I beg of you! Calm down! You didn't discover this object's recipe yet.
+<<else>>
+Astère : If you had the recipe, it would make for a great object!
+<<endif>>
+<<UnlockInput>>
+===
+title: Tuto_CourantMarin
+position: 0,0.5
+---
+<<LockInput>>
+<<if visited("Jeunes_Intro_EPAVE") is true>>
+Bulle : What's this thing?
+Astère : It's a Marine Current, the thing the gang was talking about earlier.
+Astère : To take it, you just have to get inside and let yourself be carried along.
+<<else>>
+Bulle : What's this thing?
+Astère : It's a Marine Current.
+Astère : To take it, you just have to get inside and let yourself be carried along.
+<<endif>>
+<<UnlockInput>>
+===
+title: Tuto_ZonePollution
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Be careful, you're entering a Polluted Area, Bulle.
+Astère : If you stay too long, you're going to get Rage in your Raging bar!
+<<UnlockInput>>
+===
+title: Tuto_Seum
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Well Bulle, you're a Rager now...
+Astère : But don't worry, it's not an incurable disease.
+Astère : You can lower your Rage by either eating or sleeping in a Camp!
+<<UnlockInput>>
+===
+title: Tuto_SeumPNJ
+position: 0,0.5
+---
+<<LockInput>>
+Astère : Bulle, it's better if you don't talk with people when you're Raging...
+Astère : Don't forget you can lower your Rage by eating or sleeping in a camp!
+<<UnlockInput>>
+===
+title: Tuto_CourantMarin
+position: 34,210
+---
+Astère : The best thing in the ocean! A marine current!
+Bulle : How am I supposed to get inside?
+Astère : Easy peasy Bulle...
+<<SetSpeed 50>>
+Astère : so just press A while walking, 3 seconds later you press ZL 6 times at regular intervals, exactly 1 second later you just do a backflip towards the north east entrance of the current while turning your left joystick counter-clockwise! 
+<<wait 0.5>>
+Astère : Just kidding, you just have to jump in. 
+===
+title: Tuto_CourantMarinSortie
+position: -332,-175
+---
+Astère : When you're done playing around, you can exit by pressing RT.
+===
+title: Tuto_Blague
+position: -258,236
+---
+Astère : Ah, one last important thing!
+Bulle : What now?
+<<Close>>
+<<wait 0.5>>
+<<Open>>
+Astère : No, nothing ahahah.
+===
+title: Tuto_Inventory
+position: -273,112
+---
+Astère : Well your weist bag is where you put all the junk you collect. And each item is magically sorted into little pockets. 
+Asterix : Use your joystick to reach the burning flower and select it with A.
+===
+title: Tuto_Fleur_Selected
+position: -330,-86
+---
+Astère : And here, you put your joystick up and press A to take the object out of your waist bag.
+===
+title: Tuto_Fleur_NotSelected
+position: -100,-182
+---
+Astère : Bulle, I know you've never seen the outside world but still, you think this thing looks like a flower ???? 
+===
+title: Tuto_Inventory_Short
+position: 0,0
+---
+Astère : Come on Bulle, courage, you will succeed in selecting this flower... someday.
+===
+title: Tuto_Craft_Intro_Short
+position: 10,10
+---
+Astère : Octopus + Banana = Pillow Octopus, it's like the multiplication tables, it's by heart Bulle !!!! 
+===
+title: Tuto_ShakerUsedTooSoon
+position: 192,-157
+---
+Astère : Hey easy Bulle, I teach you that a little later.
+===
+title: Tuto_PassageSecret
+position: 556,-135
+---
+Astere : I love little hiding places like that! If you ever see a waterfall, you know what to do.
+===
+title: Tuto_MissedCourantMarin0
+position: 547,46
+---
+Astere : Hey where are you going ? It's in the marine current that you have to go!
+===
+title: Tuto_MissedCourantMarin1
+position: 547,118
+---
+Astere : No Bulle in the marine current! You know the big blue tube in front of you. You can't miss it!
+===
+title: Tuto_MissedCourantMarin2
+position: 550,192
+---
+Astère: I'm starting to think you did it on purpose. Or is it the tutorials that have fried your brain?
+===
+title: Tuto_MissedCourantMarin3
+position: 555,267
+---
+Astère : Bulle if you understand me make me a sign quickly !
+===
+title: Tuto_MissedCourantMarin4
+position: 552,339
+---
+Astère : Damnit, we didn't agree on the sign, maybe shamefully missing the marine current was your sign.
+===
+title: Tuto_MissedCourantMarin5
+position: 550,408
+---
+Astère : That's it I'm done helping you, from now on I'm simply going to admire your stupidity.
+===
+title: Tuto_MissedCourantMarin6
+position: 553,485
+---
+Astère : Magnificent...
+===
+title: Tuto_Skip
+position: 32,379
+---
+Astère : To go on, you just have to go in the sea current in front of you.
+===

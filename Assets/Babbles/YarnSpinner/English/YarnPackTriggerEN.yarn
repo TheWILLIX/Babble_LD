@@ -1,0 +1,235 @@
+title: ZoneSombre_First
+position: 0,0.5
+---
+Bulle : It's already the night?
+Astère : Yes, Bulle, go to sleep lil buddy.
+Astère : ...
+<<wait 0.5>>
+Astère : No, Bulle, it's a Dark Area.
+<<BulleAnim Sad>>
+Bulle : It's scary...
+<<BulleAnim Idle>>
+Astère : You might see better with some light. 
+===
+title: ZoneSombre_Peur
+position: 0,0.5
+---
+Bulle : <size=50%>Astere... There's nothing to see there...</size> 
+Bulle : <size=50%>We can't see there...</size> 
+Astère : Of course, of course. It's not at all that you're scared of the dark. 
+===
+title: ZoneSombre_DemiTour
+position: 0,0.5
+---
+<<if dice(3) == 1>>
+Astère : So, Bulle, you're scared of the dark? 
+<<BulleAnim Sad>>
+Bulle : <size=50%>No... It's just that a true adventurer would take another path...</size> 
+<<BulleAnim Idle>>
+<<elseif dice(2) == 2>>
+Bulle : <size=50%>Oh, I took the wrong path...</size> 
+Astère : Oh really? How unlucky we aren't going through this Dark Area... 
+<<endif>>
+===
+title: ZonePolluée_First
+position: 0,0.5
+---
+Bulle : What are these purple things?
+Astère : It's the result of human consumer society's trash and irresponsability. 
+Astère : <size=700%>You, there!</size>
+Astère : Stop throwing your trash on us. 
+Bulle : What? 
+Astère : Nothing. It's pollution, don't breath it, it's dangerous. 
+===
+title: ZonePolluée_DemiTour
+position: 0,0.5
+---
+<<if $visitedUrfeIntro is true>> 
+Bulle : It smells like <color="purple">Urfe</color> here, I'm never breathing the same water than him. 
+<<elseif dice(2) == 1>>
+Bulle : Yuk! It smells fishy. 
+<<elseif dice(2) == 2>>
+Bulle : Ugh! It smells like fish spirit.
+<<endif>>
+===
+title: ZonePolluée_Peur
+position: 0,0.5
+---
+Bulle : Plastic isn't fantasitic. I'm not touching these things.
+===
+title: Wall_Touched
+position: 0,0.5
+---
+<<if dice(3) == 1>>
+Astère : Bulle, did you drink too much saltwater?
+<<elseif dice(3) == 2>>
+Astère : Do you need a wall to lean against so much, Bulle?
+<<else>>
+Astère : It's a good thing your bubble is sturdy, with all the walls you hit...
+<<endif>>
+===
+title: Wall_Touched2
+position: 0,0.5
+---
+Astère : If you played with fins, I'd understand your lack of dexterity, but still...
+===
+title: UberFish_Intro
+position: 0,0.5
+---
+Ver : Why are you bothering me during my nap? 
+Bulle : Eeeh, I just wanted to see what was that thing. 
+Ver : Well "that thing" is an Uberfish.
+Ver : If you want to go fast talk to me and I call a driver, bro.
+Ver : So, where you wanna go? I have other fishes to fry.
+->Abysses 
+    Ver : Billy is coming.
+    Ver : One advice for the <color=\#48BC0D>abysses</color>: don't eat too much ra-fishes, it destroyed me so much you have idea.
+->Cave
+    Ver : Jason is coming, that man's the best.
+    Ver : In the <color=\#48BC0D>cave</color> take a GPS, my bro Camille got lost and I never saw him again. It's been 10 years. RIP.
+->Cimetery
+    Ver : Beverly is arriving soon.
+    Ver : Take a puffa for the <color=\#48BC0D>cemetary</color> man, if you don't wanna get wet to the skin.
+->Forest
+    Ver : Kimberley is on her way.
+    Ver : In the <color=\#48BC0D>forest</color>, be careful with the young delinquents there. They're the kids of the sister of my uncle's father, they have no education.
+===
+title: Uberfish_End
+position: 0,0.5
+---
+Ver : Thanks for using UberFish, don't forget to rate your drive!
+->Bulle : 0 stars <<if $seum > 20 >> 
+    Driver : I'd like to see you drive in these conditions!!!
+->Bulle : 1 star
+    Driver : You could give me more, it's not cool.
+->Bulle : 2 stars
+    Driver : Neither good nor bad, as I always was... I'm an mid person, thanks for reminding it to me...
+->Bulle : 3 stars
+    Driver : And 1, and 2, and 3 stars!!!! Thanks mister!
+->Bulle : 10,000 stars <<if $seum < 20 >>
+    Driver : No, it's you who deserves 10,000 stars, you're the best client in the whole sea!
+===
+title: Trigger_Cimetiere
+position: 0,0.5
+---
+Bulle : It's all empty here.
+Astère : It's normal, it's a cimetary.
+Astère : In general deads aren't too noisy.
+Bulle : Deads?
+Astère : You see this big skeleton?
+Astère : It used to be a whale.
+Astère : She wind up here at the end of her life.
+Astère : They pass on far from their families to not be a weight to them.
+<<BulleAnim Sad>>
+Bulle : It's so sad. They must be missing them.
+<<BulleAnim Idle>>
+Astère : You're far from your family too, you know.
+Bulle : But I'm not the same! I'll go back to see them someday!
+Astère : Oh, really? That wasn't what you were saying when you left.
+Bulle : I didn't want them to be sad because of me.
+Astère : Be careful not to be too sad, or you'll drown in your bubble, haha!
+===
+title: Trigger_Falaise
+position: 0,0.5
+---
+Bulle : Dad would tell me to be careful not to fall.
+Astère : And grandma to jump.
+Bulle : And Gumpy to punch out all these shrimps that block the view!!!! 
+Astère : Hahaha, they're all crazy.
+Bulle : Are we crazy too?
+Astère : Of course, we went through the whole sea alone with basically no knowledge, leaving mom and dad behind!
+<<BulleAnim Sad>>
+Bulle : I hope they're not too worried...
+<<BulleAnim Idle>>
+Bulle : But it was cool, no?
+Astère : Not too bad. Wanna continue?
+Bulle : I'd like to. There must be so many things left to see.
+Astère : What's our next step then?
+Bulle : I think we'll go see mom and dad.
+Astère : Is it the end of the adventure, or the start of a new one?
+Bulle : I don't know, but as grandma would say:
+Bulle : <i>"Continue along your path, and you'll see for yourself!"</i>
+Bulle : So, let's go?
+===
+title: Fantomas_Intro_EPAVE
+position: 0,0.5
+---
+<<if visited("Fantomas_Intro_EPAVE") is true>>
+<<jump Trigger_Fantome2>>
+<<endif>>
+Fantomas : Kikikikiki, you dared enter the hauuuunnted wreck! 
+Bulle : Eh? I'm supposed to be scared, right now?
+Fantomas : Well, yes! I'm a ghost!
+Bulle : BOO!!!!
+Fantomas : AHHHHHHHHHHHH!
+===
+title: Trigger_Fantome2
+position: 0,0.5
+---
+Fantomas : Leave me alone!
+Bulle : Sorry for scaring you...
+Fantomas : I don't understand, you should be the one who's scared of me.
+Bulle : I'm not a baby anymore, I'm not scared of things that don't exist!!
+Fantomas : But... I exist...
+===
+title: Marin_Intro_EPAVE
+position: 0,0.5
+---
+<<if dice(4) == 1>>
+Marin : Have you seen my son?
+<<elseif dice(4) == 2>>
+Marin : When will I see you again, my marvelous son?
+<<elseif dice(4) == 3>>
+Marin : Where are you Nemo? Where are you? 
+<<else>>
+Marin : NEMO??? NEMO!!!
+<<endif>>
+===
+title: Trigger_Fin
+position: 0,0.5
+---
+Kristine : Oh non !!!
+Ursule : O rage! O despair! O age my ene-
+Bulle : What's happening here?
+Kristine : We wanted to go to the abysses to see the Shrimp Festival...
+Gertrude : But it's been canceled for water damage!!!
+===
+title: Trigger_Coffre
+position: -4,-133
+---
+Astère: Very well done... Such an original music!
+Astère: /s
+===
+title: Trigger_Marline
+position: -4,-133
+---
+Astère: Bulle, won't you say hi to grandma?
+===
+title: Trigger_Meduse_1
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: !?! DON'T BLOODY JUMP ON ME YOU CRAZY <color="green">unpleasant person</color>! DAMN IT!
+<<SetSpeed 30>>
+===
+title: Trigger_Meduse_2
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: OH! YOU DEAF?!?
+<<SetSpeed 30>>
+===
+title: Trigger_Meduse_3
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: ON MY MOTHER'S LIFE! ON MY MOTHER'S LIFE I'M GONNA GANK YOU!
+<<SetSpeed 30>>
+===
+title: Trigger_Meduse_4
+position: 0,0.5
+---
+<<SetSpeed 55>>
+Frank: OH! THAT'S ENOUGH! YOU PISSED ME OFF!
+<<SetSpeed 30>>
+===

@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 03fdf6db85b7a4d4c9176586ab1f91bf
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 053561912b1654d80a424bb0696a74ae, type: 3}
+  sourceScripts:
+  - {fileID: 6391573757903218779, guid: 1feb355d729d9f642b7d17705cf284ef, type: 3}
+  - {fileID: 6391573757903218779, guid: b1874969ba227c64490e3e68588285e2, type: 3}
+  - {fileID: 6391573757903218779, guid: 5f5b1493b9f96f5418a45bd6f5eb5453, type: 3}
+  - {fileID: 6391573757903218779, guid: 525ee1e085ecd16408e2fab6f31575f1, type: 3}
+  - {fileID: 6391573757903218779, guid: b370ed46e252a3d47a5407904484e232, type: 3}
+  - {fileID: 6391573757903218779, guid: ad5c6d07c6f84c140b6fac4fecf2e5d8, type: 3}
+  compileErrors: []
+  serializedDeclarations:
+  - name: $seum
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 15
+    defaultValueString: 
+    description: "La valeur du Seum de Bulle.                     (Le Thermom\xE8tre
+      de Seum)"
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $nbAlgueBurb
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: "Le Nombre d'algue donn\xE9 \xE0 Burb"
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $jeunesParle
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: "Si le joueur a d\xE9ja parl\xE9 aux jeunes ou non."
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $mapGiven
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: "Si le joueur a parl\xE9 a Napol\xE9on apr\xE8s avoir parl\xE9 aux
+      Jeunes (D\xE9but de la Qu\xEAte)"
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $canetteGivenToUrfe
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: "Si le joueur a donn\xE9 une canette a Urfe pour la quete du Parfum"
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $pileGivenToUrfe
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: "Si le joueur a donn\xE9 une pile a Urfe pour la quete du Parfum"
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $urfeQuestSuccess
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: "Si le joueur a donn\xE9 une pile ET une canette"
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $urfeBadMath
+    typeName: Number
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $tireBouchonFound
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $cuillereFound
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $fourchetteFound
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $requinsSuccessQuest
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $rockGrotteDestroyed
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $jeunesVisited
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedJeunesIntro_EPA
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedJeunesStory0_EPA
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedJeunesStory1_EPA
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedJeunesStory0_ABY
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedJeunesStory1_ABY
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineIntro_FOR
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineStory0_FOR
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineStory1_FOR
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineStory0_CIM
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineStory1_CIM
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineIntro_CIM
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedJeunesIntro_ABY
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedUrfeIntro
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $GrenadeInInventory
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $grenadePositionInfo
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $hotuQueteSucced1
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $hotuQueteSucced2
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $hotuQueteSucced3
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $skateTaken
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $infoAbysses
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: 
+    isImplicit: 0
+    sourceYarnAsset: {instanceID: 0}
+  - name: $visitedMarlineIntro
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: YarnPackMarline.yarn, node Marline_Intro_FORET, line 0
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 1feb355d729d9f642b7d17705cf284ef, type: 3}
+  - name: $visitedJeunesIntro
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: YarnPackJeunes.yarn, node Jeunes_Intro_EPAVE, line 3
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: b1874969ba227c64490e3e68588285e2, type: 3}
+  - name: $canetteGiven
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: YarnPackForet.yarn, node Urfe_Receive_Canette, line 0
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 5f5b1493b9f96f5418a45bd6f5eb5453, type: 3}
+  - name: $pileGiven
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: YarnPackForet.yarn, node Urfe_Receive_Canette, line 1
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 5f5b1493b9f96f5418a45bd6f5eb5453, type: 3}
+  - name: $rocherDestroyed
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: YarnPackForet.yarn, node Sloop_Intro_EPAVE, line 4
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 5f5b1493b9f96f5418a45bd6f5eb5453, type: 3}
+  - name: $recetteTaken
+    typeName: Bool
+    defaultValueBool: 0
+    defaultValueNumber: 0
+    defaultValueString: 
+    description: YarnPackForet.yarn, node Sloop_Salute, line 0
+    isImplicit: 1
+    sourceYarnAsset: {fileID: 6391573757903218779, guid: 5f5b1493b9f96f5418a45bd6f5eb5453, type: 3}
+  defaultLanguage: fr-FR
+  languagesToSourceAssets:
+  - languageID: fr-FR
+    stringsFile: {instanceID: 0}
+    assetsFolder: {fileID: 102900000, guid: 997e24b3b9194cb4eb20a1f37924ddce, type: 3}
+  - languageID: en
+    stringsFile: {fileID: 4900000, guid: 4270c2be96580bb49be0d15bbed43b6f, type: 3}
+    assetsFolder: {fileID: 102900000, guid: 55050ad158819e2468ad0cfc0edfca98, type: 3}
+  useAddressableAssets: 0
+  searchAllAssembliesForActions: 1
+  assembliesToSearch: []

@@ -1,0 +1,410 @@
+title: Napoleon_Intro_EPAVE
+position: -164,63
+---                                                         // --- NAPOLEON ---- \\
+<<if $visitedJeunesIntro == false>>
+<<jump Napoleon_PasParleJeunes>>
+<<endif>>
+<<if visited("Napoleon_Intro_EPAVE") is true>>
+<<jump Napoleon_Salute>>
+<<endif>>
+Napoleon : Yarr another sailor, set sail landlubber! Ye shall not pass!
+->Bulle : Who are you?
+    Bulle : Who the hell are you?
+    Napoleon : Glad ye asked! Today's lass are no longer interested in thar ancestors!
+->Bulle : You octopus face! 
+    Bulle : Your octopus face is really scary, but I'll go through anyway!
+    Napoleon : Yo oh oh. Ye'll dance with Jack Ketch.
+->Bulle : You're beautiful! <<if $seum < 20 >> #line:23521b2
+    Bulle : Wow, this is the first time I see a real octopus! It's so beautiful! 
+    <<BulleAnim Star>>
+    Napoleon : Don't mess wit' me...Me know son of a biscuit eater like ye, ye compliment me 'n then ye break me pots!!!!!
+    <<BulleAnim Idle>>
+<<BulleAnim Star>>
+Napoleon : Me Napoleon, the most powerful pirate in the <color=\#48BC0D>forest</color>! 
+<<BulleAnim Idle>>
+Napoleon : Now get out o' here, me don't 'ave time t' speak wit' landlubber like ye!
+<<BulleAnim Sad>>
+Bulle : But I want my friends' skate-bulle back!
+<<BulleAnim Idle>>
+Napoleon : Good grief! Ye know these Bilge-Sucking! Go, go far away from here, scoundrel! 
+Napoleon : Only a sea dog can read the map t' find 'em arrrghhh.
+<<BulleAnim Angry>>
+Bulle : I'm a sea dog! Give me the map!
+<<CarteNapoleon>>
+Napoleon : Aye, aye, ye'll ne'er understand this map anyway.
+<<BulleAnim Idle>>
+<<set $mapGiven to true>>
+===
+title: Napoleon_PasParleJeunes
+position: 0,0.5
+---
+Napoleon : Blimey!!
+Napoleon : Another swashbuckler, join yer matey before me crush ye barnacles.
+Napoleon : Savvy?
+===
+title: Napoleon_Quete_Good
+position: 0,0.5
+---
+Napoleon : Yarrrr, ye found those damn skates. But don't worry, that doesn't make ye a buccaneer. 
+Napoleon : Now out of my sight deckhand.
+===
+title: Napoleon_Quete_Bad
+position: 0,0.5
+---
+Napoleon : Sprog, now that ye've got the map, ye're on yer own. Ye don't stand a chance as a bilge rat.
+===
+title: Urfe_Intro_FORET
+position: -267,0.5
+---                                                     // --- URFE ---- \\
+<<if $visitedUrfeIntro>>
+<<jump Urfe_Salute>>
+<<endif>>
+<<SetSpeed 17>> 
+Urfe : Lil fishhhhhh, want sooooome candy?
+<<SetSpeed 40>>
+Bulle : Uh...who are you?
+<<SetSpeed 17>>
+Urfe : Me? I'm Urfe, the overwater diver from the <color=\#48BC0D>underwater forest</color>.
+<<SetSpeed 40>>
+<<BulleAnim Star>>
+Bulle : What's an overwater diver?
+<<SetSpeed 17>>
+<<BulleAnim Idle>>
+Urfe : Loooook abooooove yooooou lil fish.
+Urfe : Out of the water, there's the earth! 
+Urfe : And on the earth, there are what we call: humans!
+<<SetSpeed 40>>
+<<BulleAnim Star>>
+Bulle : Waaaaaah, I want to go so bad.
+<<SetSpeed 17>>
+Urfe : You're still too lil to go. But you can help me if you want.
+Urfe : I need 10 000 <color=\#FFC300>batteries</color> and 10 000 <color=\#FFC300>cans</color> for a delivery!
+<<BulleAnim Sad>>
+Urfe : Take a chill pill! I already have 9 999 <color=\#FFC300>batteries</color> and 9 999 <color=\#FFC300>cans</color>.
+Urfe : You just have to bring me 1 of each doudouuuu. 
+<<BulleAnim Idle>>
+Urfe : If you bring this back to me I can give you something.
+<<SetSpeed 30>>
+<<set $visitedUrfeIntro to true>>
+<<jump Urfe_Option>>
+===
+title: Urfe_Receive_Canette
+position: 0,0.5
+---
+<<set $canetteGiven to true>>
+<<if $canetteGiven && $pileGiven == true>>
+<<jump Urfe_Quete_Good>>
+<<endif>>
+Urfe : Ooooooooh thank you lil fish.
+Urfe : Did you know that a can is a small glass or metal container that holds a drink that you can take away and drink?
+===
+title: Urfe_Receive_Pile
+position: 0,0.5
+---
+<<set $pileGiven to true>>
+<<if $canetteGiven && $pileGiven == true>>
+<<jump Urfe_Quete_Good>>
+<<endif>>
+Urfe : Wow thank you lil fish.
+Urfe : Did you know that a battery is an electrochemical device that produces electricity by converting chemical energy into electrical energy through a redox reaction?
+Astère : <i>I didn't get it.</i>
+Bulle : Me neither.
+===
+title: Urfe_Receive
+position: -267,0.5
+---
+<<SetSpeed 17>>
+<<BulleAnim Sad>>
+Urfe : Thanks for this item but it's neither a <color=\#FFC300>battery</color>, nor a <color=\#FFC300>can</color> doudouuuuuu.
+<<BulleAnim Idle>>
+<<SetSpeed 30>>
+===
+title: Urfe_Option
+position: 269,-183
+---
+<<Choice true>>
+Urfe : Lil fish, do you have my <color=\#FFC300>battery</color> and my <color=\#FFC300>can</color>? #line:31e2c1d 
+->Give
+    <<Choice false>>
+    <<GiveObject>>  
+===
+title: Urfe_Salute
+position: -267,0.5
+---
+<<if $urfeQuestSuccess == false>>
+<<jump Urfe_Option>>
+<<elseif $urfeBadMath == 0>>
+<<jump Urfe_Quete_POLLUTION_After1>>
+<<elseif $urfeBadMath == 1>>
+<<jump Urfe_Quete_POLLUTION_After2>>
+<<elseif $urfeBadMath == 2>>
+<<jump Urfe_Quete_POLLUTION_After3>>
+<<else>> 
+<<jump Urfe_Quete_POLLUTION_After4>>
+<<endif>>
+Urfe : Hi doudou.
+===
+title: Urfe_Receive_Dislike
+position: -267,0.5
+---
+<<SetSpeed 17>>
+Urfe : Doudouuu, if you have vision problems I advise you to wear diving goggles.
+<<SetSpeed 30>>
+===
+title: Urfe_Receive_Algue
+position: -267,0.5
+---
+<<SetSpeed 17>>
+Urfe : I've a brother who loves <color=\#FFC300>algae</color> but he got lost in an algae forest.
+Urfe : Nobody ever found him but at least he is in his element...
+<<SetSpeed 30>>
+===
+title: Urfe_Quete_Good
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_Good") is true>>
+<<jump Urfe_Quete_POLLUTION_After1>>
+<<endif>>
+<<SetSpeed 17>>
+Urfe : Perfect doudouuuuu, let me count it all. 
+<<SetSpeed 4>>
+Urfe : <size=50%>1, 2, 3, 4, 5,...</size=50%>
+<<wait 0.5>>
+<<SetSpeed 17>>
+Urfe : Ahhhh yes, wait lil fish, I had to give you something. 
+Urfe : Hmmm, what's in my backpack?
+Urfe : Seaweed...leaves...filters...
+<<BulleAnim Happy>>
+Urfe : OOOOH! Here's one you might like, a recipe for <color=\#FFC300>fruity perfume</color>! 
+Urfe : See you later doudouuuu.
+<<BulleAnim Idle>> 
+<<ReceiveRecipe REC_ParfumFruite1>>
+<<SetSpeed 30>>
+===
+title: Urfe_Quete_POLLUTION_After1
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After1") is true>>
+<<jump Urfe_Quete_POLLUTION_After2>>
+<<endif>>
+<<SetSpeed 4>>
+Urfe : <size=50%>6, 7, 8, 9, 10,...</size=50%>
+<<SetSpeed 30>>
+<<set $urfeBadMath to 1>>
+===
+title: Urfe_Quete_POLLUTION_After2
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After2") is true>>
+<<jump Urfe_Quete_POLLUTION_After3>>
+<<endif>>
+<<SetSpeed 4>>
+Urfe : <size=50%>11, 12, 13, 14, 15,...</size=50%>
+<<SetSpeed 30>>
+<<set $urfeBadMath to 2>>
+===
+title: Urfe_Quete_POLLUTION_After3
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After3") is true>>
+<<jump Urfe_Quete_POLLUTION_After4>>
+<<endif>>
+<<SetSpeed 4>>
+Urfe : <size=50%>16, 17, 18, 19, 20,...</size=50%>
+<<SetSpeed 30>>
+<<set $urfeBadMath to 3>>
+===
+title: Urfe_Quete_POLLUTION_After4
+position: -267,0.5
+---
+<<if visited("Urfe_Quete_POLLUTION_After4") is true>>
+<<jump Urfe_Aurevoir>>
+<<endif>>
+<<SetSpeed 17>>
+Urfe : Damn, I lost the coooount...I'm going to start again...
+<<SetSpeed 4>>
+Urfe : <size=50%>1, 2, 3,...</size=50%>
+<<SetSpeed 30>>
+<<set $urfeBadMath to 0>>
+===
+title: Urfe_Aurevoir
+position: -267,0.5
+---
+<<if dice(2) == 1>>
+<<SetSpeed 17>>
+Urfe : I have some <color=\#FFC300>seaweed</color> buyers waiting for me, I have to leave you doudouuuu.
+<<else>>
+Urfe : The humans are waiting for me up there. See you sooooooon.
+<<endif>>
+<<SetSpeed 30>>
+===
+title: Sloop_Intro_EPAVE
+position: -267,0.5
+---                                                         // --- SLOOP ---- \\
+<<if visited("Sloop_Intro_EPAVE") is true>>
+<<jump Sloop_Salute>>
+<<endif>>
+Sloop : Heyyyy, hi boooops !
+<<BulleAnim Sad>>
+Bulle : My name's not Boooops...
+Sloop : No, I know glooooops. I'm Sloop!
+<<BulleAnim Idle>>
+Bulle : Uh...I'm Bulle.
+Sloop : So glad to meet you Bulle woooop! 
+Sloop : What are you doing in this beautiful <color=\#48BC0D>forest</color> doooops?
+<<BulleAnim Sad>>
+Bulle : I'm looking for a way out of here. There's a wall blocking me.
+<<BulleAnim Idle>>
+Sloop : I've got what you need glooops! I used to work in a massive wall destruction factory in the ocean. 
+Sloop : Unfortunately it closed recently...But I could tell you where to get <color=\#229954>grenades</color>!
+Astère : <i>That's really good timing...</i>
+<<BulleAnim Happy>>
+Bulle : So cool!!
+Sloop : So you want to know doops?
+<<BulleAnim Idle>>
+->Bulle : Yes.
+    Sloop : Alright, so do you like blobfish?
+    Bulle : What?
+    Sloop : Do you like blobfish?
+    ->Bulle : Uhhhhh...yes?
+        Sloop : The <color=\#229954>grenade</color> is in a crater ploooop!
+    ->Bulle : No.
+        Bulle : No, it's too ugly.
+        Sloop : You know I'm a blob fish right cloop?
+        Bulle : Well, yes, of course.  
+        Sloop : So you like blob fish xoooop?
+        ->Bulle : Yes.
+            Bulle : Uh huh...yes I guess so?
+            Sloop : Yooooop ! The <color=\#229954>grenade</color> is in a crater ploooop!
+        ->Bulle : No.
+            Bulle : Well no, still not...
+            Sloop : Oooooops...too bad then...no <color=\#229954>grenade</color> for you...
+->Bulle : No.
+    Sloop : Come back to me whenever you feel like it there booops.
+===
+title: Sloop_Quete_GRENADE_No
+position: -267,0.5
+---
+Sloop : Boop! You like ugly fish now gloops?
+->Bulle : Yes.
+    Bulle : Yes...we have the right to change our minds, right?
+    Sloop : Yooooop that's right! The <color=\#229954>grenade</color> is in a crater ploooop!
+->Bulle : No.
+    Bulle : No, still not hahaha !!!!
+    Sloop : Glooops, I don't care what you think anyway. I'm not the one who needs a <color=\#229954>grenade</color>.
+===
+title: Sloop_Condition
+position: -267,0.5
+---
+Sloop : Want to know where to find the <color=\#229954>grenade</color> biloop?
+Bulle : Well...I already have <color=\#229954>grenades</color> actually...
+Sloop : But you are stupid bloop, why didn't you blow up the wall with it then voooop?
+<<BulleAnim Angry>>
+Bulle : Well, I don't know. Why are you ugly?
+Sloop : Snoooooof...
+<<BulleAnim Idle>>
+===
+title: Sloop_Quete_GRENADE_No2
+position: -267,0.5
+---
+Sloop : Boop! Last chance for you plooops! 
+Sloop : Do.
+Sloop : You. 
+Sloop : Like. 
+Sloop : Blob. 
+Sloop : Fish?
+->Bulle : Yes.
+    Bulle : Yeah, yeah, I love it! They are my favorite fish...
+    Sloop : Yoooooop, where there is a will there is a way! The <color=\#229954>grenade</color> is in a crater ploooop!
+->Bulle : No.
+    Bulle : N.O. NO!!!!!!
+    Sloop : Rooooooooop! Your lost floooop!
+===
+title: Sloop_Salute
+position: -267,0.5
+---
+<<if dice(2) == 1>>
+Sloop : Boooooop, Bulle. You okay?
+<<else>>
+Sloop : I have a runny nose, I'd have to go get some seaweed to blow my nose snooooof.
+<<endif>>
+===
+title: Hotu_Intro_EPAVE
+position: -267,0.5
+---                                                 // --- HOTU ---- \\
+<<if visited("Hotu_Intro_EPAVE") is true>>
+<<jump Hotu_Salute>>
+<<endif>>
+Hotu : How's it going, kid?
+Bulle : Huh? What was that?
+Astère : <i>Beware, there may be something fishy going on. Do you really want to go and see?</i>
+<<BulleAnim Happy>>
+Bulle : Yeeeees!
+<<BulleAnim Idle>>
+Bulle : What are you doing here?
+Hotu : I'm jumping on some <color=\#229954>jellyfish pillows</color>.
+->Bulle : So cool!
+    Bulle : So cool!...What's the point?
+    Hotu : You'll find out if you join my jumping club on <color=\#229954>jellyfish pillows</color>! 
+    Hotu : You'll be trained by the world champion of the discipline, namely...
+    Hotu : <size=800%>ME!!!</size>
+->Bulle : Poor things!
+    Bulle : Poor things! Do you ever think about their welfare? They also have feelings!
+    <<BulleAnim Sad>>
+    Hotu : Who do you think I am? I have a background in breeding <color=\#229954>jellyfish</color> me! 
+    Hotu : I even have a world title!
+    <<BulleAnim Idle>>
+->Bulle : So lame!
+    Bulle : Hahaha how it looks too lame.
+    Hotu : <size=60%>You make fun of me while I am world champion in this discipline...</size=60%>
+Astère : <i>World champion? Ha ha ha rather champion of loneliness</i>
+Bulle : <i>Shhh Astere, he could be a friend of ours.</i>
+<<BulleAnim Happy>>
+Bulle : Go ahead and give it a high five my friend!
+<<BulleAnim Idle>>
+Hotu : <size=60%>But...</size=60%>
+Hotu : <size=60%>I don't have arms...</size=60%>
+Hotu : You're as bad as that old octopus that uses my jellyfish to get up here. 
+Hotu : He has no idea how to jump and he doesn't listen to my advice. 
+Hotu : <size=500%>They are suffering !!!!</size>
+Astère : <i>Victim, victim.</i>
+Hotu : If you take this path, please take care of my jellyfish, they are fragile...
+===
+title: Hotu_Salute
+position: -267,0.5
+---
+<<if dice(2) == 1>>
+Hotu : You want to play rock, paper, scissors ?
+->Bulle : Yes!
+    Bulle : Yes! I'll start.
+    Bulle : Rock, paper, scissors!
+    <<BulleAnim Sad>>
+    Astère : <i>He made stone, you lost Bulle ha ha!</i>
+    <<BulleAnim Idle>> 
+    Bulle : Revenge! 
+    Bulle : Rock, paper, scissors!
+    <<BulleAnim Happy>>
+    Astère : <i>Stone again, this time you've won Bubble!</i>
+    <<BulleAnim Idle>> 
+    Bulle : Go one last time! 
+    Bulle : Rock, paper, scissors!
+    Astère : <i>But...I think he can only do stone actually.</i>
+    Hotu : <size=60%>I can't play, I have no arms...
+    Hotu : You thought I was a rock just because I'm one...</size=60%>
+->Bulle : No, I have other fish to fry...
+<<else>>
+Bulle : Oh hi Hotu, how are you?
+Hotu : <size=60%>It goes badly, I lost Medusa, the most beautiful of my jellyfish...</size=60%>
+Bulle : You should have kept her on a leash.
+Hotu : <size=60%>But I don't have arms.</size=60%>
+Astère : <i>No arms, no Medusa hahaha.</i> //blague à changer
+<<endif>>
+===
+title: Ver_Info
+position: 0,0.5
+---
+Ver : Traffic information from the <color=\#48BC0D>underwater forest</color>. 
+Ver : Nothing to report in the <color=\#48BC0D>Burb Forest</color>. 
+Ver : On the side of the <color=\#48BC0D>kelp forest</color>, a rock blocks the G52 geyser, please take another route or clear it yourself. 
+Ver : Have a good day on the Verci Autoroutes network.
+===

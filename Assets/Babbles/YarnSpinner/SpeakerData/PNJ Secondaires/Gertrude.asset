@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Gertrude
+  m_EditorClassIdentifier: 
+  _textColorID: '#D3D0C0'
+  _characterName: Gertrude
+  _faceSprite: {fileID: 0}
+  _isPNJClassic: 1
+  _seumHasInfluence: 1
+  _stadePNJ: 0
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 0
+  _seuilSeumExplo: 12
+  _itemLike: []
+  _itemDislike: []
+  _receiveUniqueItem: []
+  _voiceSound:
+  - {fileID: 11400000, guid: 4f423d93f837221489a980a48ea190d4, type: 2}
+  - {fileID: 11400000, guid: 66ad4c4f8c5834840aff081295f4460d, type: 2}
+  - {fileID: 11400000, guid: 1d57b6e7712fa42439a2f92da674b193, type: 2}
+  _speedOfLettersSound: 0
+  _minimumPitchOfLettersSound: 1
+  _maximumPitchOfLettersSound: 1

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d99aa992dde3a45a93e06f1b2f891a, type: 3}
+  m_Name: REC_BrochetteFruit1
+  m_EditorClassIdentifier: 
+  _recipeName: REC_BrochetteFruit1
+  _firstItem: {fileID: 11400000, guid: f0b86854bbbcaa0498a1b2436819957b, type: 2}
+  _secondItem: {fileID: 11400000, guid: b4aa2791c2d6f834899f8f3328c26c62, type: 2}
+  _resultItem: {fileID: 11400000, guid: 66671844de5d3214d8153725684432e0, type: 2}
+  _linkedRecipe: {fileID: 11400000, guid: 077049031d6364a41a0688b7886c042c, type: 2}
+  _locked: 0

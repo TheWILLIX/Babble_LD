@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7395098413391199121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8679795712802945696}
+  - component: {fileID: 3232884853856047428}
+  - component: {fileID: 2080750640772050737}
+  - component: {fileID: 6194311068906728760}
+  m_Layer: 0
+  m_Name: Prog_Parfum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8679795712802945696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395098413391199121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3232884853856047428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395098413391199121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08a8c624cf271a24489435a5b62c6f41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Parfum
+--- !u!114 &2080750640772050737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395098413391199121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54748ef0f739d744b1e87a2f5429d04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6194311068906728760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395098413391199121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8dc221a3fe2cf41a58fcfc9bb669ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AlgaePerfume: {fileID: 5129633904710731687, guid: daccde42fe2b99e48bfe0e8c52708441, type: 3}
+  _FruitPerfume: {fileID: 5129633904710731687, guid: ee1209bbc78db164e8f9f5d4001c9180, type: 3}
+  _VanillaPerfume: {fileID: 5129633904710731687, guid: fda984af905442f49995b61bdfba1511, type: 3}
+  Type: 1

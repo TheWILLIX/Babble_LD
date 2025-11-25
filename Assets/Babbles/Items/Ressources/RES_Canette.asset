@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927309bfbb3f6eb4eaa1bbc8100a5f6d, type: 3}
+  m_Name: RES_Canette
+  m_EditorClassIdentifier: 
+  _name: Canette
+  _cleanName: $Resource.Canette
+  _defaultQuantity: 1
+  _isRessource: 1
+  _isDiscoveredByDefault: 1
+  _useMultipleSelection: 0
+  _craftMultipleSelection: 1
+  _sprite: {fileID: 21300000, guid: d485451d2124fa247bb8607245aed42d, type: 3}
+  _spriteQuantity0: {fileID: 21300000, guid: bb304fbd6600ca245a2276ab1df3cbe5, type: 3}
+  _spriteQuantity1: {fileID: 21300000, guid: 88893a5e0e9cbc944988ed5a14d9082a, type: 3}
+  _spriteQuantity2: {fileID: 21300000, guid: 6034086d2da4a6045a053354d149eb6f, type: 3}
+  _spriteQuantity3: {fileID: 21300000, guid: fcf77a6e140384444b1ba6f8046d7377, type: 3}
+  _usageType: 6
+  _linkedObject: {fileID: 0}
+  _linkedValue: 5
+  _audio: S_CanetteRapide

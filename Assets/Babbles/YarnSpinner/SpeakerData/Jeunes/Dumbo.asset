@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Dumbo
+  m_EditorClassIdentifier: 
+  _textColorID: '#000000'
+  _characterName: Dumbo
+  _faceSprite: {fileID: 21300000, guid: ee1dd76d54254c048b819b494bcc66f5, type: 3}
+  _isPNJClassic: 1
+  _seumHasInfluence: 1
+  _stadePNJ: 0
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 0
+  _seuilSeumExplo: 12
+  _itemLike: []
+  _itemDislike: []
+  _receiveUniqueItem: []
+  _voiceSound:
+  - {fileID: 11400000, guid: 41fcbe70c87606944b50d46557eb7618, type: 2}
+  - {fileID: 11400000, guid: 378226c89e811de4787c26ec07309146, type: 2}
+  - {fileID: 11400000, guid: 1d488dfc3c97dc74b9cce586f300b2c7, type: 2}
+  _speedOfLettersSound: 0
+  _minimumPitchOfLettersSound: 0.8
+  _maximumPitchOfLettersSound: 0.85

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d99aa992dde3a45a93e06f1b2f891a, type: 3}
+  m_Name: REC_PoulpeCasque2
+  m_EditorClassIdentifier: 
+  _recipeName: REC_PoulpeCasque2
+  _firstItem: {fileID: 11400000, guid: 8cf862263bc392240aa2a9e42f89c3c3, type: 2}
+  _secondItem: {fileID: 11400000, guid: 56941cfb37db3b940aaceba9fb167db8, type: 2}
+  _resultItem: {fileID: 11400000, guid: 87ae22507281df14bb322e6b8a00bf56, type: 2}
+  _linkedRecipe: {fileID: 11400000, guid: c9845e7dc27a3a944a289f47d52b7f72, type: 2}
+  _locked: 0

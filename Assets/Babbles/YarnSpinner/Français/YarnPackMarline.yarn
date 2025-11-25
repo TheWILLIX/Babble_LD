@@ -1,0 +1,680 @@
+﻿title: Marline_Intro_FORET
+position: 0,0.5
+---
+<<if $visitedMarlineIntro>>
+<<jump Marline_Salute>>
+<<endif>>
+Marline: Ah ça y est, la perle est enfin sortie de la palourde qui l'emprisonnait.  #line:0853a62 
+<<MarlineAnim "Laugh">>
+Marline : C'est pas trop tôt ! #line:0e0841f 
+<<MarlineAnim "Idle">>
+<<BulleAnim Happy>>
+Bulle: <size=1000%>Mamie !!!!</size=1000%>  #line:03d83f6 
+Bulle : Qu'est-ce que tu fais ici ? #line:001def5 
+<<BulleAnim Idle>>
+<<MarlineAnim "Sad">>
+Marline : Je compte les grains de sable en attendant qu'on vienne me parler. #line:0edee18 
+<<MarlineAnim "Idle">>
+Astère : <i>Dur, dur la vie de PNJ...</i> #line:09f1b6a 
+<<MarlineAnim "Laugh">>
+Marline : Non mais je blague Bulle, t'as cru que j'étais une vieille sénile ?  #line:0101163 
+Marline : Je cueillais des <color=\#FFC300>algues</color> dans le coin. #line:08bd6a4 
+<<MarlineAnim "Idle">>
+<<BulleAnim Star>>
+Bulle : Trop cool ! Je peux venir avec toi ?  #line:003ceb7 
+<<BulleAnim Sad>>
+Marline : Non, dans tes rêves.  #line:09f4d56 
+Marline : Maintenant que t'es libre, lâche moi les écailles et sors de ta bulle...<size=50%>Bulle</size=50%>. #line:0b0a3ba 
+<<BulleAnim Idle>>
+->Bulle : Pas besoin de toi ! #line:0b7e673 
+    Bulle : D'façon j'ai pas besoin d'une vieille comme toi !! <<if $seum > 20 >> #line:12b41e2
+    <<MoreSeum 15>>
+    Marline : ... #line:0ae445b 
+    Marline : T'étais un gosse bien à l'époque...Dommage que la foutue éducation de tes parents t'ait rendu comme ça. #line:00e2c26 
+    <<wait 0.5>>
+->Bulle : T'as raison ! #line:0d8c627 
+    Bulle : T'as raison mamie ! Je vais continuer tout droit je pense. #line:0d9a1ba 
+    Marline : Hahaha, j'aime cet esprit d'aventure bullot, faut aller où notre cœur nous mène, on s'en fout des conséquences ! #line:004f8e1 
+    <<LessSeum 15>>
+    <<RelationMarline 1>>
+->Bulle : Des conseils ? #line:0f92dca 
+    Bulle : Tu me conseilles d'aller où ? #line:06a5cb1 
+    Marline : Pfffff, t'es plus un petiot, débrouille toi tout seul.  #line:0dc0485 
+    Marline : Tu sais, à ton âge j'avais déjà parcouru l'océan.  #line:0ec60f6 
+    Marline : <mspace=1em>Trois fois</mspace=1em> ! #line:0e22e67 
+<<set $visitedMarlineIntro to true>>
+<<jump Marline_Option>>
+===
+title: Marline_Story_FORET_0
+position: -161,-56
+---
+<<if $visitedMarlineStory0_FOR>>
+<<jump Marline_Salute>>
+<<endif>>
+Marline : --- #line:0b92a66 
+Marline: Ahhh, cette <color=\#48BC0D>forêt</color> me rappelle ma jeunesse. #line:09cb0f2 
+Marline : --- #line:0949c67 
+Marline: Mon voyage de noces avec ton grand-père s'est passé dans une grande forêt de varech. #line:0c30e79 
+<<BulleAnim Sad>>
+Bulle: C'est trop nul une forêt de varech, ça pue et on voit rien.  #line:0003521 
+Bulle:En plus c'est tout près de <color=\#48BC0D>chez maman et papa</color>. #line:0116528 
+<<BulleAnim Idle>>
+Marline : Bulle, tu crois qu'il y a qu'une seule forêt de varech dans le monde ? #line:03b31ca 
+Marline: Quand tu auras plus voyagé que moi, tu pourras critiquer. #line:0f6f210 
+Astère : <b>B O O M !</b>  #line:055a708 
+Astère : <i>Faut pas la chercher mamie.</i> #line:0df4940 
+Marline : Mais bon, j'aurais préféré rester seule pour être libre. Ton grand-père était une vraie poule sèche.  #line:01a6c32 
+Marline: Après notre voyage de noces et la naissance de ton père, il n'a plus jamais voulu voyager. #line:014209f 
+Bulle : Tu l'as quitté du coup ? #line:03f54e7 
+Marline : Non, il restait chez nous et s'occupait de ton père pendant que je voyageais.  #line:04358f3 
+Marline:C'est pour ça que <color="purple">Bleenie</color="purple"> est aussi peureux. #line:069d86b 
+Bulle : Il était pas triste que tu sois pas avec lui ? #line:043fc32 
+Marline : J'en sais rien moi ! Tout ce que je sais c'est que j'étais libre. #line:0976494 
+<<SetSpeed 150>>
+Marline: Pas de mari ! #line:02d63d0 
+<<wait 0.7>>
+Marline: Pas de gosse !  #line:09fb127 
+<<wait 0.7>>
+<<SetSpeed 30>>
+Marline: Le rêve ! Ne te marie jamais Bulle. #line:07173b2 
+<<set $visitedMarlineStory0_FOR to true>>
+<<jump Marline_Option>>
+===
+title: Marline_Story_FORET_1
+position: -169,126
+---
+<<if $visitedMarlineStory1_FOR>>
+<<jump Marline_Salute>>
+<<endif>>
+Marline : --- #line:084fdbd 
+Marline: Ah, c'est mon shaker que je vois là. #line:04abe58 
+Bulle : --- #line:0e9f2c2 
+<<BulleAnim Happy>>
+Bulle: Ouais ! Je l'ai récupéré dans la poubelle de mes parents. #line:0b18f23 
+<<BulleAnim Idle>>
+Marline: Oh les cons !!! #line:080f8bc 
+Astère : Combres de mer !!! #line:0ea7f27 
+Marline: Ils en connaissent pas la valeur. #line:0721b1e 
+Astère: <i>Comment un truc aussi moche peut avoir de la valeur ?</i> #line:0aedcdc 
+Marline: J'ai acheté ce shaker quand j'avais à peu près ton âge.  #line:0931a2a 
+Marline:Je voulais fabriquer une bombe pour faire péter l'école et partir en vadrouille. #line:0ffae76 
+Bulle: Et ça a marché ? #line:018dbba 
+Marline: Non c'était très étrange, je mettais des objets dedans. #line:0725a46 
+Marline : Par exemple une <color=\#FFC300>banane</color> et une <color=\#FFC300>méduse</color> et... #line:0dda883 
+<<wait 0.5>>
+Marline : <size=1000%><b>PAF !!</b></size=1000%>  #line:0c6bc3a 
+<<BulleAnim Star>>
+Marline : Ça faisait une <color=\#FFC300>méduse coussin</color>, un objet ma foi très utile mais pas pour faire péter une école...  #line:0e13145 
+Astère: <i>Et c'est ainsi que Marline découvrit le principe du craft en l'an 58 avant JC.</i> #line:0c79c6c 
+<<BulleAnim Idle>>
+Marline: Au final ce shaker m'a bien aidé pour mes aventures. Je suis contente que tu t'en serves à ton tour.  #line:030e978 
+Marline:Tu t'en sers souvent j'espère ! #line:03329ce 
+->Bulle: Pas souvent... #line:0c34f73 
+    Bulle : Je m'en suis servi <size=50%>une ou deux fois...</size=50%> #line:00bb737 
+    Marline: Oh bah tiens alors, voilà de quoi fabriquer des trucs.  #line:0838237 
+    <<ReceiveItem Algue>>
+    Marline:Tu verras que même les objets les plus nuls trouvent leur utilité quelque part. #line:059347e 
+    <<BulleAnim Happy>>
+    Bulle: Merci mamie !!! #line:0302790 
+    <<BulleAnim Idle>>
+    <<LessSeum 15>>
+->Bulle: Tous les jours ! #line:0895b06 
+    Bulle : Je m'en sers <mspace=1em>tous les jours</mspace=1em> ! #line:08e7c03 
+    Marline: Bulle tu es le petit fils parfait. #line:073d539 
+    Marline: Tiens voilà ma trouvaille la plus précieuse, tu la mérites. #line:0a55254 
+    <<BulleAnim Star>>
+    <<RelationMarline 1>>
+    <<ReceiveItem Pile>>
+    Bulle: Merci mamie, c'est toi la mamie parfaite. #line:04691e5
+    <<BulleAnim Idle>> 
+    <<MoreSeum 15>>
+->Bulle : Plus que toi ! #line:0ce6762 
+    Bulle : Je suis sûr que je m'en sers plus que toi ! #line:02295b4 
+    Marline : Oh le petit vantard ! Le jour où tu t'en seras servi plus que moi, les poules d'eau auront des dents ! #line:0d381e5 
+<<set $visitedMarlineStory1_FOR to true>>
+<<jump Marline_Option>>
+===
+title: Marline_Intro_CIMETIERE
+position: 262,0.5
+---
+<<ResetStade Marline>>
+<<if $visitedMarlineIntro_CIM>>
+<<jump Marline_Salute>>
+<<endif>>
+Bulle: Mamie, ne me dis pas que tu me suis ?  #line:08afacb 
+<<BulleAnim Angry>>
+Bulle : C'est papa qui t'a engagée comme espionne ?? #line:0d0bc7b 
+<<BulleAnim Idle>>
+<<MarlineAnim "Angry">>
+Marline: Hého, tu crois que j'ai pas de vie en dehors de toi ?  #line:0487db0 
+Marline: Je suis une grand-mère active. #line:099f64b 
+<<MarlineAnim "Idle">>
+Bulle: Pourquoi t'es là alors ? #line:06ca788 
+<<MarlineAnim "Angry">>
+Marline: Ça t'regarde pas petit vicieux. #line:065e85f 
+Marline : Pourquoi <b>TOI</b> tu traînes dans ce coin paumé ? #line:0423d25 
+<<MarlineAnim "Idle">>
+->Bulle: Trop bien ici ! #line:07d35f9 
+    Bulle : Mais c'est trop bien ici ! #line:0d79510 
+    Marline: Ah ! Revois tes standards Bullot !  #line:0caab8a 
+    <<MarlineAnim "Sad">>
+    Marline: C'est le deuxième endroit le plus vide après la <color=\#48BC0D>ferme de tes parents</color>.  #line:06a90d3 
+    <<MarlineAnim "Idle">>
+    <<BulleAnim Sad>>
+    Marline: Faut que t'ailles voir de nouveaux horizons !  #line:097700e 
+    <<MarlineAnim "Laugh">>
+    Marline: Balade toi dehors, prends des couleurs.  #line:00b142b 
+    Marline : T'as l'air d'un pauvre poulpe desséché là. #line:079b2bf 
+    <<MarlineAnim "Idle">>
+    <<BulleAnim Angry>>
+    Bulle: <size=800%><b>QUOI ??</b></size> #line:02d4b9e 
+    Bulle: Y'a un <color="purple">gang</color="purple"> qui m'a dit que j'étais frais ! #line:09c1107 
+    <<BulleAnim Idle>>
+->Bulle: Toi aussi t'es là ! #line:0fc3dfb 
+    Bulle : Toi aussi tu traînes ici. #line:0edd415 
+    Marline: Je ne traînes pas, j'explore !  #line:02ff44f 
+    <<MarlineAnim "Angry">>
+    Marline: Et arrête de te mêler de mes affaires ! Occupe-toi de ta propre vie un peu !  #line:00086aa 
+    Marline: Rencontre d'autres gens que moi ! #line:0f8896e 
+    <<MarlineAnim "Idle">>
+    <<BulleAnim Angry>>
+    Bulle: J'ai déjà vu d'autres gens !  #line:0c8d783 
+    Bulle: D'ailleurs y'a même un <color="purple">gang</color="purple"> qui m'a dit que j'étais trop frais ! #line:019498c 
+    <<BulleAnim Idle>>
+->Bulle: Rencontrer des gens. <<if $seum < 20 >> #line:2188d06
+    Bulle : C'est dans les coins perdus qu'on fait les meilleures rencontres.    #line:0bb7fde 
+    Astère: <i>Très heureuse d'avoir rencontré ce squelette de baleine...</i> #line:0393aec 
+    <<MarlineAnim "Laugh">>
+    Marline: Quel esprit d'aventurier Bulle ! C'est magnifique.  #line:04c8432 
+    <<MarlineAnim "Idle">>
+    <<RelationMarline 1>>
+    <<BulleAnim Star>>
+    Bulle : Eh ouais ! Y'a même un <color="purple">gang</color="purple"> qui m'a dit que j'étais trop frais ! #line:00e6b6f 
+    <<BulleAnim Idle>>
+Marline : Frais ??? #line:0102f25 
+Marline : Non, non, non c'est pas comme ça qui faut être.  #line:05e2134
+<<MarlineAnim "Laugh">> 
+Marline : La seule chose qui doit être fraiche ici, c'est cette <color=\#FFC300>canette</color=\#FFC300>.  #line:0c079fb 
+Marline : Tiens Bulle, elle pourra te servir ! #line:03e3015 
+<<MarlineAnim "Idle">>
+<<BulleAnim Star>>
+<<ReceiveItem Canette>>
+Bulle : Me servir à quoi ? #line:0fd3c40 
+<<BulleAnim Idle>>
+Marline : À devenir un grand aventurier Bulle !  #line:0610841 
+Marline : Mais attention tu dois l'utiliser au bon moment ! #line:0113524 
+Bulle : Pourquoi ? #line:0fd9e78 
+<<MarlineAnim "Laugh">>
+Marline : Tu verras, aller oust ! #line:0a56c03 
+<<MarlineAnim "Idle">>
+<<set $visitedMarlineIntro_CIM to true>>
+<<jump Marline_Option>>
+===
+title: Marline_Story_CIMETIERE_0
+position: 262,0.5
+---
+<<if $visitedMarlineStory0_CIM>>
+<<jump Marline_Salute>>   
+<<endif>>
+Marline : --- #line:0ca192a 
+Marline: Je suis fière de toi Bulle, malgré ton accident t'as pas peur de l'aventure ! #line:06afd3d 
+Bulle: Quel accident ? #line:05e6308 
+Marline : Ah, tu t'en souviens plus ?  #line:09e9939 
+<<MarlineAnim "Sad">>
+Marline : C'est à cause de ça que tes idiots de parents ont coupé le contact avec moi. #line:023e211 
+<<MarlineAnim "Idle">>
+Astère: <i>C'est l'heure du flashback. Préparez vos pop corn.</i> #line:0c25dae 
+Marline : Quand t'étais encore qu'un p'tit poisson, je t'ai emmené explorer la <color=\#48BC0D> forêt</color=\#48BC0D>.  #line:0b730c6 
+Marline: Mais t'es pas très doué Bulle, t'as trébuché sur un coquillage, t'es tombé et t'as percé ta bulle.  #line:07ee56f 
+Marline: Je t'ai ramené chez toi avant même que tu t'en rendes compte ! #line:005b2be 
+<<MarlineAnim "Angry">>
+Marline: Mais ton père est un fragile, il a fait tout un cinéma et m'a interdit de te voir. #line:09b6b5e
+<<MarlineAnim "Idle">>
+<<BulleAnim Angry>> 
+Bulle : Mais c'est hyper méchant ! #line:0ef2729 
+Marline : Et d'après lui c'est moi la méchante !! C'est facile de parler dans le dos !!  #line:01685bb 
+<<BulleAnim Idle>>
+<<wait 0.5>>
+<<MarlineAnim "Sad">>
+Marline:En même temps, j'étais jamais là donc c'est sûrement de ma faute. #line:05d0b99
+<<MarlineAnim "Idle">> 
+Bulle : Et même papi il te trouvait méchante ? #line:0997969 
+Marline : Non, ton grand-père était très gentil... #line:0b9770f 
+Marline : Il me pardonnait tout et était toujours là pour m'accueillir quand je rentrais de voyage.  #line:0de6b98
+<<MarlineAnim "Sad">> 
+Marline: <size=70%>Mais à cause de moi, il ne pouvait plus te voir non plus.</size=70%> #line:0e7712f 
+<<MarlineAnim "Idle">>
+<<BulleAnim Sad>>
+Bulle : C'est trop triste... #line:06b6069 
+<<BulleAnim Idle>>
+<<wait 0.7>>
+<<MarlineAnim "Sad">>
+Marline : ...  #line:0003341 
+<<MarlineAnim "Idle">>
+Marline : <size=150%>Hého !</size=150%> Pas le temps pour la tristesse quand on est un aventurier Bulle !  #line:08df558 
+Marline: On regarde vers l'avenir et on dit bye-bye au passé !  #line:07b4bcb 
+<<MarlineAnim "Laugh">>
+Marline : Et puis, t'as pas une aventure à vivre ? Continue d'avancer au lieu de me parler ! #line:0dc7ad0 
+<<MarlineAnim "Idle">>
+<<set $visitedMarlineStory0_CIM to true>>
+<<jump Marline_Option>>
+===
+title: Marline_Story_CIMETIERE_1
+position: -363,-96
+---
+<<if $visitedMarlineStory1_CIM>>
+<<jump Marline_Salute>>
+<<endif>>
+Marline : --- #line:087e008 
+Bulle: C'était quoi ton plus beau voyage mamie ? #line:02d4858 
+Marline : Bulle ! Je t'ai déjà dit d'arrêter de papoter avec moi... #line:00a08ad 
+<<wait 0.7>>
+<<BulleAnim Happy>>
+Marline: Mais tu as de la chance, <mspace=0.7em>j'adore</mspace=0.7em> raconter ma vie.  #line:09a46f8 
+<<BulleAnim Idle>>
+Marline : C'était dans la <color=\#48BC0D>forêt de varech</color="\#48BC0D>. #line:03e7698 
+->Bulle : M'en fiche ! #line:0fe70cf 
+    Bulle : Je m'en fiche en fait hahaha ! <<if $seum > 20 >> #line:1b97665  
+    <<MarlineAnim "Laugh">>
+    Marline : Très bien, continue ton aventure sans mes conseils dans ce cas. #line:06cf25b 
+    <<MarlineAnim "Idle">>
+    <<BulleAnim Sad>>
+    Bulle : C'est bon je rigole mamie...T'es pas drôle. #line:0f2040b 
+    <<BulleAnim Idle>>
+->Bulle: Quoi ? #line:0c2510c 
+    Marline : Ça me rappelle ton grand-père, c'était le seul lieu où il aimait venir avec moi.  #line:0384e8b 
+    Marline: Mais tu connais déjà, je vais plutôt te parler d'un endroit plus loin qui pourrait te plaire... #line:03bd516 
+->Bulle : Mon endroit préféré ! #line:0028bbb 
+    Bulle : Moi aussi c'est mon endroit préféré ! #line:0ac2d8c 
+    <<BulleAnim Sad>>
+    <<MarlineAnim "Laugh">>
+    Marline : T'es pas sérieux Bulle ? Cet endroit est nul, il y a rien à part des <color=\#FFC300>algues</color=\#FFC300> et des hippies. #line:0040d0f 
+    <<MarlineAnim "Idle">>
+    <<BulleAnim Idle>>
+    Astère : <i>Mais Marline a tout en commun avec les hippies...</i> #line:0da58d0 
+->Bulle: Le spot d'Hotu ! #line:08f3c70 
+    Bulle : Ouais, c'est le spot de <color="purple">Hotu</color="purple"> le caillou ! <<if $seum < 20 >> #line:20eb581  
+    Marline : Tu connais <color="purple">Hotu</color="purple"> ? C'était un grand champion à l'époque.  #line:0cee896 
+    Marline : Ça me rappelle de si bons souvenirs. Il y avait <color="purple">Napopo</color> aussi... #line:0fd77cd
+    <<RelationMarline 1>>
+    <<wait 0.7>> 
+    Marline : Oh tiens regarde, cette <color=\#FFC300>pile</color=\#FFC300> date de cette époque. Je te la donne, elle te sera sûrement plus utile qu'à moi ! #line:0c9f204 
+    <<BulleAnim Star>>
+    Bulle : Trop cool merci mamie !! #line:06d96a0 
+    <<BulleAnim Idle>>
+    Marline : Mais à part ça... #line:04955e4 
+Marline : Mon endroit préféré est pas loin d'ici.  #line:079a3fe 
+Marline : J'y allais pour bouger ma carcasse et rencontrer des partenaires. #line:0c324c5 
+Bulle : Des partenaires ? #line:07dde2e 
+Marline : Des partenaires pour faire l... #line:02965dc 
+<<SetSpeed 500>>
+Astère : De la danse ! #line:022b531 
+<<SetSpeed 30>>
+Marline : En plus, en tant qu'aventurière, j'avais pas le temps de lier des relations.  #line:0ef7899 
+Marline: Un soir par ci, un soir par là. Tu dois compter sur personne et personne compte sur toi.  #line:074f205 
+Marline :Pas le temps pour les embrouilles ! #line:056b815 
+Bulle : T'as jamais eu d'amis alors ? #line:07fb59b 
+Marline : Non, pour quoi faire ?  #line:0d908cb 
+<<SetSpeed 10>>
+<<MarlineAnim "Angry">>
+Marline :Un.  #line:0d2cfac 
+Marline :Aventurier.  #line:0fd08fe 
+Marline :Doit.  #line:0833fcb 
+Marline :Se.  #line:08252ad 
+Marline :Débrouiller.  #line:0c8f133 
+Marline :<b><size=600%>SEUL !!!</size=600%></b>  #line:03db4e4 
+<<MarlineAnim "Idle">>
+<<SetSpeed 30>>
+<<BulleAnim Sad>>
+Bulle : C'est trop nul. Moi je me suis fait des amis depuis que je suis parti de chez maman et papa. #line:0545a5a 
+<<BulleAnim Idle>>
+<<MarlineAnim "Angry">>
+Marline : Roooh Bulle, j'avais des amis aussi à ton âge, mais aujourd'hui il y a plus personne. #line:0045240 
+Marline : Quand t'es un adulte tout le monde t'abandonne crois moi !  #line:0e56b78 
+Marline: À la fin, il ne reste que l'aventure pour toi ! #line:0000ca1 
+<<MarlineAnim "Idle">>
+Bulle : J'te crois pas. #line:07ee23a 
+Marline : Comme tu veux... #line:0431058 
+Marline:  Continue ton chemin alors. Et tu verras de tes propres yeux ! #line:0598532 
+<<set $visitedMarlineStory1_CIM to true>>
+<<jump Marline_Option>>
+===
+title: Marline_Quete_LUMIERE
+position: 53,106
+---
+Marline : Bullot, si tu réponds bien à <b>toutes</b> mes questions, je t'offre une <color=\#FFC300>recette de craft</color>. #line:0975e4e 
+<<BulleAnim Happy>>
+Bulle : J'accepte le défi ! #line:014ce59 
+<<BulleAnim Idle>>
+Marline : <b>Première question</b> !  #line:05d0f55 
+Marline : Avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:0f0193e 
+
+->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:0a7755e 
+    Marline : Bien joué, tu es plus intelligent que je ne le pensais. #line:0aac18e 
+    <<RelationMarline 1>>
+->Marline : Une <color=\#FFC300>méduse</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:00f8302 
+    <<BulleAnim Sad>>
+    Marline : Non Bulle, réfléchis un peu... #line:0e9f962 
+    <<BulleAnim Idle>>
+    Marline : Retente ta chance, avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:0a16e64 
+    ->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:0929ca1 
+        Marline : Bien joué, tu vois quand tu veux ! #line:0449f73 
+    -> Marline : Des coussins. #line:001a7cc 
+        <<BulleAnim Sad>>
+        Marline : Ta tête est aussi vide que celle de ton père ma parole... #line:019560b 
+        <<BulleAnim Idle>>
+        Marline : Aller Bulle tu peux y arriver ! #line:0af6a2a 
+        Marline : Il ne te reste plus beaucoup de choix...  #line:0e0a2d1 
+        Marline : Avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:07791c7 
+        ->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:04efdff 
+        Marline : Bravo Bulle ! #line:04d5f06 
+->Marline : Des coussins. #line:0e19675 
+    <<BulleAnim Sad>>
+    Marline : Ta tête est aussi vide que celle de ton père ma parole... #line:0bc1f7b 
+    <<BulleAnim Idle>>
+    Marline : Retente ta chance, avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:0d324c0 
+    ->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:0313d62 
+        Marline : Bien joué, tu vois quand tu veux ! #line:0dd4fd1 
+    -> Marline : Une <color=\#FFC300>méduse</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:0363699 
+    <<BulleAnim Sad>>
+    Marline : Non Bulle, réfléchis un peu... #line:0ea9fae 
+    <<BulleAnim Idle>>
+    Marline : Retente ta chance, avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:02912d7 
+    Marline : Aller Bulle tu peux y arriver ! #line:0d1009c 
+    Marline : Il ne te reste plus beaucoup de choix...  #line:07a8e3b 
+    Marline : Avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:0f9258d 
+    ->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:0e4868b 
+        Marline : Bravo Bulle ! #line:06d89fe 
+->Bulle : A ton avis ? <<if $seum > 20 >> #line:1ca73aa  
+    Marline : Bulle, un peu d'effort... #line:03693a6
+    Marline : Retente ta chance, avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ? #line:0d86364 
+    ->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:034e5ec 
+        Marline : Bien joué, tu vois quand tu veux !  #line:06c480b 
+    -> Marline : Des coussins.  #line:01f0f58 
+        <<BulleAnim Sad>>
+        Marline : Ta tête est aussi vide que celle de ton père ma parole...  #line:042af72 
+        <<BulleAnim Idle>>
+        Marline : Aller Bulle tu peux y arriver !  #line:0618461 
+        Marline : Il ne te reste plus beaucoup de choix...   #line:08a50a0 
+        Marline : Avec quoi fabrique-t-on un <color=\#FFC300>poulpe coussin</color=\#FFC300> ?  #line:0100a30 
+        ->Marline : Un <color=\#FFC300>poulpe</color=\#FFC300> et une <color=\#FFC300>banane</color=\#FFC300>. #line:075cdc5 
+        Marline : Bravo Bulle !  #line:0f551bf 
+Marline : <b>Deuxième question</b>.  #line:0699f92 
+Marline : Qui est le meilleur acteur de l'océan ? #line:0e67fdf 
+->Marline : Willem Dafeau #line:0149783 
+    Marline : Ça se voit que tu n'y connais rien mais bon je peux pas t'en vouloir t'es encore jeune... #line:0c5a5db 
+->Marline : Noémie Merlant. #line:0ff5f5a 
+    Marline : Non Bulle...comment tu peux penser ça... #line:0cd7ca7 
+    Marline : La seule chose bien avec cette actrice c'est qu'elle porte bien son nom.  #line:0abf687 
+    Marline : Elle m'a toujours énervée avec son regard de merlan frit là. #line:0703298 
+->Marline : Carrie Fisher. #line:0ef0f69 
+    Marline : Tu es un poisson de goût Bulle ! Carrie Fisher c'était une <b><size=170%>vraie<size=170%></b> aventurière dans tous ses films !  #line:0316147 
+    Marline : C'était mon modèle quand j'avais ton âge, j'aimais tellement Sky Wars... #line:06a6c5c 
+    <<RelationMarline 1>>
+->Bulle : C'est John Cen'eau pupulupuuuu pupululupuuu. <<if $seum < 20 >> #line:23ea058  
+    Marline : Bulle, ton humour est <mspace=1.10em>inégalable</mspace=1.10em>. #line:024ceb0 
+Marline : <b>Troisième et dernière question.</b>  #line:0af9b27 
+Marline : Qui est la meilleure personne du monde ? #line:08e4aba 
+->Bulle : Je sais pas. Mais c'est pas toi en tout cas ! <<if $seum > 20 >> #line:1bce7d9  
+    Marline : Si c'est comme ça, tu n'auras rien petit insolent ! Oust ! #line:02512a2 
+->Marline : La mère de ton père.  #line:0057990 
+    Marline : Tu as raison là dessus Bullot ! Tiens tu l'as bien mérité.  #line:08cc079 
+    <<ReceiveRecipe REC_AmpouleFleur>>
+    <<RelationMarline 1>>
+    Marline : Quand tu l'auras fabriqué tu pourras voir plus longtemps dans le noir, c'est super pratique pour explorer certaines zones crois moi ! #line:0966d78 
+    <<BulleAnim Star>>
+    Bulle : Merci mamie, c'est trop cool !! #line:0b2ad9a 
+    <<BulleAnim Idle>>
+    Marline : Oui, oui, maintenant à toi d'en fabriquer une ! L'aventure n'attend pas ! #line:09d4bc4 
+->Marline : La plus grande aventurière de l'océan. #line:086f0dc 
+    Marline : Tu as bien raison la dessus Bullot ! Tiens tu l'as bien mérité.  #line:0866071 
+    <<RelationMarline 1>>
+    <<ReceiveRecipe REC_AmpouleFleur>>
+    Marline : Quand tu l'auras fabriqué tu pourras voir plus longtemps dans le noir, c'est super pratique pour explorer certaines zones crois moi ! #line:06620ec 
+    <<BulleAnim Star>>
+    Bulle : Merci mamie, c'est trop cool !! #line:0377e87 
+    <<BulleAnim Idle>>
+    Marline : Oui, oui, maintenant à toi d'en fabriquer une ! L'aventure n'attend pas ! #line:026d8bb 
+->Marline : Ta grand-mère préférée. <<if $seum < 20 >> #line:273b789 
+    Marline : Tu as bien raison la dessus Bullot ! Tiens tu l'as bien mérité.  #line:07e6286 
+    <<RelationMarline 1>>
+    <<ReceiveRecipe REC_AmpouleFleur>>
+    Marline : Quand tu l'auras fabriqué tu pourras voir bien longtemps dans le noir, c'est super pratique pour explorer certaines zones crois moi ! #line:0d9c0f1 
+    <<BulleAnim Star>>
+    Bulle : Merci mamie, c'est trop cool !! #line:094f4c7 
+    <<BulleAnim Idle>>
+    Marline : Oui, oui, maintenant à toi d'en fabriquer une ! L'aventure n'attend pas ! #line:0f0d3d4 
+
+===
+title: Marline_Salute
+position: -448,-211
+---
+    <<if dice(2) == 1>>
+    <<MarlineAnim "Laugh">>
+    Marline : Coucou Bullot. #line:07a2bc9 
+    <<MarlineAnim "Idle">>
+    <<else>>
+    <<MarlineAnim "Laugh">>
+    Marline : Sous l'océannn, sous l'océannn.  #line:0cb1426 
+    Marline : Oh t'es là Bulle ! #line:0afb678 
+    <<MarlineAnim "Idle">>
+    <<endif>>
+    <<jump Marline_Option>>
+===
+title: Marline_Aurevoir
+position: -216,78
+---
+    <<if dice(2) == 1>>
+    Marline : Tu vas rester là toute la journée ?  #line:0c8ea4a 
+    <<MarlineAnim "Laugh">>
+    <<Autoskip 10>>
+    Marline : J'ai un planning chargé moi. #line:0cc0b4e 
+    <<MarlineAnim "Idle">>
+    <<else>>
+    Marline : Je crois que le prochain <color="white">courant marin</color="white"> direction l'aventure part bientôt. #line:0b1ebeb 
+    <<Autoskip 10>>
+    Marline : Tu devrais te dépêcher d'aller le prendre. #line:04f9ea5 
+    <<endif>>
+===
+
+title: Marline_Receive
+position: -388,-271
+---
+<<MarlineAnim "Laugh">>
+Marline : Merci, je m'en servirai pour le jeter sur ton père la prochaine fois qu'il te cherche. #line:07fe25f 
+<<MarlineAnim "Idle">>
+===
+title: Marline_Receive_Like
+position: -170,240
+---
+    <<if dice(2) == 1>>
+    Marline : Merci Bulle, quelque chose qui pourra me servir dans mon prochain voyage ! #line:0359fee 
+    <<else>>
+    Marline : Même Napoléon m'a jamais offert un si beau cadeau ! Merci Bulle. #line:04bece2 
+    Bulle : Napoléon ? #line:07eab77 
+    <<MarlineAnim "Laugh">>
+    Marline : Aller Bulle, t'as pas autre chose à faire ? #line:061aee6 
+    <<MarlineAnim "Idle">>
+    <<endif>>
+===
+title: Marline_Receive_Dislike
+position: -14,-263
+---
+    <<if dice(2) == 1>>
+    <<MarlineAnim "Angry">>
+    Marline : Euh, je sais que l'océan est une poubelle... #line:0e41557 
+    Marline : Mais c'est pas une raison pour croire que j'en suis une aussi Bulle. #line:0ffdc1a 
+    <<MarlineAnim "Idle">>
+    <<else>>
+    <<MarlineAnim "Angry">>
+    Marline : Tu utilises vraiment mon shaker pour crafter un truc aussi nul ?  #line:072e374 
+    Marline : Tu te fous de moi ? #line:0f79641 
+    <<MarlineAnim "Idle">>
+    <<endif>>
+===
+title: Marline_Receive_Campement
+position: -84,-179
+---
+Marline : Bulle, tu es ma plus belle réussite.  #line:069f4cd 
+<<RelationMarline 1>>
+Marline : Ce campement est magnifique ! #line:07977b0 
+Marline : Les <color=\#FFC300>algues</color=\#FFC300> sont d'une qualité <mspace=0.7em>exceptionnelle</mspace=0.7em> ! #line:042b5e2 
+Marline : La méduse a été élevée en eau salée, nourrie au plancton blanc et attrapée avec une <size=60%>délicatesse</size=60%> digne du plus grand éleveur de méduses.  #line:006d6b1 
+Marline : Je vais très bien dormir grâce à toi. #line:06c6513 
+===
+title: Marline_Receive_Poulpe
+position: -84,-179
+---
+<<MarlineAnim "Sad">>
+Marline : Napopo... #line:02d6910 
+<<MarlineAnim "Idle">>
+<<BulleAnim Sad>>
+Bulle : Oh non pas encore lui. #line:0489650 
+<<BulleAnim Idle>>
+===
+title: Marline_Receive_Fruit
+position: -84,-179
+---
+Marline : Non mais laissez-moi, manger ma banane. #line:078222b 
+Marline : Non mais laissez-moi, manger ma banane toute nue sur la plage. #line:0c2f455 
+Bulle : Ça va mamie ? #line:021e676 
+<<MarlineAnim "Laugh">>
+Marline : C'est rien, c'est une vieille chanson. #line:0b1a712 
+<<MarlineAnim "Idle">>
+===
+title: Marline_Receive_Grenade
+position: -84,-179
+---
+<<MarlineAnim "Laugh">>
+Marline: Franchement t'aurais pu la charger un peu plus en explosif, cette grenade pourrait à peine faire sauter un ou deux navires. #line:03b4b2d 
+<<MarlineAnim "Idle">>
+Bulle: Euh...mamie j'ai pas pour vocation de finir en prison... #line:0e62d59 
+===
+title: Marline_Wake
+position: 5,359
+---
+    <<ModeFullScreen true>>
+    <<if dice(2) == 1>>
+    Marline : C'est l'heure de se réveiller Bullot. #line:04e1913 
+    Bulle : Ahhhh, je suis mort ? #line:0badc63 
+    Marline : Quoi ? Tu me prends pour un fantôme  ?  #line:02d27e5 
+    Marline : Tu vas te prendre une de ces claques tu vas voir si je suis un fantôme. #line:0afa2c9 
+    Astère : Bulle, si on se prend une claque rappelle toi que je suis en première ligne. #line:0e33f21 
+    <<ModeFullScreen false>>
+    <<else>>
+    <<ModeFullScreen true>>
+    Marline : Debout Bulle ! C'est l'aventure qui sonne à ta porte ! #line:0805ef3 
+    <<BulleAnim Happy>>
+    Bulle : C'est vrai ? Tu vas m'emmener explorer mamie ? #line:0dd18fb 
+    <<BulleAnim Sad>>
+    Marline : Euh non, moi je joue juste le rôle de l'appel à l'aventure et toi tu es l'aventurier.  #line:09ecd1f 
+    Marline : Hop hop hop, on se dépêche ! #line:0f9e5ca 
+    <<BulleAnim Idle>>
+    <<ModeFullScreen false>>
+    <<endif>>
+===
+title: Marline_WakeOral
+position: 5,359
+---
+Marline : <size=70%>C'est l'heure de se réveiller Bullot.</size>   #line:0ec0199 
+Bulle : Ahhhhhh, je suis mort ?  #line:035a6b1 
+Marline : <size=800%><b>Quoi ???</b></size> #line:02f834c 
+<<SetSpeed 60>>
+Marline : Tu me prends pour un fantôme  ?  #line:0bdbc9c 
+Marline : Tu vas te prendre une de ces claques tu vas voir si je suis un fantôme.  #line:054d63e 
+<<SetSpeed 30>>
+Astère : <i>Bulle, si on se prend une claque rappelle toi que je suis en première ligne.</i>  #line:0d50b40 
+===
+title: Marline_SeumExplo
+position: 27,252
+---
+Marline : Hého Bulle, ne me parle plus <b>jamais</b> sur ce thon !  #line:04f1a21 
+Marline : Tu vas pas t'en tirer comme ça !  #line:0d23595 
+Marline : Si tu veux te comporter comme un adulte alors il va falloir assumer comme un adulte ! #line:0db3dd1 
+<<BulleAnim Angry>>
+Bulle : Je suis un adulte ! #line:0fe3b94 
+<<BulleAnim Idle>>
+Marline : Non ! Là, t'es juste un gosse capricieux ! #line:074796e 
+<<BulleAnim Angry>>
+Bulle : Je m'en fiche de ton avis ! #line:04559ba 
+<<BulleAnim Idle>>
+Marline : C'est pas comme ça que tu vas grandir crois moi.  #line:0c4748e 
+Marline : Reviens me parler quand tu seras calmé. #line:0b596ba 
+<<BulleAnim Angry>>
+Bulle : J'ai même plus envie de te parler de toute façon. #line:0ffe4ae 
+Marline : Parfait, moi non plus ! #line:0c5606f 
+<<BulleAnim Idle>>
+===
+title: Marline_SeumExcuse
+position: 8,174
+---
+Marline : Ah ça y est, le petit rebelle s'est calmé ? #line:0a7ac3b 
+<<BulleAnim Sad>>
+Bulle : Pardon mamie...<size=70%>je voulais pas être méchant...</size=70%> #line:0dad48d 
+Marline : Oh t'inquiètes pas bullot, il faut avoir du caractère dans la vie !  #line:046ced3 
+<<BulleAnim Idle>>
+Marline : Sinon tout le monde te marchera dessus.  #line:032cb3b 
+Marline : Regarde ton père, personne le respecte. #line:067abd6 
+<<BulleAnim Sad>>
+Bulle : Mais c'est pas d'ma faute si j'ai tout le temps le seum. #line:03b03fa 
+Astère : <i>Ah bah il suffit de mieux jouer.</i> #line:0a24b1a 
+Marline : Bullot, la vie c'est pas un kiwi ! #line:06644d1 
+<<BulleAnim Idle>>
+Marline : Il y a des gens chiants, des gens cons et pourtant on est obligés d'être gentils avec eux.  #line:0c49b12 
+Marline : Le jour où tu comprendras ça, tu sera un adulte. #line:02f427a 
+===
+title: Marline_SeumSalute
+position: 3,-89
+---
+Marline : Je t'ai dis de revenir seulement quand tu seras calmé Bulle ! #line:09b84c2 
+===
+title: Marline_Condition
+position: -189,-279
+---
+<<MarlineAnim "Angry">>
+Marline : Bulle ! T'as pas suivi mon conseil, tu devais utiliser la <color=\#FFC300>canette</color=\#FFC300> plus tard.  #line:004ead6 
+<<MarlineAnim "Idle">>
+Marline : Mais bon j'apprécie ton esprit curieux alors tiens je t'en redonne une ! #line:0970b0f 
+<<ReceiveItem Canette>>
+Marline : Fais attention cette fois ! #line:08e1e15 
+===
+title: Marline_Option
+position: 269,-183
+---
+Marline : Bon Bulle tu veux quoi ? #line:3170b5f 
+<<Choice true>>
+->Donner un objet #line:3070b5f 
+    <<Choice false>>
+    <<GiveObject>> 
+->Parler #line:3975b0f 
+    <<Choice false>>
+    <<Story "Marline">>   
+->Quitter #line:0945b0f 
+    <<jump Marline_Aurevoir>>
+    <<MarlineAnim Coucou>>
+    <<Choice false>>
+===
+title: Marline_Option_2
+position: 269,-183
+---
+Marline : Bullot, t'as besoin de quelque chose ? #line:0a69c69 
+->Donner un objet #line:3270b5f 
+    <<GiveObject>>
+->Parler #line:3770b5f 
+    <<Story "Marline">>   
+->Quitter #line:0985b0f 
+    <<jump Marline_Aurevoir>>
+    <<MarlineAnim Coucou>>
+    <<Choice false>>
+===
+title: Marline_NeedNewIntercation
+position: 0,0.5
+---
+Marline : <i><size=70%>Psssst Bulle, si tu me donne quelque chose, je serai peut-être motivée pour te raconter une histoire.</size></i> #line:0934ef9 
+===
+title: Marline_NeedNewLocation
+position: -358,0.5
+---
+Marline : Bullot, j'adore te parler, mais je vais bientôt rater mon UberFish pour les <color=\#48BC0D>abysses</color>. #line:01090ec 
+Marline : On se reverra peut-être là-bas.  #line:0d920a2 
+===

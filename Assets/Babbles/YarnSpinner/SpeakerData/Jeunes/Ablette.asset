@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec55014a0c30e244b754ea7b0a1eed8, type: 3}
+  m_Name: Ablette
+  m_EditorClassIdentifier: 
+  _textColorID: '#7DE7AC'
+  _characterName: Ablette
+  _faceSprite: {fileID: 21300000, guid: 5d77fa5fdcca5974cb6794f7ae5d53f6, type: 3}
+  _isPNJClassic: 0
+  _seumHasInfluence: 1
+  _stadePNJ: 0
+  _relationPointsPNJ: 1
+  _seuilToIncreaseEachStade: 0
+  _seuilSeumExplo: 12
+  _itemLike:
+  - {fileID: 11400000, guid: 88c6f0a4e51d90d4f9a7628a19ed2940, type: 2}
+  - {fileID: 11400000, guid: 78bdb5df977a091488a3844892f1e09a, type: 2}
+  - {fileID: 11400000, guid: b6abaeaba49d72b4d8904431f492a0b7, type: 2}
+  - {fileID: 11400000, guid: 5f5ab6ac69d7c484d89f85a463b47ba3, type: 2}
+  - {fileID: 11400000, guid: ac12b0b41d3ecce489fac442757b289e, type: 2}
+  - {fileID: 11400000, guid: 42a6deafb4c5a9b41b4c2c5a1a5dc0d5, type: 2}
+  - {fileID: 11400000, guid: 2b7d9bc15185fc443a010c16676970b6, type: 2}
+  - {fileID: 11400000, guid: 66671844de5d3214d8153725684432e0, type: 2}
+  - {fileID: 11400000, guid: b4aa2791c2d6f834899f8f3328c26c62, type: 2}
+  - {fileID: 11400000, guid: f0b86854bbbcaa0498a1b2436819957b, type: 2}
+  - {fileID: 11400000, guid: 6552b8513eda68e49bb1520326859806, type: 2}
+  _itemDislike:
+  - {fileID: 11400000, guid: 06b70db8e60ab704b9eab27783ab08e2, type: 2}
+  - {fileID: 11400000, guid: 0b9f2bd4356ff1143adf668fcfca91a9, type: 2}
+  - {fileID: 11400000, guid: 62e3a935819864a4db5fb91f43b72ab0, type: 2}
+  - {fileID: 11400000, guid: 56941cfb37db3b940aaceba9fb167db8, type: 2}
+  - {fileID: 11400000, guid: 05c6e9513bdcb3c47a6be2e0192c6867, type: 2}
+  - {fileID: 11400000, guid: 015021617147b154aa3c6f85a13f4512, type: 2}
+  _receiveUniqueItem:
+  - {fileID: 11400000, guid: 897858b3deb7f564ea859c44f82ebca5, type: 2}
+  _voiceSound:
+  - {fileID: 11400000, guid: e4c560e5382765c4aa5027c6e68531fe, type: 2}
+  - {fileID: 11400000, guid: 9b38c512cb4bbb74fa9b4236dece6c8f, type: 2}
+  - {fileID: 11400000, guid: 040f62d287b8e0442bacef492cdc93ad, type: 2}
+  - {fileID: 11400000, guid: a06403b3e4bf8f14c84023ec2cbf3f8b, type: 2}
+  - {fileID: 11400000, guid: f62e28330c0953d41ace35b40b498605, type: 2}
+  - {fileID: 11400000, guid: 4957b8f91bb825840a5faf08ec49f643, type: 2}
+  - {fileID: 11400000, guid: 025d55f3b5de44b4196b86782df529bf, type: 2}
+  - {fileID: 11400000, guid: d658c4586aec1ce44a804781f3dd546d, type: 2}
+  - {fileID: 11400000, guid: 812b1b7116b013342b66872070d7cb4b, type: 2}
+  - {fileID: 11400000, guid: cbd3e5730941efa4ab0b7d9bd4a65bff, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d99aa992dde3a45a93e06f1b2f891a, type: 3}
+  m_Name: REC_BrassartSlide1
+  m_EditorClassIdentifier: 
+  _recipeName: REC_BrassartSlide1
+  _firstItem: {fileID: 11400000, guid: 56941cfb37db3b940aaceba9fb167db8, type: 2}
+  _secondItem: {fileID: 11400000, guid: 89d931e8429513c499aec6ea086e9e4f, type: 2}
+  _resultItem: {fileID: 11400000, guid: aef440246971eeb48af3fc487d227606, type: 2}
+  _linkedRecipe: {fileID: 11400000, guid: d8ea1f82fb9bdf649a13314634a69872, type: 2}
+  _locked: 0
