@@ -175,7 +175,7 @@ Material:
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
     - _Anisotropy: 0
-    - _Blend: 0.0205
+    - _Blend: 0
     - _BlendAmount: 0.5
     - _BlendMode: 0
     - _CoatMask: 0

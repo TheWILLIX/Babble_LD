@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Babbles/Scenes/Tests/LD_Modules.unity
     guid: 78b9364cc9b741a438ad185a6ed1ba79
+  - enabled: 1
+    path: Assets/MapLD/Level 1 WIL.unity
+    guid: 5973dea64c2ae90458f31218b995ef9d
   m_configObjects: {}
