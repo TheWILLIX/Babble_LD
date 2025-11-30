@@ -194,7 +194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7074363859735655023, guid: 903cc1a2342030243bd070e895cfbcb5, type: 3}
       propertyPath: field of view
-      value: 60
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 7074363860040110496, guid: 903cc1a2342030243bd070e895cfbcb5, type: 3}
       propertyPath: m_RootOrder
