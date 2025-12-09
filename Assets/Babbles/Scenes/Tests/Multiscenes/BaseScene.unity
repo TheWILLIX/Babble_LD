@@ -217358,11 +217358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Areas.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Names.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _loadingPlatforms.Array.data[0]
@@ -217391,7 +217391,7 @@ PrefabInstance:
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Areas.Array.data[3]
       value: 
-      objectReference: {fileID: 1994810501}
+      objectReference: {fileID: 380191905}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Areas.Array.data[4]
       value: 
@@ -217418,7 +217418,7 @@ PrefabInstance:
       objectReference: {fileID: 1994810501}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Names.Array.data[0]
-      value: Adrien_Epave
+      value: Level 1 WIL
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Names.Array.data[1]
@@ -217430,7 +217430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Names.Array.data[3]
-      value: SAS_Cimetiere
+      value: Level 1 WIL
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.Names.Array.data[4]
@@ -217530,11 +217530,11 @@ PrefabInstance:
       objectReference: {fileID: 1994810501}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.LevelTypes.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.LevelTypes.Array.data[0]
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.LevelTypes.Array.data[1]
@@ -217546,7 +217546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.LevelTypes.Array.data[3]
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1770483501966372514, guid: 4f0745c44f1f31a4fbd502631552841e, type: 3}
       propertyPath: _scenesAreas.LevelTypes.Array.data[4]

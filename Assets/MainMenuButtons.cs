@@ -29,7 +29,7 @@ public class MainMenuButtons : MonoBehaviour
         _ = ClemCAddons.Utilities.GameTools.DelayedCall(100, () =>
         {
             Application.backgroundLoadingPriority = ThreadPriority.Low;
-            SceneManager.LoadScene("BaseScene");
+            SceneManager.LoadScene("Level 1 WIL");
         });
 
     }
